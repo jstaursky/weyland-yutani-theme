@@ -1,7 +1,7 @@
 # weyland-yutani-theme
 An emacs theme based on the Alien movie franchise 
 
-![Image of theme](theme-screenshot.jpg)
+![Image of theme](theme-screenshot.png)
 
 ### About theme
 This theme was created using the emacs-theme-generator, https://github.com/mswift42/theme-creator.

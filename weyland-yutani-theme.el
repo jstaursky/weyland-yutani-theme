@@ -45,7 +45,7 @@
        (keyword "#88B54D")
        (const   "#CCB364") ;;#CCB364
        (comment "#565766")
-       (func    "#B85169")
+       (func    "#a3646f") ;;#B85169
        (str     "#738F79")
        (type    "#5992C2")
        (var     "#9E79B3") ;;#9c84a9

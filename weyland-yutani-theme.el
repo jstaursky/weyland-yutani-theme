@@ -46,7 +46,7 @@
        (const   "#A3646F")
        (comment "#565766")
        (func    "#beb7f7")
-       (str     "#9eba88") ;#485E70 #bcdada #dde4eb #CDD7E2 #889fb8 #DEEDDA #C8EBBE #9CD58E #9ED193 #738F79 #BAD2B3 #e6eee3
+       (str     "#627E95") ;#9eba88 #485E70 #bcdada #dde4eb #CDD7E2 #889fb8 #DEEDDA #C8EBBE #9CD58E #9ED193 #738F79 #BAD2B3 #e6eee3
        (type    "#5992C2")
        (var     "#9E79B3")
        (warning "#ff0000"))
@@ -254,3 +254,4 @@
 ;; End:
 
 ;;; weyland-yutani-theme.el ends here
+

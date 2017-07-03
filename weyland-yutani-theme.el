@@ -1,5 +1,5 @@
 
-;;; weyland-theme.el --- Emacs theme with a dark background.
+;;; weyland-yutani-theme.el --- Emacs theme with a dark background.
 
 ;; Copyright (C) 2014 , Joe Staursky
 
@@ -31,7 +31,7 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#abb8ae")
+       (fg1 "#a0a8b8") ;;#bcdada #b3b8c5 #abb8ae
        (fg2 "#9ca89f")
        (fg3 "#8d9890")
        (fg4 "#7f8881")
@@ -42,13 +42,13 @@
        (key2 "#97B685")
        (key3 "#557940")
        (builtin "#AD8B6B")
-       (keyword "#88B54D")
-       (const   "#CCB364") ;;#CCB364
+       (keyword "#93E57C")
+       (const   "#A3646F")
        (comment "#565766")
-       (func    "#a3646f") ;;#B85169
-       (str     "#738F79")
+       (func    "#beb7f7")
+       (str     "#9eba88") ;#485E70 #bcdada #dde4eb #CDD7E2 #889fb8 #DEEDDA #C8EBBE #9CD58E #9ED193 #738F79 #BAD2B3 #e6eee3
        (type    "#5992C2")
-       (var     "#9E79B3") ;;#9c84a9
+       (var     "#9E79B3")
        (warning "#ff0000"))
    (custom-theme-set-faces
    'weyland-yutani
@@ -254,4 +254,3 @@
 ;; End:
 
 ;;; weyland-yutani-theme.el ends here
-

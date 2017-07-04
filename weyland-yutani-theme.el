@@ -1,4 +1,5 @@
 
+
 ;;; weyland-yutani-theme.el --- Emacs theme with a dark background.
 
 ;; Copyright (C) 2014 , Joe Staursky
@@ -31,25 +32,25 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#a0a8b8") ;;#bcdada #b3b8c5 #abb8ae
-       (fg2 "#9ca89f")
-       (fg3 "#8d9890")
-       (fg4 "#7f8881")
+       (fg1 "#a0a8b8")
+       (fg2 "#9299a8")
+       (fg3 "#848b98")
+       (fg4 "#777d88")
        (bg1 "#141e20")
        (bg2 "#232d2f")
        (bg3 "#333c3e")
        (bg4 "#444d4e")
-       (key2 "#97B685")
-       (key3 "#557940")
-       (builtin "#AD8B6B")
-       (keyword "#93E57C")
-       (const   "#A3646F")
+       (key2 "#a0e88b")
+       (key3 "#82c96e")
+       (builtin "#a3646f")
+       (keyword "#93e57c")
+       (const   "#d1d68b")
        (comment "#565766")
        (func    "#beb7f7")
-       (str     "#627E95") ;#9eba88 #485E70 #bcdada #dde4eb #CDD7E2 #889fb8 #DEEDDA #C8EBBE #9CD58E #9ED193 #738F79 #BAD2B3 #e6eee3
-       (type    "#5992C2")
-       (var     "#9E79B3")
-       (warning "#ff0000"))
+       (str     "#627e95")
+       (type    "#5992c2")
+       (var     "#9e79b3")
+       (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -254,4 +255,3 @@
 ;; End:
 
 ;;; weyland-yutani-theme.el ends here
-

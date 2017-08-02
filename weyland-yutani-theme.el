@@ -53,8 +53,12 @@
        (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani
-        `(default ((,class (:background ,bg1 :foreground ,fg1))))
-        `(font-lock-builtin-face ((,class (:foreground ,builtin))))
+   `(default ((,class (:background ,bg1 :foreground ,fg1))))
+   `(font-lock-builtin-face ((,class (:foreground ,builtin))))
+   `(company-tooltip-annotation-selection ((,class (:foreground ,func))))
+
+   `(company-tooltip-annotation ((,class (:foreground ,const))))
+
         `(font-lock-comment-face ((,class (:foreground ,comment))))
 	`(font-lock-negation-char-face ((,class (:foreground ,const))))
 	`(font-lock-reference-face ((,class (:foreground ,const))))
@@ -210,19 +214,26 @@
         `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
         `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
         `(helm-bookmark-w3m ((,class (:foreground ,type))))
-        `(company-echo-common ((,class (:foreground ,bg1 :background ,fg1))))
+
+
+
+        `(company-echo ((,class (:foreground ,bg1 :background ,fg1))))
         `(company-preview ((,class (:background ,bg1 :foreground ,key2))))
-        `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
-        `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
+        `(company-tooltip ((,class (:foreground ,fg2 :background ,bg1 :bold t))))
+        `(company-echo-common ((,class (:foreground ,bg1 :background ,fg1))))
         `(company-scrollbar-bg ((,class (:background ,bg3))))
         `(company-scrollbar-fg ((,class (:foreground ,keyword))))
-        `(company-tooltip ((,class (:foreground ,fg2 :background ,bg1 :bold t))))
-        `(company-tooltop-annotation ((,class (:foreground ,const))))
-        `(company-tooltip-common ((,class ( :foreground ,fg3))))
-        `(company-tooltip-common-selection ((,class (:foreground ,str))))
         `(company-tooltip-mouse ((,class (:inherit highlight))))
-        `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
+        `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
         `(company-template-field ((,class (:inherit region))))
+        `(company-tooltop-search ((,class (:inherit region))))
+        `(company-tooltip-common ((,class ( :foreground ,fg3))))
+        `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
+        `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
+        `(company-tooltop-annotation ((,class (:foreground ,const))))
+        `(company-tooltip-common-selection ((,class (:foreground ,str))))
+        `(company-tooltop-search-selection ((,class (:foreground ,const))))
+        `(company-tooltop-annotation-selection ((,class (:foreground ,const))))
         `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
         `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
         `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
@@ -241,7 +252,10 @@
         `(jde-java-font-lock-constant-face ((t (:foreground ,const))))
         `(jde-java-font-lock-modifier-face ((t (:foreground ,key3))))
         `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
-        `(jde-java-font-lock-number-face ((t (:foreground ,var))))))
+        `(jde-java-font-lock-number-face ((t (:foreground ,var))))
+
+
+        ))
 
 ;;;###autoload
 (when load-file-name

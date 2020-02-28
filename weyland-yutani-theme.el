@@ -32,7 +32,7 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#fffff6")                  ;#bbc2cf  #f1f0ea #FBFAF9
+       (fg1 "#d9d7cf")                  ;#bbc2cf  #f1f0ea #FBFAF9
        (fg2 "#9299a8")
        (fg3 "#848b98")
        (fg4 "#777d88")

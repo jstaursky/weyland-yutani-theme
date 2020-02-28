@@ -32,7 +32,7 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#f1f0ea")                  ;#bbc2cf  
+       (fg1 "#fffff6")                  ;#bbc2cf  #f1f0ea #FBFAF9
        (fg2 "#9299a8")
        (fg3 "#848b98")
        (fg4 "#777d88")
@@ -43,13 +43,14 @@
        (key2 "#a0e88b")
        (key3 "#82c96e")
        (builtin "#eb8288")              ;DB504A #dc91b2 #e17b82
-       (keyword "#99d68b")              ; Saturation 37 #99d082
-       (const   "#f7eda4")              ;#d5d289
+       (keyword "#abea7f")              ; Saturation 37 #99d082 #a6f45d #94e652
+       (const   "#fce194")              ;#d5d289 #f7eda4
        (comment "#8499aa")
-       (func    "#beb7f7")
+       (func    "#D8D2F9")              ;#beb7f7
        (str     "#7D97AA")
-       (type    "#5db7f2")              ;#549dcc   #57afdd
-       (var     "#e4b0dc")              ;#b398d0   #d6c0f4  #d1b7ed  #acadef
+       (type    "#72c1fc")              ;#549dcc   #57afdd
+       (var     "#ffceec")              ;#b398d0   #d6c0f4  #d1b7ed  #acadef
+                                        ;#c0789b #e3bcda #DFB9D7
                                         ;#cac9ed #F5E0B7
        (warning "#fcbec9"))
    (custom-theme-set-faces

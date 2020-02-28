@@ -44,7 +44,7 @@
        (key3 "#82c96e")
        (builtin "#eb8288")              ;DB504A #dc91b2 #e17b82
        (keyword "#abea7f")              ; Saturation 37 #99d082 #a6f45d #94e652
-       (const   "#fee6a8")              ;#d5d289 #f7eda4
+       (const   "#fff9ac")              ;#d5d289 #f7eda4
        (comment "#8499aa")
        (func    "#D8D2F9")              ;#beb7f7
        (str     "#7D97AA")

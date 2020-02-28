@@ -44,12 +44,12 @@
        (key3 "#82c96e")
        (builtin "#eb8288")              ;DB504A #dc91b2 #e17b82
        (keyword "#abea7f")              ; Saturation 37 #99d082 #a6f45d #94e652
-       (const   "#fce194")              ;#d5d289 #f7eda4
+       (const   "#fee6a8")              ;#d5d289 #f7eda4
        (comment "#8499aa")
        (func    "#D8D2F9")              ;#beb7f7
        (str     "#7D97AA")
        (type    "#72c1fc")              ;#549dcc   #57afdd
-       (var     "#ffceec")              ;#b398d0   #d6c0f4  #d1b7ed  #acadef
+       (var     "#FFA8DB")              ;#b398d0   #d6c0f4  #d1b7ed  #acadef
                                         ;#c0789b #e3bcda #DFB9D7
                                         ;#cac9ed #F5E0B7
        (warning "#fcbec9"))

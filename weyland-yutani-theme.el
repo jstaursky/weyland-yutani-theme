@@ -47,7 +47,7 @@
        (const   "#fff9ac")              ;#d5d289 #f7eda4
        (comment "#8499aa")
        (func    "#D8D2F9")              ;#beb7f7
-       (str     "#7D97AA")
+       (str     "#8099c6")
        (type    "#72c1fc")              ;#549dcc   #57afdd
        (var     "#FFA8DB")              ;#b398d0   #d6c0f4  #d1b7ed  #acadef
                                         ;#c0789b #e3bcda #DFB9D7

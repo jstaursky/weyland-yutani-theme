@@ -42,16 +42,16 @@
        (bg4 "#444d4e")
        (key2 "#a0e88b")
        (key3 "#82c96e")
-       (builtin "#eb8288")              ;DB504A #dc91b2 #e17b82
+       (builtin "#DD99F7")              ;DB504A #dc91b2 #e17b82 #eb8288
        (keyword "#abea7f")              ; Saturation 37 #99d082 #a6f45d #94e652
-       (const   "#fff9ac")              ;#d5d289 #f7eda4
+       (const   "#8ea0fc")              ;#d5d289 #f7eda4 #FFA8DB #fff9ac
        (comment "#8499aa")
        (func    "#C3B9FA")              ;#beb7f7  #D8D2F9  #cbc3f7
-       (str     "#a0bae8")
+       (str     "#fff9ac")
        (type    "#7ed1fe")              ;#7EC6FC #549dcc   #57afdd #72c1fc #7ed1fe
        (var     "#FFA1D8")              ;#FFA8DB #b398d0   #d6c0f4  #d1b7ed  #acadef
                                         ;#c0789b #e3bcda #DFB9D7
-                                        ;#cac9ed #F5E0B7
+                                        ;#cac9ed #F5E0B7 #fec1ab #FFA1D8
        (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani

@@ -32,26 +32,24 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#eaf1e7")                  ; Keep #eaf1e7
+       (fg1 "#eaeaec")                  ; Keep #eaf1e7 #ededf3 #e3e3e6
        (fg2 "#9299a8")
        (fg3 "#848b98")
        (fg4 "#777d88")
-       (bg1 "#1f1f1f")
+       (bg1 "#1e1e1e")
        (bg2 "#232d2f")
        (bg3 "#333c3e")
        (bg4 "#444d4e")
        (key2 "#9cae48")
        (key3 "#82c96e")
-       (builtin "#919191")              ;#f0a3dd DB504A #dc91b2 #e17b82 #eb8288 #dd7dbb
-       (keyword "#a9f880")              ; Keep
-       (const   "#fff89f")              ;#d5d289 #f7eda4 #FFA8DB #fff9ac
+       (builtin "#87ba80")
+       (keyword "#a9f880")
+       (const   "#d0a6ec")              ;#fff89f #f5f09c
        (comment "#8499aa")
-       (func    "#beb7f7")              ;#beb7f7  #D8D2F9  #cbc3f7 #af9ece
+       (func    "#beb7f7")
        (str     "#d18282")
-       (type    "#8cd0e4")              ;#65c8fe #7EC6FC #549dcc   #57afdd #72c1fc #7ed1fe
-       (var     "#d0a6ec")              ;#FFA8DB #b398d0   #d6c0f4  #d1b7ed  #acadef
-                                        ;#c0789b #e3bcda #DFB9D7
-                                        ;#cac9ed #F5E0B7 #fec1ab #FFA1D8
+       (type    "#8cd0e4")
+       (var     "#9faae4")
        (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani

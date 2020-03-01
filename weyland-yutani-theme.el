@@ -36,21 +36,20 @@
        (fg2 "#9299a8")
        (fg3 "#848b98")
        (fg4 "#777d88")
-       (bg1 "#1e1e1e")                  ;#1e1e1e
+       (bg1 "#212121")                  ;#1e1e1e
        (bg2 "#232d2f")
        (bg3 "#333c3e")
        (bg4 "#444d4e")
        (key2 "#9cae48")
        (key3 "#82c96e")
-       (builtin "#fc7981")                     ;#87ba80 #87ba80 #d18282 #EF626B
-                                        ;#f67b81 #f7888e
-       (keyword "#a9f880")
-       (const   "#DAAEF8")              ;#fff89f #f5f09c #d0a6ec
-       (comment "#8499aa")
-       (func    "#beb7f7")
-       (str     "#fff89f")
-       (type    "#9AE4FA")              ;#8cd0e4
-       (var     "#A8C2FF")              ;#9faae4 #A3BDF8 #A4BEFA #A7C2FF
+       (builtin "#f38283")              ; Done
+       (keyword "#a6f27d")              ; Done
+       (const   "#dfb8e9")              ; Done
+       (comment "#7e9fad")              ; Done
+       (func    "#bfc0f5")              ; Done
+       (str     "#f5f891")              ; Done
+       (type    "#95ecee")              ; Done
+       (var     "#aac6e2")              ; Done
        (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani

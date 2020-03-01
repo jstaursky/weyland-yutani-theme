@@ -32,16 +32,16 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#e8edf1")                  ; Keep #eaf1e7 #ededf3 #e3e3e6
-       (fg2 "#9299a8")
-       (fg3 "#848b98")
-       (fg4 "#777d88")
-       (bg1 "#212121")                  ;#1e1e1e
-       (bg2 "#232d2f")
-       (bg3 "#333c3e")
-       (bg4 "#444d4e")
-       (key2 "#9cae48")
-       (key3 "#82c96e")
+       (fg1 "#e8edf1")
+       (fg2 "#b3c1c9")
+       (fg3 "#9babb7")
+       (fg4 "#8694a5")
+       (bg1 "#212121")
+       (bg2 "#292e31")
+       (bg3 "#313641")
+       (bg4 "#3c3a50")
+       (key2 "#59c55f")
+       (key3 "#7edc6e")
        (builtin "#f38283")              ; Done
        (keyword "#a6f27d")              ; Done
        (const   "#dfb8e9")              ; Done

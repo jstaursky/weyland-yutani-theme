@@ -36,18 +36,18 @@
        (fg2 "#9299a8")
        (fg3 "#848b98")
        (fg4 "#777d88")
-       (bg1 "#1e1e1e")
+       (bg1 "#1e1e1e")                  ;#1e1e1e
        (bg2 "#232d2f")
        (bg3 "#333c3e")
        (bg4 "#444d4e")
        (key2 "#9cae48")
        (key3 "#82c96e")
-       (builtin "#87ba80")
+       (builtin "#EF626B")                     ;#87ba80 #87ba80 #d18282
        (keyword "#a9f880")
        (const   "#d0a6ec")              ;#fff89f #f5f09c
        (comment "#8499aa")
        (func    "#beb7f7")
-       (str     "#d18282")
+       (str     "#fff89f")
        (type    "#8cd0e4")
        (var     "#9faae4")
        (warning "#fcbec9"))

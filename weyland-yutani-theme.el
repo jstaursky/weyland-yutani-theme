@@ -50,6 +50,7 @@
        (key2       "#59c55f")
        (key3       "#7edc6e")
        (builtin    "#f38283") ; Done.
+       (err        "#f38283")
        (keyword    "#a1ef78") ; Done.
        (const      "#D4B0EE") ; Done.
        (comment    "#7e9fad") ; Done.
@@ -72,6 +73,14 @@
      ((,class (:foreground ,comment
                :background
                ,(when weyland-yutani-theme-comment-bg comment-bg)))))
+
+;;;;; flycheck
+   `(flycheck-error
+     ((,(append '((supports :underline (:style line))) class)
+       (:underline (:style line :color ,err)))
+      (,class (:foreground ,bg4 :background ,err :inherit bold :underline t))))
+
+
 
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(company-tooltip-annotation-selection ((,class (:foreground ,func))))

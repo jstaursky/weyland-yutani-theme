@@ -51,7 +51,7 @@
        (key3       "#7edc6e")
        (builtin    "#f38283") ; Done.
        (keyword    "#a1ef78") ; Done.
-       (const      "#e6c0de") ; Done.
+       (const      "#D4B0EE") ; Done.
        (comment    "#7e9fad") ; Done.
        (comment-bg "#2b2e2f")
 

@@ -30,6 +30,13 @@
 
 ;;; Code:
 
+(defcustom weyland-yutani-theme-comment-bg nil
+  "Use a background for comment lines."
+  :type 'boolean
+  :group 'weyland-yutani-theme)
+
+
+
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
        (fg1 "#e8edf1")
@@ -46,20 +53,31 @@
        (keyword "#a1ef78")              ; Done.
        (const   "#e6c0de")              ; Done.
        (comment "#7e9fad")              ; Done.
+       (comment-bg     "#2b2e2f")
+
        (func    "#bfc0f5")              ; Done.
-       (str     "#f5f891")              ; Done.
+       (str     "#81d2e7")              ; #f5f891
        (type    "#b87be3")              ; Done.
        (var     "#85b7e5")              ; Done.
-       (warning "#fcbec9"))
+       (warning "#fcbec9")
+
+
+       )
    (custom-theme-set-faces
    'weyland-yutani
+
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
+
+   `(font-lock-comment-face
+     ((,class (:foreground ,comment
+               :background
+               ,(when weyland-yutani-theme-comment-bg comment-bg)))))
+
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(company-tooltip-annotation-selection ((,class (:foreground ,func))))
 
    `(company-tooltip-annotation ((,class (:foreground ,const))))
 
-        `(font-lock-comment-face ((,class (:foreground ,comment))))
     `(font-lock-negation-char-face ((,class (:foreground ,const))))
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const))))

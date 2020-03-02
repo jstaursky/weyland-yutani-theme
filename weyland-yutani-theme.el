@@ -39,28 +39,27 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#e8edf1")
-       (fg2 "#b3c1c9")
-       (fg3 "#9babb7")
-       (fg4 "#8694a5")
-       (bg1 "#212121")
-       (bg2 "#292e31")
-       (bg3 "#313641")
-       (bg4 "#3c3a50")
-       (key2 "#59c55f")
-       (key3 "#7edc6e")
-       (builtin "#f38283")              ; Done.
-       (keyword "#a1ef78")              ; Done.
-       (const   "#e6c0de")              ; Done.
-       (comment "#7e9fad")              ; Done.
-       (comment-bg     "#2b2e2f")
+       (fg1        "#cfd5d8")
+       (fg2        "#b3c1c9")
+       (fg3        "#9babb7")
+       (fg4        "#8694a5")
+       (bg1        "#212628")
+       (bg2        "#292e31")
+       (bg3        "#313641")
+       (bg4        "#3c3a50")
+       (key2       "#59c55f")
+       (key3       "#7edc6e")
+       (builtin    "#f38283") ; Done.
+       (keyword    "#a1ef78") ; Done.
+       (const      "#e6c0de") ; Done.
+       (comment    "#7e9fad") ; Done.
+       (comment-bg "#2b2e2f")
 
-       (func    "#bfc0f5")              ; Done.
-       (str     "#81d2e7")              ; #f5f891
-       (type    "#b87be3")              ; Done.
-       (var     "#85b7e5")              ; Done.
-       (warning "#fcbec9")
-
+       (func       "#bfc0f5") ; Done.
+       (str        "#81d2e7") ; #f5f891
+       (type       "#b87be3") ; Done.
+       (var        "#85b7e5") ; Done.
+       (warning    "#fcbec9")
 
        )
    (custom-theme-set-faces

@@ -39,12 +39,12 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#cfd5d8")
+       (fg1        "#D1D9DD")
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#212628")
-       (bg2        "#292e31")
+       (bg1        "#212628")            ;
+       (bg2        "#292F35")
        (bg3        "#313641")
        (bg4        "#3c3a50")
        (key2       "#59c55f")
@@ -60,6 +60,7 @@
        (type       "#b87be3") ; Done.
        (var        "#85b7e5") ; Done.
        (warning    "#fcbec9")
+
 
        )
    (custom-theme-set-faces

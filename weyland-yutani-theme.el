@@ -42,14 +42,14 @@
        (bg4 "#3c3a50")
        (key2 "#59c55f")
        (key3 "#7edc6e")
-       (builtin "#f38283")              ; Done
-       (keyword "#a1ef78")              ; Done
-       (const   "#e6c0de")              ; Done
-       (comment "#7e9fad")              ; Done
-       (func    "#bfc0f5")              ; Done
-       (str     "#f5f891")              ; Done
-       (type    "#b87be3")              ; Done
-       (var     "#85b7e5")              ; Done
+       (builtin "#f38283")              ; Done.
+       (keyword "#a1ef78")              ; Done.
+       (const   "#e6c0de")              ; Done.
+       (comment "#7e9fad")              ; Done.
+       (func    "#bfc0f5")              ; Done.
+       (str     "#f5f891")              ; Done.
+       (type    "#b87be3")              ; Done.
+       (var     "#85b7e5")              ; Done.
        (warning "#fcbec9"))
    (custom-theme-set-faces
    'weyland-yutani

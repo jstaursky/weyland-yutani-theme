@@ -50,18 +50,27 @@
        (key2       "#59c55f")
        (key3       "#7edc6e")
        (builtin    "#f38283") ; Done.
-       (err        "#f38283")
+       (err        "#cd2517")
        (keyword    "#a1ef78") ; Done.
        (const      "#D4B0EE") ; Done.
        (comment    "#7e9fad") ; Done.
        (comment-bg "#2b2e2f")
-
+       (region-bg  "#3c3a50")
        (func       "#bfc0f5") ; Done.
        (str        "#81d2e7") ; #f5f891
        (type       "#b87be3") ; Done.
        (var        "#85b7e5") ; Done.
        (warning    "#fcbec9")
 
+       ;; Colors Generic
+       (wy-light-blue "#81d2e7")
+       (wy-purple        "#b87be3")
+       (wy-green         "#a1ef78")
+       (wy-red           "#f38283")
+       (wy-yellow        "#f5f891")
+       (wy-diff-change        "#ff8820")
+       (wy-diff-insert        "#b3f35c")
+       (wy-diff-delete        "#d85657")
 
        )
    (custom-theme-set-faces
@@ -87,7 +96,7 @@
 
    `(company-tooltip-annotation ((,class (:foreground ,const))))
 
-    `(font-lock-negation-char-face ((,class (:foreground ,const))))
+    `(font-lock-negation-char-face ((,class (:foreground ,wy-yellow))))
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
@@ -97,7 +106,10 @@
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))
         `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
-        `(region ((,class (:background ,fg1 :foreground ,bg1))))
+
+
+        `(region ((,class (:background ,region-bg))))
+
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
     `(hl-line ((,class (:background  ,bg2))))
     `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
@@ -179,7 +191,7 @@
         `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
         `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
     `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-        `(trailing-whitespace ((,class :foreground nil :background ,warning)))
+        `(trailing-whitespace ((,class :foreground nil :background ,wy-green)))
         `(rainbow-delimiters-depth-1-face ((,class :foreground ,fg1)))
         `(rainbow-delimiters-depth-2-face ((,class :foreground ,type)))
         `(rainbow-delimiters-depth-3-face ((,class :foreground ,var)))
@@ -188,6 +200,48 @@
         `(rainbow-delimiters-depth-6-face ((,class :foreground ,fg1)))
         `(rainbow-delimiters-depth-7-face ((,class :foreground ,type)))
         `(rainbow-delimiters-depth-8-face ((,class :foreground ,var)))
+
+
+    ;; MODE SUPPORT: git-gutter
+    `(git-gutter:added               ((,class (:foreground ,wy-green      ))))
+    `(git-gutter:deleted             ((,class (:foreground ,wy-red   ))))
+    `(git-gutter:modified            ((,class (:foreground ,wy-yellow       ))))
+    ;; `(git-gutter:separator           ((,class (:foreground ,dp_background ))))
+    ;; `(git-gutter:unchanged           ((,class (:foreground ,dp_background ))))
+    ;; ;; MODE SUPPORT: git-gutter-fr
+    `(git-gutter-fr:added            ((,class (:foreground ,wy-green))))
+    `(git-gutter-fr:deleted          ((,class (:foreground ,wy-red))))
+    `(git-gutter-fr:modified         ((,class (:foreground ,wy-yellow))))
+    ;; ;; MODE SUPPORT: git-gutter+
+    ;; `(git-gutter+-commit-header-face ((,class (:foreground ,dp_foreground ))))
+    `(git-gutter+-added              ((,class (:foreground ,wy-green      ))))
+    `(git-gutter+-deleted            ((,class (:foreground ,wy-red   ))))
+    `(git-gutter+-modified           ((,class (:foreground ,wy-yellow       ))))
+    ;; `(git-gutter+-separator          ((,class (:foreground ,dp_foreground ))))
+    ;; `(git-gutter+-unchanged          ((,class (:foreground ,dp_foreground ))))
+    ;; ;; MODE SUPPORT: git-gutter-fr+
+    `(git-gutter-fr+-added           ((,class (:foreground ,wy-green      ))))
+    `(git-gutter-fr+-deleted         ((,class (:foreground ,wy-red   ))))
+    `(git-gutter-fr+-modified        ((,class (:foreground ,wy-yellow       ))))
+
+    ;; #d19a66 #e5c07b
+    ; diff-hl-change
+    `(diff-hl-change        ((,class (:foreground ,wy-diff-change :background ,wy-diff-change))))
+    `(diff-hl-insert        ((,class (:foreground ,wy-diff-insert :background ,wy-diff-insert))))
+    `(diff-hl-delete        ((,class (:foreground ,wy-diff-delete :background ,wy-diff-delete))))
+
+
+    ;; ;; MODE LINE
+    ;; `(mode-line                    ((,class (:foreground ,fg4           :background ,dp_background :bold t  ))))
+    ;; `(mode-line-inactive           ((,class (:foreground ,var           :background nil :weight normal      ))))
+    ;; `(mode-line-buffer-id          ((,class (:foreground ,dp_green      :background nil :bold t       ))))
+    ;; `(mode-line-buffer-id-inactive ((,class (:foreground ,fg1           :background nil                     ))))
+    ;; `(mode-line-highlight          ((,class (:foreground ,keyword       :background nil :weight bold        ))))
+    ;; `(mode-line-emphasis           ((,class (:foreground ,fg1           :background nil                     ))))
+
+
+
+
         `(magit-item-highlight ((,class :background ,bg3)))
         `(magit-section-heading        ((,class (:foreground ,keyword :weight bold))))
         `(magit-hunk-heading           ((,class (:background ,bg3))))
@@ -213,10 +267,14 @@
         `(term-color-cyan ((,class (:foreground ,str :background ,str))))
         `(term-color-white ((,class (:foreground ,fg2 :background ,fg2))))
         `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
+
+
+        ;;; helm
+        `(helm-match ((,class (:foreground ,wy-purple))))
         `(helm-header ((,class (:foreground ,fg2 :background ,bg1 :underline nil :box nil))))
         `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
-        `(helm-selection ((,class (:background ,bg2 :underline nil))))
-        `(helm-selection-line ((,class (:background ,bg2))))
+        `(helm-selection ((,class (:background ,bg4 :underline nil))))
+        `(helm-selection-line ((,class (:background ,bg4))))
         `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
         `(helm-candidate-number ((,class (:foreground ,bg1 :background ,fg1))))
         `(helm-separator ((,class (:foreground ,type :background ,bg1))))

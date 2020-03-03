@@ -49,9 +49,9 @@
        (bg4        "#3c3a50")
        (key2       "#59c55f")
        (key3       "#7edc6e")
-       (builtin    "#f38283") ; Done.
+       (builtin    "#a1ef78") ; Done. #f38283
        (err        "#cd2517")
-       (keyword    "#a1ef78") ; Done.
+       (keyword    "#BFEB3A") ; Done.
        (const      "#D4B0EE") ; Done.
        (comment    "#7e9fad") ; Done.
        (comment-bg "#2b2e2f")

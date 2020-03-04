@@ -5,7 +5,7 @@
 ;; Copyright (C) 2014 , Joe Staursky
 
 ;; Author: Joe Staursky
-;; 
+;;
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
 ;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
@@ -39,19 +39,19 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#b6bab5")           ; #D1D9DD
+       (fg1        "#a6bdc8")           ; #D1D9DD #b6bab5 #b1b5b0 #B6BDBD
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#1e1e1e")            ;#212628
+       (bg1        "#212628")            ; #1e1e1e
        (bg2        "#292F35")
        (bg3        "#313641")
        (bg4        "#3c3a50")
        (key2       "#59c55f")
        (key3       "#7edc6e")
-       (builtin    "#65cb75") ; Done. #f38283 #a1ef78 #A9E675
+       (builtin    "#8fcb84") ; Done. #f38283 #a1ef78 #A9E675 #65cb75 #77ac8c
        (err        "#cd2517")
-       (keyword    "#a4c443") ; DONE #CBFF33 #a6c744
+       (keyword    "#a2c142") ; DONE #CBFF33 #a6c744 #a4c443
        (const      "#D4B0EE") ; DONE
        (comment    "#7e9fae") ; Done. #7e9fad
        (comment-bg "#2b2e2f")

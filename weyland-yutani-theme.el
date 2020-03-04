@@ -39,7 +39,7 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#a6bdc8")           ; #D1D9DD #b6bab5 #b1b5b0 #B6BDBD
+       (fg1        "#ededed")           ; #D1D9DD #b6bab5 #b1b5b0 #B6BDBD #f5f5f5
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
@@ -53,7 +53,7 @@
        (err        "#cd2517")
        (keyword    "#a2c142") ; DONE #CBFF33 #a6c744 #a4c443
        (const      "#D4B0EE") ; DONE
-       (comment    "#7e9fae") ; Done. #7e9fad
+       (comment    "#688491") ; Done. #7e9fad #7e9fae #546b75
        (comment-bg "#2b2e2f")
        (region-bg  "#3c3a50")
        (func       "#b3b4f3") ; Done.

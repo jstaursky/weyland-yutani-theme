@@ -39,11 +39,13 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#ededed")           ; #D1D9DD #b6bab5 #b1b5b0 #B6BDBD #f5f5f5
+       (fg1        "#c1c6c9")           ;#ededed #D1D9DD #b6bab5 #b1b5b0 #B6BDBD
+                                        ;#f5f5f5 #ededed #c8c8c8 #d5f0ff #C1CECE
+                                        ;#9FA2A3 #aaadae #BEC3C6 #bcc4c7
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#212628")            ; #1e1e1e
+       (bg1        "#2e2e2e")            ; #1e1e1e #212628
        (bg2        "#292F35")
        (bg3        "#313641")
        (bg4        "#3c3a50")
@@ -51,15 +53,15 @@
        (key3       "#7edc6e")
        (builtin    "#8fcb84") ; Done. #f38283 #a1ef78 #A9E675 #65cb75 #77ac8c
        (err        "#cd2517")
-       (keyword    "#a2c142") ; DONE #CBFF33 #a6c744 #a4c443
+       (keyword    "#a2c142") ; DONE #CBFF33 #a6c744 #a4c443 #a2c142 #abd038 #a6ca36
        (const      "#D4B0EE") ; DONE
        (comment    "#688491") ; Done. #7e9fad #7e9fae #546b75
        (comment-bg "#2b2e2f")
        (region-bg  "#3c3a50")
        (func       "#b3b4f3") ; Done.
-       (str        "#76c1d4") ; #f5f891 #81d2e7
+       (str        "#A4C0DA") ; #f5f891 #81d2e7 #76c1d4 #96D0DE
        (type       "#b87be3") ; Done. #b87be3
-       (var        "#84b7e4") ; Done. #85b7e5
+       (var        "#86B7E4") ; Done. #85b7e5 #84b7e4 #8ebce6
        (warning    "#fcbec9")
 
        ;; Colors Generic
@@ -101,7 +103,7 @@
     `(font-lock-constant-face ((,class (:foreground ,const))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func :bold t))))
-        `(font-lock-keyword-face ((,class (:foreground ,keyword :bold t))))
+        `(font-lock-keyword-face ((,class (:foreground ,keyword :bold t)))) ;
         `(font-lock-string-face ((,class (:foreground ,str))))
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))

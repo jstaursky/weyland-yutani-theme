@@ -46,8 +46,8 @@
        (fg3        "#9babb7")
        (fg4        "#8694a5")
        (bg1        "#2e2e2e")            ; #1e1e1e #212628
-       (bg2        "#292F35")
-       (bg3        "#313641")
+       (bg2        "#363636")             ; #3f3f3f
+       (bg3        "#3f3f3f")             ; #313641
        (bg4        "#3c3a50")
        (key2       "#59c55f")
        (key3       "#7edc6e")
@@ -57,7 +57,7 @@
        (const      "#D4B0EE") ; DONE
        (comment    "#688491") ; Done. #7e9fad #7e9fae #546b75
        (comment-bg "#2b2e2f")
-       (region-bg  "#3c3a50")
+       (region-bg  "#3f3f3f")
        (func       "#b3b4f3") ; Done.
        (str        "#A4C0DA") ; #f5f891 #81d2e7 #76c1d4 #96D0DE
        (type       "#b87be3") ; Done. #b87be3

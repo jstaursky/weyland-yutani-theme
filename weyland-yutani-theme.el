@@ -53,7 +53,7 @@
        (err        "#cd2517")
        (keyword    "#ccff33") ; Done. #BFEB3A #BDE040 #dcf13a #bddf40
        (const      "#d4b0ee") ; Done. #D4B0EE #cc99ff
-       (comment    "#7e9fad") ; Done.
+       (comment    "#7e9fae") ; Done. #7e9fad
        (comment-bg "#2b2e2f")
        (region-bg  "#3c3a50")
        (func       "#bfc0f5") ; Done.

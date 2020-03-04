@@ -39,25 +39,25 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#d1d9dc")           ; #D1D9DD
+       (fg1        "#b6bab5")           ; #D1D9DD
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#212629")            ;#212628
+       (bg1        "#1e1e1e")            ;#212628
        (bg2        "#292F35")
        (bg3        "#313641")
        (bg4        "#3c3a50")
        (key2       "#59c55f")
        (key3       "#7edc6e")
-       (builtin    "#99ff66") ; Done. #f38283 #a1ef78 #A9E675
+       (builtin    "#90c87b") ; Done. #f38283 #a1ef78 #A9E675
        (err        "#cd2517")
-       (keyword    "#ccff33") ; Done. #BFEB3A #BDE040 #dcf13a #bddf40
-       (const      "#d4b0ee") ; Done. #D4B0EE #cc99ff
+       (keyword    "#a1c142") ; DONE #CBFF33 #a6c744
+       (const      "#D4B0EE") ; DONE
        (comment    "#7e9fae") ; Done. #7e9fad
        (comment-bg "#2b2e2f")
        (region-bg  "#3c3a50")
-       (func       "#bfc0f5") ; Done.
-       (str        "#81d2e7") ; #f5f891 #81d2e7
+       (func       "#b3b4f3") ; Done.
+       (str        "#76c1d4") ; #f5f891 #81d2e7
        (type       "#b87be3") ; Done. #b87be3
        (var        "#84b7e4") ; Done. #85b7e5
        (warning    "#fcbec9")
@@ -101,7 +101,7 @@
     `(font-lock-constant-face ((,class (:foreground ,const))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func :bold t))))
-        `(font-lock-keyword-face ((,class (:foreground ,keyword))))
+        `(font-lock-keyword-face ((,class (:foreground ,keyword :bold t))))
         `(font-lock-string-face ((,class (:foreground ,str))))
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))

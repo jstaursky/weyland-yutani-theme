@@ -39,29 +39,33 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#c1c6c9")           ;#ededed #D1D9DD #b6bab5 #b1b5b0 #B6BDBD
+       (fg1        "#b8bec1")           ;#ededed #D1D9DD #b6bab5 #b1b5b0 #B6BDBD
                                         ;#f5f5f5 #ededed #c8c8c8 #d5f0ff #C1CECE
-                                        ;#9FA2A3 #aaadae #BEC3C6 #bcc4c7
+                                        ;#9FA2A3 #aaadae #BEC3C6 #bcc4c7 #c1c6c9
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#2e2e2e")            ; #1e1e1e #212628
+       (bg1        "#2d2d2d")            ; #1e1e1e #212628
        (bg2        "#363636")             ; #3f3f3f
        (bg3        "#3f3f3f")             ; #313641
        (bg4        "#3c3a50")
        (key2       "#59c55f")
        (key3       "#7edc6e")
-       (builtin    "#8fcb84") ; Done. #f38283 #a1ef78 #A9E675 #65cb75 #77ac8c
+       (builtin    "#da8cf1") ; Done. #f38283 #a1ef78 #A9E675 #65cb75 #77ac8c #c6c631
        (err        "#cd2517")
-       (keyword    "#a2c142") ; DONE #CBFF33 #a6c744 #a4c443 #a2c142 #abd038 #a6ca36
-       (const      "#D4B0EE") ; DONE
+       (keyword    "#99CC00") ; DONE #CBFF33 #a6c744 #a4c443 #a2c142 #abd038 #99CC00
+                                        ; #a6ca36 #a2c142
+       (const      "#d6b4ef") ; DONE #D4B0EE
        (comment    "#688491") ; Done. #7e9fad #7e9fae #546b75
        (comment-bg "#2b2e2f")
        (region-bg  "#3f3f3f")
        (func       "#b3b4f3") ; Done.
-       (str        "#A4C0DA") ; #f5f891 #81d2e7 #76c1d4 #96D0DE
+       (str        "#cde47b") ; #f5f891 #81d2e7 #76c1d4 #96D0DE #A4C0DA #f5f000 #b3fa56
+                                        ; #F271AA #EA869D #98d648 #b1ec52
+                                        ; #98cb45 #cfe67c
+
        (type       "#b87be3") ; Done. #b87be3
-       (var        "#86B7E4") ; Done. #85b7e5 #84b7e4 #8ebce6
+       (var        "#74AFEC") ; Done. #85b7e5 #84b7e4 #8ebce6 #86B7E4
        (warning    "#fcbec9")
 
        ;; Colors Generic
@@ -103,7 +107,7 @@
     `(font-lock-constant-face ((,class (:foreground ,const))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func :bold t))))
-        `(font-lock-keyword-face ((,class (:foreground ,keyword :bold t)))) ;
+        `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-string-face ((,class (:foreground ,str))))
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))

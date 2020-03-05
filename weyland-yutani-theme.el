@@ -43,7 +43,7 @@
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#2d2d2d")
+       (bg1        "#2b2b2b")
        (bg2        "#363636")
        (bg3        "#3f3f3f")
        (bg4        "#3c3a50")
@@ -58,7 +58,7 @@
        (err        "#cd2517")
        (comment    "#6B8E98")
        (comment-bg "#313131")
-       (region-bg  "#3f3f3f")
+       (region-bg  "#3a3a3a")
        (func       "#c693f2")           ;#b3b4f3 #688491 #c565d0 #c971d4 #c86dd2 #71B2F7
                                         ;#9E7ECC #AE83DA
        (str        "#FF6C6B")           ;E084A3 #be6fe5 #be6fe5 #e892af #ECBE7B

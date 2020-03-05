@@ -59,11 +59,11 @@
        (comment    "#688491") ; Done. #7e9fad #7e9fae #546b75
        (comment-bg "#2b2e2f")
        (region-bg  "#3f3f3f")
-       (func       "#b3b4f3") ; Done.
-       (str        "#cde47b") ; #f5f891 #81d2e7 #76c1d4 #96D0DE #A4C0DA #f5f000 #b3fa56
+       (func       "#b3b4f3") ; Done. #e5b560
+       (str        "#f38283") ; #f5f891 #81d2e7 #76c1d4 #96D0DE #A4C0DA #f5f000 #b3fa56
                                         ; #F271AA #EA869D #98d648 #b1ec52
                                         ; #98cb45 #cfe67c
-
+       ;; #cde47b #efbd64
        (type       "#b87be3") ; Done. #b87be3
        (var        "#74AFEC") ; Done. #85b7e5 #84b7e4 #8ebce6 #86B7E4
        (warning    "#fcbec9")

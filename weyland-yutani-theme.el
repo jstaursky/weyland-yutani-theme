@@ -30,7 +30,7 @@
 
 ;;; Code:
 
-(defcustom weyland-yutani-theme-comment-bg t
+(defcustom weyland-yutani-theme-comment-bg nil
   "Use a background for comment lines."
   :type 'boolean
   :group 'weyland-yutani-theme)
@@ -39,29 +39,28 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#c7c6cC")
+       (fg1        "#cdcdcd")
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
-       (bg1        "#2b2b2b")
+       (bg1        "#2b2b2b")                  ; #302d2d
        (bg2        "#363636")
        (bg3        "#3f3f3f")
        (bg4        "#3c3a50")
        (key2       "#c8ef62")
        (key3       "#b3f35c")
-       (builtin    "#c693f2")           ;#a387d5 #de90e6 #d092e4
-       (type       "#c678dd")           ; Done #CC99F8 #C693F2
-       (keyword    "#B9CC5B")           ; Done L = 76.0 #a5ca1d #b7c433 #98be65
-       (const      "#8BAD95")           ; Done #eda1fe #e892af #f1c0f6 #9bb4bb #7c9f75
-                                        ; #e5fe7c #acaf81 #9ba56d #b0c997 #74AB86
-       (var        "#b3b4f3")           ; Done #A4A6FC #A4A6FC #c565d0 #A4A6FC
+
+       (keyword    "#dadd6c")           ;DONE #c6d56b
+       (var        "#b3b4f3")           ;DONE #9bbf86 #6ea4d0 #6fb8df
+       (const      "#abc789")           ;DONE #76AE9A #94c9e7 #a3d1ee
+       (builtin    "#c7a0dc")           ;DONE #ad99c8 #b498d2
+       (type       "#e39cfe")           ;DONE #ce95f3
        (err        "#cd2517")
-       (comment    "#6B8E98")
+       (comment    "#6e8397")           ;DONE #5f6d74 #627d8f
        (comment-bg "#313131")
        (region-bg  "#3a3a3a")
-       (func       "#c693f2")           ;#b3b4f3 #688491 #c565d0 #c971d4 #c86dd2 #71B2F7
-                                        ;#9E7ECC #AE83DA
-       (str        "#FF6C6B")           ;E084A3 #be6fe5 #be6fe5 #e892af #ECBE7B
+       (func       "#8bc1ad")           ;DONE #87baa8
+       (str        "#e27470")           ;DONE #cc6f6c
        (warning    "#76b7a4")
 
        ;; Colors Generic

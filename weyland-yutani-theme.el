@@ -52,7 +52,7 @@
 
        (keyword    "#cce671")   ;#dadd6c "#dadd6c"
        (var        "#aabcf1")   ;#b3b4f3 "#b3b4f3"
-       (const      "#9ccf8b")   ;#abc789 "#abc789"
+       (const      "#a1d58f")   ;#abc789 "#abc789"
        (builtin    "#c278f0")   ;#c278f0
        (type       "#EDAAF3")   ;#EDAAF3  #cd93f3 #d27bb0ff
        (err        "#cd2517")   ;#cd2517
@@ -99,7 +99,7 @@
 
     `(font-lock-negation-char-face ((,class (:foreground ,wy-yellow))))
     `(font-lock-reference-face ((,class (:foreground ,const))))
-    `(font-lock-constant-face ((,class (:foreground ,const ))))
+    `(font-lock-constant-face ((,class (:foreground ,const :background "#312e2e"))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func))))
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t

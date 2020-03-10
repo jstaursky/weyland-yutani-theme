@@ -39,7 +39,7 @@
 
  (deftheme weyland-yutani)
  (let ((class '((class color) (min-colors 89)))
-       (fg1        "#cdcdcd")
+       (fg1        "#cbcbcb")
        (fg2        "#b3c1c9")
        (fg3        "#9babb7")
        (fg4        "#8694a5")
@@ -50,18 +50,18 @@
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#dadd6c")           ;DONE #c6d56b
-       (var        "#b3b4f3")           ;DONE #9bbf86 #6ea4d0 #6fb8df
-       (const      "#abc789")           ;DONE #76AE9A #94c9e7 #a3d1ee
-       (builtin    "#c7a0dc")           ;DONE #ad99c8 #b498d2
-       (type       "#e39cfe")           ;DONE #ce95f3
-       (err        "#cd2517")
-       (comment    "#6e8397")           ;DONE #5f6d74 #627d8f
-       (comment-bg "#313131")
-       (region-bg  "#3a3a3a")
-       (func       "#8bc1ad")           ;DONE #87baa8
-       (str        "#e27470")           ;DONE #cc6f6c
-       (warning    "#76b7a4")
+       (keyword    "#cce671")   ;#dadd6c "#dadd6c"
+       (var        "#aabcf1")   ;#b3b4f3 "#b3b4f3"
+       (const      "#9ccf8b")   ;#abc789 "#abc789"
+       (builtin    "#c278f0")   ;#c278f0
+       (type       "#EDAAF3")   ;#EDAAF3  #cd93f3 #d27bb0ff
+       (err        "#cd2517")   ;#cd2517
+       (comment    "#6e8397")   ;#6e8397
+       (comment-bg "#313131")   ;#313131
+       (region-bg  "#3a3a3a")   ;#3a3a3a
+       (func       "#63bfa5")   ;##EDAAF38bc1ad
+       (str        "#d27bb0")   ;#e27470 #e27470
+       (warning    "#76b7a4")   ;#76b7a4
 
        ;; Colors Generic
        (wy-light-blue "#81d2e7")

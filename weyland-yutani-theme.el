@@ -51,7 +51,7 @@
        (key3       "#b3f35c")
 
        (keyword    "#cce671")   ;#dadd6c "#dadd6c"
-       (var        "#aabcf1")   ;#b3b4f3 "#b3b4f3"
+       (var        "#97b3e2")   ;#b3b4f3 "#b3b4f3"
        (const      "#a1d58f")   ;#abc789 "#abc789"
        (builtin    "#c28de4")   ;#c278f0 #c689ec #c38ce6
        (type       "#EDAAF3")   ;#EDAAF3  #cd93f3 #d27bb0ff

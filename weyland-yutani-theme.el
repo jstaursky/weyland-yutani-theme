@@ -54,13 +54,13 @@
        (var        "#d1a2e0")        ;   #e2a4f5
        (const      "#78c686")        ;   #cdbefc #b7b0d9
        (builtin    "#c196d8")        ;   #c694df
-       (type       "#baa4e4")        ;   #b89ee1
+       (type       "#b4a0da")        ;   #b89ee1
        (err        "#cd2517")        ;   #cd2517
        (comment    "#6e808b")        ;   #7592aa
        (comment-bg "#313131")        ;   #313131
        (region-bg  "#3a3a3a")        ;   #3a3a3a
-       (func       "#6aad9e")        ;   #5bc5b0
-       (str        "#9193ca")        ;   #9b9af9
+       (func       "#73bbab")        ;   #5bc5b0 #6aad9e
+       (str        "#9daed2")        ;   #9b9af9 #9193ca
        (warning    "#76b7a4")
 
        ;; Colors Generic

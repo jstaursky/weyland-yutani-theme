@@ -60,7 +60,7 @@
        (comment-bg "#313131")   ;#313131
        (region-bg  "#3a3a3a")   ;#3a3a3a
        (func       "#87c5be")   ;##EDAAF38bc1ad #63bfa5
-       (str        "#d27bb0")   ;#e27470 #e27470
+       (str        "#d68fbe")   ;#e27470 #e27470
        (warning    "#76b7a4")   ;#76b7a4
 
        ;; Colors Generic

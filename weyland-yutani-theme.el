@@ -52,14 +52,14 @@
 
        (keyword    "#cce671")   ;#dadd6c "#dadd6c"
        (var        "#97b3e2")   ;#b3b4f3 "#b3b4f3"
-       (const      "#a1d58f")   ;#abc789 "#abc789"
+       (const      "#a1d58f")   ;#abc789 "#abc789" #a1d58f
        (builtin    "#c28de4")   ;#c278f0 #c689ec #c38ce6
-       (type       "#EDAAF3")   ;#EDAAF3  #cd93f3 #d27bb0ff
+       (type       "#e7aef4")   ;#EDAAF3  #cd93f3 #d27bb0ff #e1b3f6
        (err        "#cd2517")   ;#cd2517
        (comment    "#6e8397")   ;#6e8397
        (comment-bg "#313131")   ;#313131
        (region-bg  "#3a3a3a")   ;#3a3a3a
-       (func       "#63bfa5")   ;##EDAAF38bc1ad
+       (func       "#87c5be")   ;##EDAAF38bc1ad #63bfa5
        (str        "#d27bb0")   ;#e27470 #e27470
        (warning    "#76b7a4")   ;#76b7a4
 

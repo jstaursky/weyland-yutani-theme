@@ -50,9 +50,9 @@
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#cce671")   ;#dadd6c "#dadd6c"
+       (keyword    "#c4d167")   ;#dadd6c "#dadd6c" #cce671
        (var        "#97b3e2")   ;#b3b4f3 "#b3b4f3"
-       (const      "#a1d58f")   ;#abc789 "#abc789" #a1d58f
+       (const      "#ade499")   ;#abc789 "#abc789" #a1d58f #a1d58f #efe4a1 #e0d697
        (builtin    "#c28de4")   ;#c278f0 #c689ec #c38ce6
        (type       "#e7aef4")   ;#EDAAF3  #cd93f3 #d27bb0ff #e1b3f6
        (err        "#cd2517")   ;#cd2517

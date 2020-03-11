@@ -52,7 +52,7 @@
 
        (keyword    "#b2c971")        ;  ;#bdd36c #b2c971
        (var        "#d1a2e0")        ;   #e2a4f5
-       (const      "#afa7d1")        ;   #cdbefc #b7b0d9
+       (const      "#78c686")        ;   #cdbefc #b7b0d9
        (builtin    "#c196d8")        ;   #c694df
        (type       "#baa4e4")        ;   #b89ee1
        (err        "#cd2517")        ;   #cd2517

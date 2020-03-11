@@ -51,9 +51,9 @@
        (key3       "#b3f35c")
 
        (keyword    "#b2c971")        ;  ;#bdd36c #b2c971
-       (var        "#d1a2e0")        ;   #e2a4f5
+       (var        "#d1a2e0")        ;   #e2a4f5 #d1a2e0
        (const      "#78c686")        ;   #cdbefc #b7b0d9
-       (builtin    "#c196d8")        ;   #c694df
+       (builtin    "#c694df")        ;    #e7e196 #c694df #a691d1
        (type       "#b4a0da")        ;   #b89ee1
        (err        "#cd2517")        ;   #cd2517
        (comment    "#6e808b")        ;   #7592aa

@@ -54,12 +54,12 @@
        (var        "#d1a2e0")        ;   #e2a4f5 #d1a2e0
        (const      "#78c686")        ;   #cdbefc #b7b0d9
        (builtin    "#c694df")        ;    #e7e196 #c694df #a691d1
-       (type       "#b4a0da")        ;   #b89ee1
+       (type       "#AC94DA")        ;   #b89ee1
        (err        "#cd2517")        ;   #cd2517
        (comment    "#6e808b")        ;   #7592aa
        (comment-bg "#313131")        ;   #313131
        (region-bg  "#3a3a3a")        ;   #3a3a3a
-       (func       "#73bbab")        ;   #5bc5b0 #6aad9e
+       (func       "#5FBBA7")        ;   #5bc5b0 #6aad9e
        (str        "#9daed2")        ;   #9b9af9 #9193ca
        (warning    "#76b7a4")
 

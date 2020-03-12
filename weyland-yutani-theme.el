@@ -51,16 +51,16 @@
        (key3       "#b3f35c")
 
        (keyword    "#b2c971")        ;
-       (var        "#e3a2fc")        ;
+       (var        "#dd89fb")        ;#e3a2fc
        (const      "#78c686")        ;
        (builtin    "#c694df")        ;
-       (type       "#c9baff")        ;
+       (type       "#9f97dd")        ;#c9baff #aaa3e1
        (err        "#cd2517")        ;
        (comment    "#6e808b")        ;
        (comment-bg "#313131")        ;
        (region-bg  "#3a3a3a")        ;
        (func       "#5bc5b0")        ;
-       (str        "#9daed2")        ;
+       (str        "#37a0c0")        ;#9daed2
        (warning    "#76b7a4")
 
        ;; Colors Generic

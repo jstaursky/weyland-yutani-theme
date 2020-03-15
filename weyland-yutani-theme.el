@@ -50,17 +50,17 @@
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#b2c971")
-       (type       "#9f97dd")
+       (keyword    "#99cc66")
+       (type       "#d78cff")                  ;#d78cff
        (builtin    (color-lighten-name type 3))
-       (var        "#dd89fb")
-       (const      "#78c686")
+       (var        "#7cacf2")                  ;#7cb1ff #80b0fb #8bb5fb
+       (const      "#bc9cff")                  ;#bc9cff
        (err        "#cd2517")
        (comment    "#6e808b")
        (comment-bg "#313131")
        (region-bg  "#3a3a3a")
-       (func       "#5bc5b0")
-       (str        "#37a0c0")
+       (func       "#00c6a4")           ;#8eacdf #99baff
+       (str        "#4ec2dd")                  ; #00aeff #00d5ed #aab3ff #6db6d7
        (warning    "#76b7a4")
 
        ;; Colors Generic

@@ -51,17 +51,20 @@
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#9ccc65")
-       (type       "#b388ff")
-       (builtin    "#a2a2ff")                  ;#9bb1eb #91b1fd
-       (var        "#7cacf2")                         ;#7cacf2 #5e6cca
-       (const      (color-lighten-name "#b388ff" 4))
+       (keyword    "#9ccc65")           ;PERFECT
+       (type       "#be97f0")           ;PERFECT
+       (func       "#aeaaff")           ;PERFECT
+       (builtin    "#aeaaff")
+       (var        "#b588ff")
+       (const      "#d2adff")
+       (str        "#82b1ff")
+
+
+
        (err        "#cd2517")
-       (comment    "#6e808b")
+       (comment    "#546e7a")
        (comment-bg "#313131")
-       (region-bg  "#3a3a3a")           ;#a2a2ff #A6A6FF
-       (func       "#acacff")           ;#a2a2ff #aeaefc #7a8cff #849aff #59a4ed
-       (str        "#6abdd0")
+       (region-bg  "#3a3a3a")
        (warning    "#f26ba8")
 
 

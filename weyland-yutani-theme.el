@@ -54,13 +54,13 @@
        (keyword    "#9ccc65")
        (type       "#b388ff")
        (builtin    "#a2a2ff")                  ;#9bb1eb #91b1fd
-       (var        "#7cacf2")                         ;#b5b5e8
-       (const      (color-lighten-name "#b388ff" 6))
+       (var        "#7cacf2")                         ;#7cacf2 #5e6cca
+       (const      (color-lighten-name "#b388ff" 4))
        (err        "#cd2517")
        (comment    "#6e808b")
        (comment-bg "#313131")
-       (region-bg  "#3a3a3a")
-       (func       "#aeaefc")           ;#a2a2ff
+       (region-bg  "#3a3a3a")           ;#a2a2ff #A6A6FF
+       (func       "#acacff")           ;#a2a2ff #aeaefc #7a8cff #849aff #59a4ed
        (str        "#6abdd0")
        (warning    "#f26ba8")
 
@@ -71,7 +71,7 @@
        (wy-green         "#a1ef78")
        (wy-red           "#f38283")
        (wy-yellow        "#f5f891")
-       (wy-diff-change        "#ff8820")
+       (wy-diff-change        "#fd7f62")
        (wy-diff-insert        "#b3f35c")
        (wy-diff-delete        "#d85657")
 

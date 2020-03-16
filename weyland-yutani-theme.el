@@ -53,8 +53,8 @@
 
        (keyword    "#9ccc65")
        (type       "#b388ff")
-       (builtin    "#91b1fd")                  ;#9bb1eb
-       (var        "#7cacf2")
+       (builtin    "#a2a2ff")                  ;#9bb1eb #91b1fd
+       (var        "#7cacf2")                         ;#b5b5e8
        (const      (color-lighten-name "#b388ff" 6))
        (err        "#cd2517")
        (comment    "#6e808b")

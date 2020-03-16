@@ -37,31 +37,33 @@
 
 
 
- (deftheme weyland-yutani)
- (let* ((class '((class color) (min-colors 89)))
-       (fg1        "#bfbfbf")
-       (fg2        "#b3c1c9")
-       (fg3        "#9babb7")
-       (fg4        "#8694a5")
-       (bg1        "#2b2b2b")
-       (bg2        (color-lighten-name bg1 3))
-       (bg3        "#3f3f3f")
-       (bg4        "#3c3a50")
+(deftheme weyland-yutani)
+(let*
+    ((class '((class color) (min-colors 89)))
+     (fg1        "#b0bec5")
+     (fg2        "#b3c1c9")
+     (fg3        "#9babb7")
+     (fg4        "#8694a5")
+     (bg1        "#2b2b2b")
+     (bg2        (color-lighten-name bg1 3))
+     (bg3        "#3f3f3f")
+     (bg4        "#3c3a50")
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#99cc66")
-       (type       "#d78cff")                  ;#d78cff
-       (builtin    (color-lighten-name type 3))
-       (var        "#7cacf2")                  ;#7cb1ff #80b0fb #8bb5fb
-       (const      "#bc9cff")                  ;#bc9cff
+       (keyword    "#9ccc65")
+       (type       "#b388ff")
+       (builtin    "#91b1fd")                  ;#9bb1eb
+       (var        "#7cacf2")
+       (const      (color-lighten-name "#b388ff" 6))
        (err        "#cd2517")
        (comment    "#6e808b")
        (comment-bg "#313131")
        (region-bg  "#3a3a3a")
-       (func       "#00c6a4")           ;#8eacdf #99baff
-       (str        "#4ec2dd")                  ; #00aeff #00d5ed #aab3ff #6db6d7
-       (warning    "#76b7a4")
+       (func       "#a2a2ff")
+       (str        "#6abdd0")
+       (warning    "#f26ba8")
+
 
        ;; Colors Generic
        (wy-light-blue "#81d2e7")
@@ -106,7 +108,7 @@
         `(font-lock-string-face ((,class (:foreground ,str))))
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))
-        `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
+        `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 
         `(region ((,class (:background ,region-bg))))

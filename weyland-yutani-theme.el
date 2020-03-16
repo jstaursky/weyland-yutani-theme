@@ -60,7 +60,7 @@
        (comment    "#6e808b")
        (comment-bg "#313131")
        (region-bg  "#3a3a3a")
-       (func       "#a2a2ff")
+       (func       "#aeaefc")           ;#a2a2ff
        (str        "#6abdd0")
        (warning    "#f26ba8")
 

@@ -52,12 +52,12 @@
        (key3       "#b3f35c")
 
        (keyword    "#9ccc65")
-       (type       "#a19fea")           ;#8e9ee7
-       (func       "#BA91FF")
-       (builtin    "#BA91FF")
+       (type       "#979dff")
+       (func       "#bf83ff")
+       (builtin    "#bf83ff")
        (var        "#72b38f")
-       (const      "#7ea6d9")                  ;#e59eeb
-       (str        "#6ab0c6")                  ;#82b1ff
+       (const      "#CbA8F6")            ;#d6b0ff
+       (str        "#6ab0c6")
 
 
 

@@ -52,10 +52,10 @@
        (key3       "#b3f35c")
 
        (keyword    "#9ccc65")           ;PERFECT
-       (type       "#be97f0")           ;PERFECT
-       (func       "#aeaaff")           ;PERFECT
-       (builtin    "#aeaaff")
-       (var        "#b588ff")
+       (type       "#aeaaff")           ;PERFECT
+       (func       "#BA91FF")           ;PERFECT
+       (builtin    "#BA91FF")
+       (var        "#72b38f")           ;#b588f  #72b38f
        (const      "#d2adff")
        (str        "#82b1ff")
 

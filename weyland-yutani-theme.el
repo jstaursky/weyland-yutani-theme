@@ -48,37 +48,37 @@
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
-       (key2       "#c8ef62")
-       (key3       "#b3f35c")
+     (key2       "#c8ef62")
+     (key3       "#b3f35c")
 
-       (keyword    "#9ccc65")
-       (type       "#979dff")
-       (func       "#bf83ff")
-       (builtin    "#bf83ff")
-       (var        "#72b38f")
-       (const      "#CbA8F6")            ;#d6b0ff
-       (str        "#6ab0c6")
-
-
-
-       (err        "#cd2517")
-       (comment    "#546e7a")
-       (comment-bg "#313131")
-       (region-bg  "#3a3a3a")
-       (warning    "#f26ba8")
+     (keyword    "#9ccc65")
+     (type       "#979dff")
+     (func       "#bf83ff")
+     (builtin    "#bf83ff")
+     (var        "#72b38f")
+     (const      "#CbA8F6")            ;#d6b0ff
+     (str        "#67ade2")
 
 
-       ;; Colors Generic
-       (wy-light-blue "#81d2e7")
-       (wy-purple        "#b87be3")
-       (wy-green         "#a1ef78")
-       (wy-red           "#f38283")
-       (wy-yellow        "#f5f891")
-       (wy-diff-change        "#fd7f62")
-       (wy-diff-insert        "#b3f35c")
-       (wy-diff-delete        "#d85657")
 
-       )
+     (err        "#cd2517")
+     (comment    "#546e7a")
+     (comment-bg "#313131")
+     (region-bg  "#3a3a3a")
+     (warning    "#f26ba8")
+
+
+     ;; Colors Generic
+     (wy-light-blue "#81d2e7")
+     (wy-purple        "#bf83ff")
+     (wy-green         "#9ccc65")
+     (wy-red           "#f38283")
+     (wy-yellow        "#f5f891")
+     (wy-diff-change        "#fd7f62")
+     (wy-diff-insert        "#b3f35c")
+     (wy-diff-delete        "#d85657")
+
+     )
    (custom-theme-set-faces
    'weyland-yutani
 
@@ -88,6 +88,8 @@
      ((,class (:foreground ,comment
                :background
                ,(when weyland-yutani-theme-comment-bg comment-bg)))))
+
+
 
 ;;;;; flycheck
    `(flycheck-error
@@ -276,6 +278,7 @@
 
 
         ;;; helm
+        `(helm-M-x-key ((,class (:foreground ,wy-purple))))
         `(helm-match ((,class (:foreground ,wy-purple))))
         `(helm-header ((,class (:foreground ,fg2 :background ,bg1 :underline nil :box nil))))
         `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))

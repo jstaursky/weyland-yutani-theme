@@ -44,18 +44,18 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#2b2b2b")
+     (bg1        "#2a2a2a")
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
        (key2       "#c8ef62")
        (key3       "#b3f35c")
 
-       (keyword    "#9ccc65")           ;PERFECT
-       (type       "#aeaaff")           ;PERFECT
-       (func       "#BA91FF")           ;PERFECT
+       (keyword    "#9ccc65")
+       (type       "#8e9ee7")
+       (func       "#BA91FF")
        (builtin    "#BA91FF")
-       (var        "#72b38f")           ;#b588f  #72b38f
+       (var        "#72b38f")
        (const      "#d2adff")
        (str        "#82b1ff")
 

@@ -35,12 +35,12 @@
   :type 'boolean
   :group 'weyland-yutani-theme)
 
-
+;;  (0.1711764705882353 0.1711764705882353 0.1711764705882353)
 
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#b0bec5")
+     (fg1        "#bdbdbd")             ;#b0bec5
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
@@ -64,7 +64,7 @@
      (err        "#cd2517")
      (comment    "#546e7a")
      (comment-bg "#333333")
-     (region-bg  (color-lighten-name bg1 3))
+     (region-bg  (color-lighten-name bg1 3))             ;"#5b5463"
      (warning    "#f26ba8")
 
 
@@ -116,7 +116,7 @@
         `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 
-        `(region ((,class (:background ,region-bg))))
+        `(region ((,class (:background ,region-bg :foreground "#747474"))))
 
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
     `(hl-line ((,class (:background  ,bg2))))

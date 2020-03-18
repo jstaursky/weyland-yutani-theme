@@ -50,12 +50,12 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#99c468")
-     (type       "#959af2")
-     (func       "#b983f2")
-     (builtin    "#b983f2")
-     (var        "#73ae8d")
-     (const      "#c485dc")
+     (keyword    "#96c760")             ;
+     (type       "#a7aeff")
+     (func       "#d693ff")
+     (builtin    "#d693ff")
+     (var        "#79c29a")
+     (const      "#df9ae5")
      (str        "#69a8d8")
 
      ;; tester

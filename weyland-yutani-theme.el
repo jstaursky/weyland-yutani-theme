@@ -59,12 +59,12 @@
      (const      "#CbA8F6")            ;#d6b0ff
      (str        "#67ade2")
 
-
+     ;; tester
 
      (err        "#cd2517")
      (comment    "#546e7a")
-     (comment-bg "#313131")
-     (region-bg  "#3a3a3a")
+     (comment-bg "#333333")
+     (region-bg  (color-lighten-name bg1 3))
      (warning    "#f26ba8")
 
 

@@ -35,7 +35,6 @@
   :type 'boolean
   :group 'weyland-yutani-theme)
 
-;;  (0.1711764705882353 0.1711764705882353 0.1711764705882353)
 
 (deftheme weyland-yutani)
 (let*
@@ -64,7 +63,7 @@
      (err        "#cd2517")
      (comment    "#546e7a")
      (comment-bg "#333333")
-     (region-bg  (color-lighten-name bg1 3))             ;"#5b5463"
+     (region-bg  (color-lighten-name bg1 6))             ;"#5b5463"
      (warning    "#f26ba8")
 
 

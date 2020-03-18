@@ -55,7 +55,7 @@
      (func       "#bf83ff")
      (builtin    "#bf83ff")
      (var        "#72b38f")
-     (const      "#CbA8F6")            ;#d6b0ff
+     (const      "#cc86e6")                    ;#cd8de4 #c58cda #d487f1
      (str        "#67ade2")
 
      ;; tester
@@ -63,7 +63,9 @@
      (err        "#cd2517")
      (comment    "#546e7a")
      (comment-bg "#333333")
+
      (region-bg  (color-lighten-name bg1 6))             ;"#5b5463"
+     (region-fg  "#73a957")
      (warning    "#f26ba8")
 
 
@@ -78,8 +80,7 @@
      (wy-diff-delete        "#d85657")
 
      )
-   (custom-theme-set-faces
-   'weyland-yutani
+   (custom-theme-set-faces 'weyland-yutani
 
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
 
@@ -115,7 +116,7 @@
         `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 
-        `(region ((,class (:background ,region-bg :foreground "#747474"))))
+        `(region ((,class (:background ,region-bg :foreground ,region-fg))))
 
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
     `(hl-line ((,class (:background  ,bg2))))

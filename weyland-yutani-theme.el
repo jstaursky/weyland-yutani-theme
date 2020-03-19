@@ -51,10 +51,10 @@
      (key3       "#b3f35c")
 
      (keyword    "#98be65")
-     (type       "#bcaeff")
-     (func       "#c789ed")
+     (type       "#bcaeff")                    ;
+     (func       "#c789ed")                    ;#c789ed
      (builtin    "#c789ed")
-     (var        "#71B58F")
+     (var        "#BB6DD1")             ;#71B58F #b86cce
      (const      "#69a8d8")
      (str        "#54c2cf")
      (str-bg     "#292C28")             ;(color-lighten-name bg1 2)
@@ -110,7 +110,7 @@
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
-        `(font-lock-function-name-face ((,class (:foreground ,func))))
+        `(font-lock-function-name-face ((,class (:foreground ,func ))))
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))

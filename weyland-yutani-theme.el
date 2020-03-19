@@ -50,21 +50,22 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#91d356")             ;#96c760 #98da2e #a1e068
-     (type       "#bcaeff")              ;#a7aeff
+     (keyword    "#98be65")
+     (type       "#bcaeff")
      (func       "#c789ed")
      (builtin    "#c789ed")
-     (var        "#24cc94")             ;#79c29a
+     (var        "#71B58F")
      (const      "#69a8d8")
-     (str        "#a48fd4")             ;#77a7d7 "#2aa1ae" #2aa1ae
+     (str        "#54c2cf")
+     (str-bg     "#292C28")             ;(color-lighten-name bg1 2)
 
      ;; tester
 
      (err        "#cd2517")
      (comment    "#546e7a")
-     (comment-bg "#333333")
+     (comment-bg "#292C28")
 
-     (region-bg  (color-lighten-name bg1 6))             ;"#5b5463"
+     (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#73a957")
      (warning    "#f26ba8")
 
@@ -90,6 +91,7 @@
                ,(when weyland-yutani-theme-comment-bg comment-bg)))))
 
 
+   `(font-lock-string-face ((,class (:foreground ,str :background ,str-bg))))
 
 ;;;;; flycheck
    `(flycheck-error
@@ -110,7 +112,6 @@
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func))))
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
-        `(font-lock-string-face ((,class (:foreground ,str))))
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))
         `(font-lock-warning-face ((,class (:foreground ,warning))))

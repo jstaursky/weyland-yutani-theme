@@ -8,7 +8,8 @@
 ;;
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
-;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
+;; Created (with the help of) emacs-theme-generator,
+;; https://github.com/mswift42/theme-creator.
 
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -26,7 +27,8 @@
 
 ;; This file is not part of Emacs.
 
-;;; Commentary:
+;;; Commentary: Vanilla emacs may need first to (require 'color) before loading
+;;; theme.
 
 ;;; Code:
 
@@ -52,12 +54,12 @@
 
      (keyword    "#98be65")
      (type       "#bcaeff")                    ;
-     (func       "#c789ed")                    ;#c789ed
+     (func       "#c789ed")
      (builtin    "#c789ed")
-     (var        "#BB6DD1")             ;#71B58F #b86cce
+     (var        "#BB6DD1")
      (const      "#69a8d8")
      (str        "#54c2cf")
-     (str-bg     "#292C28")             ;(color-lighten-name bg1 2)
+     (str-bg     "#292C28")
 
      ;; tester
 
@@ -66,7 +68,7 @@
      (comment-bg "#292C28")
 
      (region-bg  (color-lighten-name bg1 6))
-     (region-fg  "#73a957")
+     (region-fg  "#72b38f")
      (warning    "#f26ba8")
 
 

@@ -92,13 +92,22 @@
      (wy-red         "#fe5d62")
      (wy-yellow      "#f5f891")
 
-     (wy-diff-change "#f2a652")
-     (wy-diff-insert "#84c958")
-     (wy-diff-delete "#fe5d62")
+     (wy-diff-change "#bf83ff")                ;#f29742
+     (wy-diff-insert wy-green-02)                         ;"#bed856"
+     (wy-diff-delete wy-red)                           ;#fe5d62
 
+     (wy-window-border "#9d71ce")
+
+     (ttip             "#9a9aba")
+     (ttip-bg          "#34323e")
+     (red-bg           "#3c2a2c")
+     (red-bg-s         "#512e31")
+     (green-bg         "#293235")
+     (green-bg-s       "#29422d")
+     (blue-bg          "#293239")
+     (blue-bg-s        "#2d4252")
      )
    (custom-theme-set-faces 'weyland-yutani
-
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
 
    `(font-lock-comment-face
@@ -106,8 +115,10 @@
                :background
                ,(when weyland-yutani-theme-comment-bg comment-bg)))))
 
-
    `(font-lock-string-face ((,class (:foreground ,str :background ,str-bg))))
+
+   `(vertical-border ((,class (:foreground ,wy-window-border))))
+
 
 ;;;;; flycheck
    `(flycheck-error
@@ -141,6 +152,17 @@
     `(cursor ((,class (:background ,bg3))))
 
     `(which-func ((,class (:foreground ,wy-green-02))))
+
+
+;;;;; smerge
+    `(smerge-base ((,class (:background ,wy-yellow :extend t))))
+    `(smerge-markers ((,class (:background ,ttip-bg :foreground ,ttip :extend t))))
+    `(smerge-mine ((,class (:background ,red-bg))))
+    `(smerge-other ((,class (:background ,green-bg))))
+    `(smerge-refined-added ((,class (:background ,green-bg-s :foreground ,wy-green-01))))
+    `(smerge-refined-changed ((,class (:background ,blue-bg-s :foreground ,wy-blue))))
+    `(smerge-refined-removed ((,class (:background ,red-bg-s :foreground ,wy-red))))
+
 
         `(show-paren-match-face ((,class (:background ,warning))))
         `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))

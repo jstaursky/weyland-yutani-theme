@@ -63,24 +63,38 @@
 
      ;; tester
      ;; speedbar-separator-face
-     (err        "#fe5d62")
+     (err        "#f70108")
      (comment    "#546e7a")
      (comment-bg "#292C28")
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#f26ba8")
+     (warning    "#f2a652")             ;#f26ba8 #ff696e
 
 
      ;; Colors Generic
-     (wy-light-blue "#81d2e7")
-     (wy-purple        "#bf83ff")
-     (wy-green         "#9ccc65")
-     (wy-red           "#f38283")
-     (wy-yellow        "#f5f891")
-     (wy-diff-change        "#f2a652")  ;#fd7f62
-     (wy-diff-insert        "#84c958")  ;#b3f35c
-     (wy-diff-delete        "#fe5d62")
+     (wy-blue        "#69a8d8")
+     (wy-light-blue  "#54c2cf")
+
+
+     (wy-pink        "#ed73e7")
+
+     (wy-purple      "#bf83ff")
+
+     (wy-violet       "#c789ed")
+     (wy-light-violet "#d09ff0")
+     (wy-violet-red   "#f33380")
+     (wy-violet-dark  "#BB6DD1")
+
+     (wy-green-01    "#9ccc65")
+     (wy-green-02    "#b3f35c")
+
+     (wy-red         "#fe5d62")
+     (wy-yellow      "#f5f891")
+
+     (wy-diff-change "#f2a652")
+     (wy-diff-insert "#84c958")
+     (wy-diff-delete "#fe5d62")
 
      )
    (custom-theme-set-faces 'weyland-yutani
@@ -100,7 +114,7 @@
      ((,(append '((supports :underline (:style line))) class)
        (:underline (:style line :color ,err)))
       (,class (:foreground ,bg4 :background ,err :inherit bold :underline t))))
-
+   `(flycheck-fringe-error ((,class (:foreground ,wy-red))))
 
 
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
@@ -125,6 +139,9 @@
     `(hl-line ((,class (:background  ,bg2))))
     `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
     `(cursor ((,class (:background ,bg3))))
+
+    `(which-func ((,class (:foreground ,wy-green-02))))
+
         `(show-paren-match-face ((,class (:background ,warning))))
         `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
         `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
@@ -202,7 +219,7 @@
         `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
         `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
     `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-        `(trailing-whitespace ((,class :foreground nil :background ,wy-green)))
+        `(trailing-whitespace ((,class :foreground nil :background ,wy-green-01)))
         `(rainbow-delimiters-depth-1-face ((,class :foreground ,fg1)))
         `(rainbow-delimiters-depth-2-face ((,class :foreground ,type)))
         `(rainbow-delimiters-depth-3-face ((,class :foreground ,var)))
@@ -214,24 +231,24 @@
 
 
     ;; MODE SUPPORT: git-gutter
-    `(git-gutter:added               ((,class (:foreground ,wy-green      ))))
+    `(git-gutter:added               ((,class (:foreground ,wy-green-01      ))))
     `(git-gutter:deleted             ((,class (:foreground ,wy-red   ))))
     `(git-gutter:modified            ((,class (:foreground ,wy-yellow       ))))
     ;; `(git-gutter:separator           ((,class (:foreground ,dp_background ))))
     ;; `(git-gutter:unchanged           ((,class (:foreground ,dp_background ))))
     ;; ;; MODE SUPPORT: git-gutter-fr
-    `(git-gutter-fr:added            ((,class (:foreground ,wy-green))))
+    `(git-gutter-fr:added            ((,class (:foreground ,wy-green-01))))
     `(git-gutter-fr:deleted          ((,class (:foreground ,wy-red))))
     `(git-gutter-fr:modified         ((,class (:foreground ,wy-yellow))))
     ;; ;; MODE SUPPORT: git-gutter+
     ;; `(git-gutter+-commit-header-face ((,class (:foreground ,dp_foreground ))))
-    `(git-gutter+-added              ((,class (:foreground ,wy-green      ))))
+    `(git-gutter+-added              ((,class (:foreground ,wy-green-01      ))))
     `(git-gutter+-deleted            ((,class (:foreground ,wy-red   ))))
     `(git-gutter+-modified           ((,class (:foreground ,wy-yellow       ))))
     ;; `(git-gutter+-separator          ((,class (:foreground ,dp_foreground ))))
     ;; `(git-gutter+-unchanged          ((,class (:foreground ,dp_foreground ))))
     ;; ;; MODE SUPPORT: git-gutter-fr+
-    `(git-gutter-fr+-added           ((,class (:foreground ,wy-green      ))))
+    `(git-gutter-fr+-added           ((,class (:foreground ,wy-green-01      ))))
     `(git-gutter-fr+-deleted         ((,class (:foreground ,wy-red   ))))
     `(git-gutter-fr+-modified        ((,class (:foreground ,wy-yellow       ))))
 
@@ -282,7 +299,7 @@
 
         ;;; helm
         `(helm-M-x-key ((,class (:foreground ,wy-purple))))
-        `(helm-match ((,class (:foreground ,wy-purple))))
+        `(helm-match ((,class (:foreground ,wy-violet))))
         `(helm-header ((,class (:foreground ,fg2 :background ,bg1 :underline nil :box nil))))
         `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
         `(helm-selection ((,class (:background ,bg4 :underline nil))))

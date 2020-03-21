@@ -115,6 +115,9 @@
                :background
                ,(when weyland-yutani-theme-comment-bg comment-bg)))))
 
+   `(which-key-command-description-face ((,class (:foreground ,func :background nil))))
+
+
    `(font-lock-string-face ((,class (:foreground ,str :background ,str-bg))))
 
    `(vertical-border ((,class (:foreground ,wy-window-border))))
@@ -137,10 +140,10 @@
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
-        `(font-lock-function-name-face ((,class (:foreground ,func ))))
+        `(font-lock-function-name-face ((,class (:foreground ,func  :background "#2B272E"))))
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))
-        `(font-lock-variable-name-face ((,class (:foreground ,var))))
+        `(font-lock-variable-name-face ((,class (:foreground ,var ))))
         `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 

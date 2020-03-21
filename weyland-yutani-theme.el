@@ -53,7 +53,7 @@
      (key3       "#b3f35c")
 
      (keyword    "#98be65")
-     (type       "#bcaeff")                    ;
+     (type       "#bcaeff")                    ;#cf5854 #ff696e
      (func       "#c789ed")
      (builtin    "#c789ed")
      (var        "#BB6DD1")
@@ -62,8 +62,8 @@
      (str-bg     "#292C28")
 
      ;; tester
-
-     (err        "#cd2517")
+     ;; speedbar-separator-face
+     (err        "#fe5d62")
      (comment    "#546e7a")
      (comment-bg "#292C28")
 
@@ -78,9 +78,9 @@
      (wy-green         "#9ccc65")
      (wy-red           "#f38283")
      (wy-yellow        "#f5f891")
-     (wy-diff-change        "#fd7f62")
-     (wy-diff-insert        "#b3f35c")
-     (wy-diff-delete        "#d85657")
+     (wy-diff-change        "#f2a652")  ;#fd7f62
+     (wy-diff-insert        "#84c958")  ;#b3f35c
+     (wy-diff-delete        "#fe5d62")
 
      )
    (custom-theme-set-faces 'weyland-yutani

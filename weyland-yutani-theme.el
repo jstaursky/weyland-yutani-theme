@@ -82,9 +82,17 @@
      (wy-purple      "#bf83ff")
 
      (wy-violet       "#c789ed")
-     (wy-light-violet "#d09ff0")
+
+     (wy-light-violet-01 "#bcaeff")
+     (wy-violet-02       "#AC8DE5")
+     (wy-violet-03       "#d196f5")
+     (wy-violet-04       "#bb70e0")
+
+
      (wy-violet-red   "#f33380")
      (wy-violet-dark  "#BB6DD1")
+
+
 
      (wy-green-01    "#9ccc65")
      (wy-green-02    "#b3f35c")
@@ -122,6 +130,8 @@
 
    `(vertical-border ((,class (:foreground ,wy-window-border))))
 
+   `(dired-perm-write ((,class (:foreground ,wy-purple))))
+
 
 ;;;;; flycheck
    `(flycheck-error
@@ -156,7 +166,7 @@
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
     `(hl-line ((,class (:background  ,bg2))))
     `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
-    `(cursor ((,class (:background ,bg3))))
+    `(cursor ((,class (:background ,fg1))))
 
     `(which-func ((,class (:foreground ,wy-green-02))))
 
@@ -183,11 +193,12 @@
         `(default-italic ((,class (:italic t))))
     `(link ((,class (:foreground ,const :underline t))))
     `(org-code ((,class (:foreground ,fg2))))
+    `(org-verbatim ((,class (:foreground "#96c457"))))
     `(org-hide ((,class (:foreground ,fg4))))
-        `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
-        `(org-level-2 ((,class (:bold nil :foreground ,fg3))))
-        `(org-level-3 ((,class (:bold t :foreground ,fg4))))
-        `(org-level-4 ((,class (:bold nil :foreground ,bg4))))
+    `(org-level-1 ((,class (:bold t :foreground ,wy-light-violet-01 :height 1.3))))
+    `(org-level-2 ((,class (:bold nil :foreground ,wy-violet-02 :height 1.2))))
+        `(org-level-3 ((,class (:bold t :foreground ,wy-violet-03 :height 1.1))))
+        `(org-level-4 ((,class (:bold nil :foreground ,wy-violet-04 :height 1.0))))
         `(org-date ((,class (:underline t :foreground ,var) )))
         `(org-footnote  ((,class (:underline t :foreground ,fg4))))
         `(org-link ((,class (:underline t :foreground ,type ))))

@@ -59,7 +59,7 @@
      (var        "#BE6DCD")             ;#BB6DD1 #bf68d9
      (const      "#69a8d8")
      (str        "#54c2cf")
-     (str-bg     "#292C28")
+     (str-bg     "#222627")
 
      ;; tester
      ;; speedbar-separator-face

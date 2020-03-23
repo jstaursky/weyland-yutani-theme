@@ -53,10 +53,10 @@
      (key3       "#b3f35c")
 
      (keyword    "#98be65")
-     (type       "#bcaeff")                    ;#cf5854 #ff696e
-     (func       "#c789ed")
-     (builtin    "#c789ed")
-     (var        "#BB6DD1")
+     (type       "#b2a4f4")                    ;#cf5854 #ff696e #bcaeff
+     (func       "#c789ed")                    ;
+     (builtin    "#c789ed")             ;#c789ed
+     (var        "#BB6DD1")             ;
      (const      "#69a8d8")
      (str        "#54c2cf")
      (str-bg     "#292C28")
@@ -69,7 +69,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#f2a652")             ;#f26ba8 #ff696e
+     (warning    "#f1cd85")             ;#f26ba8 #ff696e #f2a652
 
 
      ;; Colors Generic

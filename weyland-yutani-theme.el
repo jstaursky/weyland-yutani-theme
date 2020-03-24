@@ -186,20 +186,24 @@
     `(which-func ((,class (:foreground ,wy-green-02))))
 
 
-;;;;; smerge
+;;;;; merge
     `(smerge-base ((,class (:background ,wy-yellow :extend t))))
     `(smerge-markers ((,class (:background ,ttip-bg :foreground ,ttip :extend t))))
-    `(smerge-mine ((,class (:background ,red-bg))))
-    `(smerge-other ((,class (:background ,green-bg))))
+
+;   `(smerge-mine ((,class (:background ,red-bg))))
+;   `(smerge-other ((,class (:background ,green-bg))))
     `(smerge-refined-added ((,class (:background ,green-bg-s :foreground ,wy-green-01))))
     `(smerge-refined-changed ((,class (:background ,blue-bg-s :foreground ,wy-blue))))
     `(smerge-refined-removed ((,class (:background ,red-bg-s :foreground ,wy-red))))
 
+    `(smerge-upper ((,class (:background  ,red-bg)))) ;"#5f2c2e" ,red-bg-s "#331e3b"
+    `(smerge-lower ((,class (:background ,green-bg))))  ;,green-bg-s #26402b "#003812"
 
-        `(show-paren-match-face ((,class (:background ,warning))))
-        `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
-        `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
-        `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,key3 :background ,bg1 :weight normal))))
+
+    `(show-paren-match-face ((,class (:background ,warning))))
+    `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
+    `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
+    `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,key3 :background ,bg1 :weight normal))))
         `(mode-line-buffer-id ((,class (:bold t :foreground ,func :background nil))))
     `(mode-line-highlight ((,class (:foreground ,keyword :box nil :weight bold))))
         `(mode-line-emphasis ((,class (:foreground ,fg1))))

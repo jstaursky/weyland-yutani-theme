@@ -370,24 +370,31 @@
         `(helm-bookmark-w3m ((,class (:foreground ,type))))
 
 
-
         `(company-echo ((,class (:foreground ,bg1 :background ,fg1))))
+
         `(company-preview ((,class (:background ,bg1 :foreground ,key2))))
-        `(company-tooltip ((,class (:foreground ,fg2 :background ,bg1 :bold t))))
+        `(company-scrollbar-fg ((,class (:background "#bb6dd1"))))
+        `(company-scrollbar-bg ((,class (:background "#4e4e4e"))))
+
+        `(company-tooltip ((,class (:foreground "#546e7a" :background "#2c2c2c" ))))
+        `(company-tooltip-common ((,class ( :foreground "#90a4ae"))))
+
         `(company-echo-common ((,class (:foreground ,bg1 :background ,fg1))))
-        `(company-scrollbar-bg ((,class (:background ,bg3))))
-        `(company-scrollbar-fg ((,class (:foreground ,keyword))))
+
+        `(company-tooltip-common-selection ((,class (:foreground "#98be65"
+                                                                 :bold t
+                                                                 :underline t))))
+
         `(company-tooltip-mouse ((,class (:inherit highlight))))
         `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
         `(company-template-field ((,class (:inherit region))))
         `(company-tooltop-search ((,class (:inherit region))))
-        `(company-tooltip-common ((,class ( :foreground ,fg3))))
         `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
         `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
         `(company-tooltop-annotation ((,class (:foreground ,const))))
-        `(company-tooltip-common-selection ((,class (:foreground ,str))))
         `(company-tooltop-search-selection ((,class (:foreground ,const))))
         `(company-tooltop-annotation-selection ((,class (:foreground ,const))))
+
         `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
         `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
         `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))

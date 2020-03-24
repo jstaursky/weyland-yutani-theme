@@ -122,9 +122,9 @@
    (custom-theme-set-faces 'weyland-yutani
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
 
-   `(lsp-face-highlight-read ((,class (:underline t))))
-   `(lsp-face-highlight-write ((,class (:underline t))))
-   `(lsp-face-highlight-textual ((,class (:underline t))))
+   `(lsp-face-highlight-read ((,class (:underline t :bold t))))
+   `(lsp-face-highlight-write ((,class (:underline t :bold t))))
+   `(lsp-face-highlight-textual ((,class (:underline t :bold t))))
 
    `(font-lock-comment-face
      ((,class (:foreground ,comment

@@ -1,5 +1,5 @@
 # weyland-yutani-theme
-An emacs theme based on the Alien movie franchise 
+An emacs theme based on the Alien movie franchise.
 Essentially the lovechild of spacemacs + doom-one themes.
 
 ![Image of theme](screenshot.png)

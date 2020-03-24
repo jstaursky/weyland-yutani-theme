@@ -10,4 +10,4 @@ Essentially the lovechild of spacemacs + doom-one themes.
 
 ### About theme
 This theme was created with help of emacs-theme-generator, https://github.com/mswift42/theme-creator.
-
+Additional faces that are missed by the theme generator I have patched in myself.

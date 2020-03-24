@@ -99,6 +99,7 @@
 
      (wy-red         "#fe5d62")
      (wy-yellow      "#f5f891")
+     (wy-orange      "#f2a652")
 
      (wy-diff-change "#bf83ff")                ;#f29742
      (wy-diff-insert wy-green-02)                         ;"#bed856"
@@ -145,6 +146,9 @@
 
 
 ;;;;; flycheck
+   `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))
+
+
    `(flycheck-error
      ((,(append '((supports :underline (:style line))) class)
        (:underline (:style line :color ,err)))

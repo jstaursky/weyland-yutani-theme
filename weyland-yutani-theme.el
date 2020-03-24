@@ -114,9 +114,16 @@
      (green-bg-s       "#29422d")
      (blue-bg          "#293239")
      (blue-bg-s        "#2d4252")
+
+     (Purple-Dimm  "#413a43")
+
      )
    (custom-theme-set-faces 'weyland-yutani
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
+
+   `(lsp-face-highlight-read ((,class (:underline t))))
+   `(lsp-face-highlight-write ((,class (:underline t))))
+   `(lsp-face-highlight-textual ((,class (:underline t))))
 
    `(font-lock-comment-face
      ((,class (:foreground ,comment
@@ -131,6 +138,10 @@
    `(vertical-border ((,class (:foreground ,wy-window-border))))
 
    `(dired-perm-write ((,class (:foreground ,wy-purple))))
+
+   `(tooltip ((,class (:foreground ,fg1 :background ,bg3))))
+
+   `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg1))))
 
 
 ;;;;; flycheck
@@ -385,12 +396,13 @@
                                                                  :bold t
                                                                  :underline t))))
 
+        `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
+
         `(company-tooltip-mouse ((,class (:inherit highlight))))
         `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
         `(company-template-field ((,class (:inherit region))))
         `(company-tooltop-search ((,class (:inherit region))))
         `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
-        `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
         `(company-tooltop-annotation ((,class (:foreground ,const))))
         `(company-tooltop-search-selection ((,class (:foreground ,const))))
         `(company-tooltop-annotation-selection ((,class (:foreground ,const))))

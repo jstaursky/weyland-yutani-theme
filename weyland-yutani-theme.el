@@ -41,7 +41,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#bdbdbd")
+     (fg1        "#b5b5b5")             ;#bdbdbd
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
@@ -51,17 +51,17 @@
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
-
-     (keyword    "#98be65")
-     (type       "#b2a4f4")                    ;#cf5854 #ff696e #bcaeff
-     (func       "#c789ed")                    ;
-     (builtin    "#c789ed")             ;#c789ed
-     (var        "#BE6DCD")             ;#BB6DD1 #bf68d9
-     (const      "#69a8d8")
-     (str        "#54c2cf")
+                                            ; Original   #1
+     (keyword    "#a1b95e")                 ; #98be65  #a2bc61
+     (type       "#bb9df8")                 ; #b2a4f4  #baa2ee
+     (func       "#d080f0")                 ;          #cd87e7
+     (builtin    "#d080f0")                 ; #c789ed
+     (var        "#c464cc")                 ; #BE6DCD  #c36bc8
+     (const      "#72a1d8")                 ; #69a8d8  #74a6d2
+     (str        "#64bdce")                 ; #54c2cf  #65c0c9
      (str-bg     "#222627")
 
-     ;; tester
+                                        ;#cf5854 #ff696e #bcaeff
      ;; speedbar-separator-face
      (err        "#f70108")
      (comment    "#546e7a")
@@ -69,7 +69,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#f1cd85")             ;#f26ba8 #ff696e #f2a652
+     (warning    "#f26ba8")             ;#f26ba8 #ff696e #f2a652 #f1cd85
 
 
      ;; Colors Generic

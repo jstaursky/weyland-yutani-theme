@@ -53,10 +53,10 @@
      (key3       "#b3f35c")
                                             ; Original   #1
      (keyword    "#a1b95e")                 ; #98be65  #a2bc61
-     (type       "#bb9df8")                 ; #b2a4f4  #baa2ee
-     (func       "#cb80f0")                 ;          #cd87e7
-     (builtin    "#cb80f0")                 ; #c789ed  #d080f0
-     (var        "#c464cc")                 ; #BE6DCD  #c36bc8 
+     (type       "#b499f7")                 ; #b2a4f4  #baa2ee
+     (func       "#d18fe7")                 ;          #cd87e7 #cb80f0
+     (builtin    "#d18fe7")                 ; #c789ed  #d080f0
+     (var        "#c074d1")                 ; #BE6DCD  #c36bc8 #c464cc
      (const      "#72a1d8")                 ; #69a8d8  #74a6d2
      (str        "#64bdce")                 ; #54c2cf  #65c0c9
      (str-bg     "#222627")

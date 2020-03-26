@@ -54,9 +54,9 @@
                                             ; Original   #1
      (keyword    "#a1b95e")                 ; #98be65  #a2bc61
      (type       "#bb9df8")                 ; #b2a4f4  #baa2ee
-     (func       "#d080f0")                 ;          #cd87e7
-     (builtin    "#d080f0")                 ; #c789ed
-     (var        "#c464cc")                 ; #BE6DCD  #c36bc8
+     (func       "#cb80f0")                 ;          #cd87e7
+     (builtin    "#cb80f0")                 ; #c789ed  #d080f0
+     (var        "#c464cc")                 ; #BE6DCD  #c36bc8 
      (const      "#72a1d8")                 ; #69a8d8  #74a6d2
      (str        "#64bdce")                 ; #54c2cf  #65c0c9
      (str-bg     "#222627")

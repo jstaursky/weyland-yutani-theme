@@ -30,7 +30,7 @@
 ;;; Commentary: Vanilla emacs may need first to (require 'color) before loading
 ;;; theme.
 
-;;; Code: 
+;;; Code:
 
 (defcustom weyland-yutani-theme-comment-bg nil
   "Use a background for comment lines."
@@ -45,25 +45,20 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#242424")
+     (bg1        "#252525")
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
                                             ; Original   #1       #2     Lo Contrast
-     (keyword    "#95bd59")                 ; #98be65  #a2bc61  #a1b95e  #abc068
-                                            ; #95bd59 #97BF5A
-     (type       "#AF90F1")                 ; #b2a4f4  #baa2ee  #b499f7  #bca4f8
-                                        ; #b599f1 #b599f1
-     (func       "#cd82e6")
-     (builtin    "#cd82e6")                 ; #c789ed  #d080f0  #d18fe7  #c789ed
-                                            ; #c584e0  #c38cd6
-
-     (var        "#b568dc")                 ; #cc8de4 #c994f0 #B97ECE #c96feb #b568dc
-                                            ; #c074d1 #c994f0 #a981d3 #c994f0
-     (const      "#72a1d8")                 ; #69a8d8  #74a6d2  #72a1d8  #7eabdc
-     (str        "#64bdce")                 ; #54c2cf  #65c0c9  #64bdce  #6fc4d3
+     (keyword    "#91b161")                 ;#95bd59 #91b161
+     (type       "#af90f1")                        ;#af90f1 #a58dda
+     (func       "#cc83e5")                               ;#cd82e6
+     (builtin    "#cc83e5")                               ;#be81d1
+     (var        "#b568dc")                    ;#b568dc
+     (const      "#72a1d8")                           ;#72a1d8
+     (str        "#69b1be")                                  ;#64bdce
      (str-bg     "#222627")
 
                                         ;#cf5854 #ff696e #bcaeff #c678dd

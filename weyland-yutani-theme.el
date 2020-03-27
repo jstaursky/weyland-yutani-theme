@@ -30,7 +30,7 @@
 ;;; Commentary: Vanilla emacs may need first to (require 'color) before loading
 ;;; theme.
 
-;;; Code:
+;;; Code: 
 
 (defcustom weyland-yutani-theme-comment-bg nil
   "Use a background for comment lines."
@@ -51,17 +51,17 @@
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
-                                            ; Original   #1
-     (keyword    "#a1b95e")                 ; #98be65  #a2bc61
-     (type       "#b499f7")                 ; #b2a4f4  #baa2ee
-     (func       "#d18fe7")                 ;          #cd87e7 #cb80f0
-     (builtin    "#d18fe7")                 ; #c789ed  #d080f0
-     (var        "#c074d1")                 ; #BE6DCD  #c36bc8 #c464cc
-     (const      "#72a1d8")                 ; #69a8d8  #74a6d2
-     (str        "#64bdce")                 ; #54c2cf  #65c0c9
+                                            ; Original   #1       #2     Lo Contrast
+     (keyword    "#a1b95e")                 ; #98be65  #a2bc61  #a1b95e  #abc068
+     (type       "#b499f7")                 ; #b2a4f4  #baa2ee  #b499f7  #bca4f8
+     (func       "#d18fe7")                 ;          #cd87e7  #d18fe7  #d69bea
+     (builtin    "#d18fe7")                 ; #c789ed  #d080f0  #d18fe7
+     (var        "#c074d1")                 ; #BE6DCD  #c36bc8  #c074d1  #c780d6
+     (const      "#72a1d8")                 ; #69a8d8  #74a6d2  #72a1d8  #7eabdc
+     (str        "#64bdce")                 ; #54c2cf  #65c0c9  #64bdce  #6fc4d3
      (str-bg     "#222627")
 
-                                        ;#cf5854 #ff696e #bcaeff
+                                        ;#cf5854 #ff696e #bcaeff #c678dd
      ;; speedbar-separator-face
      (err        "#f70108")
      (comment    "#546e7a")
@@ -165,7 +165,7 @@
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
-        `(font-lock-function-name-face ((,class (:foreground ,func
+        `(font-lock-function-name-face ((,class (:foreground ,func :italic t
                                                              ;; :background
                                                              ;; "#2B272E"
                                                              ;; :italic t :bold t

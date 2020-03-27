@@ -52,11 +52,16 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
                                             ; Original   #1       #2     Lo Contrast
-     (keyword    "#a1b95e")                 ; #98be65  #a2bc61  #a1b95e  #abc068
-     (type       "#b499f7")                 ; #b2a4f4  #baa2ee  #b499f7  #bca4f8
-     (func       "#c789ed")                 ;          #cd87e7  #d18fe7  #d69bea
-     (builtin    "#c789ed")                 ; #c789ed  #d080f0  #d18fe7
-     (var        "#c074d1")                 ; #BE6DCD  #c36bc8  #c074d1  #c780d6
+     (keyword    "#95bd59")                 ; #98be65  #a2bc61  #a1b95e  #abc068
+                                            ; #95bd59 #97BF5A
+     (type       "#AF90F1")                 ; #b2a4f4  #baa2ee  #b499f7  #bca4f8
+                                        ; #b599f1 #b599f1
+     (func       "#cd82e6")
+     (builtin    "#cd82e6")                 ; #c789ed  #d080f0  #d18fe7  #c789ed
+                                            ; #c584e0  #c38cd6
+
+     (var        "#b568dc")                 ; #cc8de4 #c994f0 #B97ECE #c96feb #b568dc
+                                            ; #c074d1 #c994f0 #a981d3 #c994f0
      (const      "#72a1d8")                 ; #69a8d8  #74a6d2  #72a1d8  #7eabdc
      (str        "#64bdce")                 ; #54c2cf  #65c0c9  #64bdce  #6fc4d3
      (str-bg     "#222627")
@@ -69,7 +74,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#f1cd85")             ;#f26ba8 #ff696e #f2a652 #f1cd85
+     (warning    "#f1cd85")             ;#f26ba8 #ff696e #f2a652 #f1cd85 #ffcb6b
 
 
      ;; Colors Generic
@@ -165,7 +170,7 @@
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
-        `(font-lock-function-name-face ((,class (:foreground ,func :italic t
+        `(font-lock-function-name-face ((,class (:foreground ,func
                                                              ;; :background
                                                              ;; "#2B272E"
                                                              ;; :italic t :bold t

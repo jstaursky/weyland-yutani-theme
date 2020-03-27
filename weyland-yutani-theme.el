@@ -54,8 +54,8 @@
                                             ; Original   #1       #2     Lo Contrast
      (keyword    "#a1b95e")                 ; #98be65  #a2bc61  #a1b95e  #abc068
      (type       "#b499f7")                 ; #b2a4f4  #baa2ee  #b499f7  #bca4f8
-     (func       "#d18fe7")                 ;          #cd87e7  #d18fe7  #d69bea
-     (builtin    "#d18fe7")                 ; #c789ed  #d080f0  #d18fe7
+     (func       "#c789ed")                 ;          #cd87e7  #d18fe7  #d69bea
+     (builtin    "#c789ed")                 ; #c789ed  #d080f0  #d18fe7
      (var        "#c074d1")                 ; #BE6DCD  #c36bc8  #c074d1  #c780d6
      (const      "#72a1d8")                 ; #69a8d8  #74a6d2  #72a1d8  #7eabdc
      (str        "#64bdce")                 ; #54c2cf  #65c0c9  #64bdce  #6fc4d3

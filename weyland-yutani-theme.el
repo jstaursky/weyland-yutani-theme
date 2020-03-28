@@ -41,25 +41,24 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#b5b5b5")             ;#bdbdbd
+     (fg1        "#b5b5b5")
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#282C34")             ;#292929 #282c34
+     (bg1        "#24282F")             ;#282C34
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
-                                            ; Original   #1       #2     Lo Contrast
-     (keyword    "#91b161")                 ;#95bd59 #91b161
-     (type       "#af90f1")                        ;#af90f1 #a58dda
-     (func       "#cc83e5")                               ;#cd82e6
-     (builtin    "#cc83e5")                               ;#be81d1
-     (var        "#b568dc")                    ;#b568dc
-     (const      "#72a1d8")                           ;#72a1d8
-     (str        "#64bdce")                                  ;#64bdce #69b1be
-     (str-bg     bg1)                                         ;#222627
+     (keyword    "#91b161")
+     (type       "#af90f1")
+     (func       "#cc83e5")
+     (builtin    "#cc83e5")
+     (var        "#b568dc")
+     (const      "#72a1d8")
+     (str        "#64bdce")
+     (str-bg     bg1)
 
                                         ;#cf5854 #ff696e #bcaeff #c678dd
      ;; speedbar-separator-face

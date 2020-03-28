@@ -143,9 +143,8 @@
 
    `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg1))))
 
-   `(highlight-numbers-number ((,class (:foreground "#e58241" ))))
+   `(highlight-numbers-number ((,class (:foreground "#F35C5A" )))) ;#e58241
 
-   
 
 ;;;;; flycheck
    `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))

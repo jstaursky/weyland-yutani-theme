@@ -68,7 +68,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#f1cd85")             ;#f26ba8 #ff696e #f2a652 #f1cd85 #ffcb6b
+     (warning    "#E2BD64")             ;#f26ba8 #ff696e #f2a652 #f1cd85 #ffcb6b
 
 
      ;; Colors Generic

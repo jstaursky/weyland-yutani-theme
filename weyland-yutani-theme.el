@@ -2,7 +2,7 @@
 
 ;;; weyland-yutani-theme.el --- Emacs theme with a dark background.
 
-;; Copyright (C) 2014 , Joe Staursky
+;; Copyright (C) 2020 , Joe Staursky
 
 ;; Author: Joe Staursky
 ;;
@@ -58,7 +58,7 @@
      (builtin    "#cc83e5")                               ;#be81d1
      (var        "#b568dc")                    ;#b568dc
      (const      "#72a1d8")                           ;#72a1d8
-     (str        "#69b1be")                                  ;#64bdce
+     (str        "#64bdce")                                  ;#64bdce #69b1be
      (str-bg     bg1)                                         ;#222627
 
                                         ;#cf5854 #ff696e #bcaeff #c678dd

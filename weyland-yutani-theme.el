@@ -58,7 +58,7 @@
      (var        "#b568dc")
      (const      "#72a1d8")
      (str        "#64bdce")
-     (str-bg     bg1)
+     (str-bg     "#2B3035")
 
                                         ;#cf5854 #ff696e #bcaeff #c678dd
      ;; speedbar-separator-face
@@ -143,6 +143,9 @@
 
    `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg1))))
 
+   `(highlight-numbers-number ((,class (:foreground "#e58241" ))))
+
+   
 
 ;;;;; flycheck
    `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))

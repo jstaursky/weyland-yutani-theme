@@ -62,7 +62,9 @@
      (func       "#cc83e5")
      (builtin    "#cc83e5")
 
-     (var        (color-lighten-name Fuschia 3))
+;    (var        (color-lighten-name Fuschia 3))
+     (var        (color-darken-name func 6))
+
 
      (const      "#72a1d8")
      (str        "#64bdce")
@@ -177,9 +179,8 @@
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
-                                                             ;; :background
+
                                                              ;; "#2B272E"
-                                                             :italic t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

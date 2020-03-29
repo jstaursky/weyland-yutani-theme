@@ -41,6 +41,11 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
+
+     (Magenta "#D996f6")
+     (Violet  "#8D67D5")
+     (Fuschia "#b568dc")
+
      (fg1        "#b5b5b5")
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
@@ -52,10 +57,13 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
      (keyword    "#91b161")
-     (type       "#af90f1")
+;    (type       "#af90f1")
+     (type       (color-lighten-name Violet 12))
      (func       "#cc83e5")
      (builtin    "#cc83e5")
-     (var        "#b568dc")
+
+     (var        (color-lighten-name Fuschia 3))
+
      (const      "#72a1d8")
      (str        "#64bdce")
      (str-bg     "#2B3035")

@@ -69,7 +69,7 @@
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
      (warning    "#E2BD64")             ;#f26ba8 #ff696e #f2a652 #f1cd85 #ffcb6b
-
+     ;; #E0C240
 
      ;; Colors Generic
      (wy-blue        "#69a8d8")
@@ -143,9 +143,11 @@
 
    `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg1))))
 
-   `(highlight-numbers-number ((,class (:foreground "#F35C5A" )))) ;#e58241
+   `(highlight-numbers-number ((,class (:foreground "#e974c7" :bold t)))) ;#e58241 #FA572A
+                                        ;#859B09 #048B5C #859B09 #B3D723 #C9D41E #87b61c
+                                        ;#F35C5A #E66343 #cbd415 #B9CE1B #bbcc56
 
-
+                                        ; #EE8EF7
 ;;;;; flycheck
    `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))
 

@@ -57,8 +57,8 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
      (keyword    "#91b161")
-;    (type       "#af90f1")
-     (type       (color-lighten-name Violet 12))
+    (type       "#af90f1")
+;    (type       (color-lighten-name Violet 12))
      (func       "#cc83e5")
      (builtin    "#cc83e5")
 
@@ -179,7 +179,7 @@
         `(font-lock-function-name-face ((,class (:foreground ,func
                                                              ;; :background
                                                              ;; "#2B272E"
-                                                             ;; :italic t :bold t
+                                                             :italic t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

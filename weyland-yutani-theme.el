@@ -62,8 +62,8 @@
      (func       "#cc83e5")
      (builtin    "#cc83e5")
 
-;    (var        (color-lighten-name Fuschia 3))
-     (var        (color-darken-name func 6))
+     (var        (color-lighten-name Fuschia 0))
+;    (var        (color-darken-name "#bc6ec5" 1))
 
 
      (const      "#72a1d8")

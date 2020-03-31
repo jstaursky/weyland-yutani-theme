@@ -32,7 +32,7 @@
 
 ;;; Code:
 
-(defcustom weyland-yutani-theme-comment-bg t
+(defcustom weyland-yutani-theme-comment-bg nil
   "Use a background for comment lines."
   :type 'boolean
   :group 'weyland-yutani-theme)
@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#272a30")
+     (bg1        "#1F2326")             ;#272a30 #1D2430 #1F2124
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
@@ -62,7 +62,7 @@
 
      (const      "#72a1d8")
      (str        "#64bdce")
-     (str-bg     "#2A2D33")
+     (str-bg      bg1)
 
      ;; speedbar-separator-face
      (err        "#f70108")

@@ -46,28 +46,28 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#272a30")                    ;#282C35
+     (bg1        "#272a30")
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#9ac265")                    ;#98be65
+     (keyword    "#9ac265")
      (type       "#af90f1")
-     (func       "#DB92E0")             ;#cc83e5
+     (func       "#DB92E0")
      (builtin    "#DB92E0")
-     (var        "#BA6AD4")             ;#b568dc
+     (var        "#BA6AD4")
 
 
      (const      "#72a1d8")
      (str        "#64bdce")
-     (str-bg     "#2A3036")
+     (str-bg     "#2A2D33")
 
      ;; speedbar-separator-face
      (err        "#f70108")
-     (comment    "#5e7188")                    ;#546e7a
-     (comment-bg "#292C32")                    ;#292C28
+     (comment    "#5e7188")
+     (comment-bg "#292C32")
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")

@@ -42,35 +42,28 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (Magenta "#D996f6")
-     (Violet  "#8D67D5")
-     (Fuschia "#b568dc")
-
      (fg1        "#b5b5b5")
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#282C30")             ;#282C34 #24282F #22262D #2B2E30 
+     (bg1        "#282C35")
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
-     (keyword    "#91b161")
-    (type       "#af90f1")
-;    (type       (color-lighten-name Violet 12))
-     (func       "#cc83e5")
-     (builtin    "#cc83e5")
 
-     (var        (color-lighten-name Fuschia 0))
-;    (var        (color-darken-name "#bc6ec5" 1))
+     (keyword    "#8AB15F")
+     (type       "#af90f1")
+     (func       "#e68ae6")
+     (builtin    "#e68ae6")
+     (var        "#b568dc")
 
 
      (const      "#72a1d8")
      (str        "#64bdce")
      (str-bg     "#2B3035")
 
-                                        ;#cf5854 #ff696e #bcaeff #c678dd
      ;; speedbar-separator-face
      (err        "#f70108")
      (comment    "#546e7a")
@@ -78,7 +71,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#E2BD64")             ;#f26ba8 #ff696e #f2a652 #f1cd85 #ffcb6b
+     (warning    "#E2BD64")
      ;; #E0C240
 
      ;; Colors Generic

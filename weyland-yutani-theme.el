@@ -48,15 +48,15 @@
      (fg4        "#8694a5")
      (bg1        "#20242D")             ;#202428
      (bg2        (color-lighten-name bg1 3))
-     (bg3        "#3f3f3f")
+     (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
      (keyword    "#9ac265")
      (type       "#af90f1")
-     (func       "#E284FC")
-     (builtin    "#E284FC")
+     (func       "#E17DF2")             ;#E284FC
+     (builtin    "#E17DF2")
      (var        "#BA6AD4")
 
 

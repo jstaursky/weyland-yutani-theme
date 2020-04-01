@@ -55,8 +55,8 @@
 
      (keyword    "#9ac265")
      (type       "#af90f1")
-     (func       "#DB92E0")
-     (builtin    "#DB92E0")
+     (func       "#E284FC")
+     (builtin    "#E284FC")
      (var        "#BA6AD4")
 
 

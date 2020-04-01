@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#202428")             ;#272a30 #1D2430 #1F2124  #212128 #1F2326
+     (bg1        "#202428")
      (bg2        (color-lighten-name bg1 3))
      (bg3        "#3f3f3f")
      (bg4        "#3c3a50")
@@ -142,9 +142,8 @@
 
    `(dired-perm-write ((,class (:foreground ,wy-purple))))
 
-   `(tooltip ((,class (:foreground ,fg1 :background ,bg3))))
 
-   `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg1))))
+
 
    `(highlight-numbers-number ((,class (:foreground "#e974c7" :bold t)))) ;#e58241 #FA572A
                                         ;#859B09 #048B5C #859B09 #B3D723 #C9D41E #87b61c
@@ -163,10 +162,6 @@
 
 
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
-   `(company-tooltip-annotation-selection ((,class (:foreground ,func))))
-
-   `(company-tooltip-annotation ((,class (:foreground ,const))))
-
     `(font-lock-negation-char-face ((,class (:foreground ,wy-yellow))))
     `(font-lock-reference-face ((,class (:foreground ,const))))
     `(font-lock-constant-face ((,class (:foreground ,const ))))
@@ -189,6 +184,69 @@
     `(cursor ((,class (:background ,fg1))))
 
     `(which-func ((,class (:foreground ,wy-green-02))))
+
+
+;;;;; Company
+    `(tooltip ((,class
+        (:foreground ,fg1 :background ,bg3))))
+
+    `(company-tooltip-annotation-selection ((,class
+        (:foreground ,func))))
+
+    `(company-tooltip-annotation ((,class
+        (:foreground ,const))))
+
+    `(company-tooltip ((,class
+        (:foreground "#546e7a" :background "#2c2c2c" ))))
+
+    `(company-tooltip-common ((,class
+        (:foreground "#90a4ae"))))
+
+    `(company-tooltip-common-selection ((,class
+        (:foreground "#98be65" :bold t :underline t))))
+
+    `(company-tooltip-selection ((,class
+        (:background ,bg3 :foreground ,fg3))))
+
+    `(company-tooltip-mouse ((,class
+        (:inherit highlight))))
+
+    `(company-echo ((,class
+        (:foreground ,bg1 :background ,fg1))))
+
+    `(company-preview ((,class
+        (:background ,bg1 :foreground ,key2))))
+
+    `(company-scrollbar-fg ((,class
+        (:background "#bb6dd1"))))
+
+    `(company-scrollbar-bg ((,class
+        (:background "#4e4e4e"))))
+
+    `(company-echo-common ((,class
+        (:foreground ,bg1 :background ,fg1))))
+
+    `(company-preview-common ((,class
+        (:foreground ,bg2 :foreground ,fg3))))
+
+    `(company-template-field ((,class
+        (:inherit region))))
+
+    `(company-tooltop-search ((,class
+        (:inherit region))))
+
+    `(company-preview-search ((,class
+        (:foreground ,type :background ,bg1))))
+
+    `(company-tooltop-annotation ((,class
+        (:foreground ,const))))
+
+    `(company-tooltop-search-selection ((,class
+        (:foreground ,const))))
+
+    `(company-tooltop-annotation-selection ((,class
+        (:foreground ,const))))
+
 
 
 ;;;;; merge
@@ -392,33 +450,6 @@
         `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
         `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
         `(helm-bookmark-w3m ((,class (:foreground ,type))))
-
-
-        `(company-echo ((,class (:foreground ,bg1 :background ,fg1))))
-
-        `(company-preview ((,class (:background ,bg1 :foreground ,key2))))
-        `(company-scrollbar-fg ((,class (:background "#bb6dd1"))))
-        `(company-scrollbar-bg ((,class (:background "#4e4e4e"))))
-
-        `(company-tooltip ((,class (:foreground "#546e7a" :background "#2c2c2c" ))))
-        `(company-tooltip-common ((,class ( :foreground "#90a4ae"))))
-
-        `(company-echo-common ((,class (:foreground ,bg1 :background ,fg1))))
-
-        `(company-tooltip-common-selection ((,class (:foreground "#98be65"
-                                                                 :bold t
-                                                                 :underline t))))
-
-        `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
-
-        `(company-tooltip-mouse ((,class (:inherit highlight))))
-        `(company-preview-common ((,class (:foreground ,bg2 :foreground ,fg3))))
-        `(company-template-field ((,class (:inherit region))))
-        `(company-tooltop-search ((,class (:inherit region))))
-        `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
-        `(company-tooltop-annotation ((,class (:foreground ,const))))
-        `(company-tooltop-search-selection ((,class (:foreground ,const))))
-        `(company-tooltop-annotation-selection ((,class (:foreground ,const))))
 
         `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
         `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))

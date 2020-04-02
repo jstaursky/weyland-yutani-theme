@@ -172,7 +172,7 @@
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))
-        `(font-lock-variable-name-face ((,class (:foreground ,var ))))
+        `(font-lock-variable-name-face ((,class (:foreground ,var :italic t))))
         `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 

@@ -53,15 +53,16 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#9dc864")             ;#9ac265
-     (type       "#b687ff")             ;#9c96fc
-     (func       "#ea81ff")             ;#E87CFD
-     (builtin    "#ea81ff")
-     (var        "#c662ec")             ;#c18aff
+     (keyword    "#99c361")             ;#9ac265 #9dc864
+     (type       "#b382ff")             ;#9c96fc #b687ff
+     (func       "#e979ff")             ;#E87CFD #ea81ff
+     (builtin    "#e979ff")
+
+     (var        "#c45ceb")             ;#c18aff #c662ec #c356eb
 
 
-     (const      "#72a5e0")             ;#72a1d8
-     (str        "#5dc1d4")             ;#64bdce
+     (const      "#6aa1df")             ;#72a1d8
+     (str        "#5bbccf")             ;#64bdce
      (str-bg      bg1)
 
      ;; speedbar-separator-face

@@ -54,10 +54,10 @@
      (key3       "#b3f35c")
 
      (keyword    "#92b75c")
-     (type       "#b799ff")             ;#ed72c1
-     (func       "#da83e6")             ;#ea81ff #e979ff #ea81ff #bd97fd #db8aef
-     (builtin    "#da83e6")
-     (var        "#C076F1")                    ;#ba67f8 #c783e8 #c385ed
+     (type       "#ae8cf7")             ;#b799ff
+     (func       "#cd81e2")                    ;#da83e6
+     (builtin    "#ae8cf7")
+     (var        "#bf87ec")                    ;#C076F1
 
      (const      "#76a2d6")
      (str        "#61b8ce")
@@ -70,7 +70,7 @@
 
      (region-bg  (color-lighten-name bg1 6))
      (region-fg  "#72b38f")
-     (warning    "#E2BD64")
+     (warning    "#caa64c")             ;#caa64c
      ;; #E0C240
 
      ;; Colors Generic
@@ -171,7 +171,8 @@
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))
-        `(font-lock-variable-name-face ((,class (:foreground ,var :italic t))))
+        `(font-lock-variable-name-face ((,class (:foreground ,var ;:italic t
+                                                             ))))
         `(font-lock-warning-face ((,class (:foreground ,warning))))
 
 

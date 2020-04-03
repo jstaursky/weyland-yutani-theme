@@ -55,7 +55,7 @@
 
      (keyword    "#9dc171")
      (type       "#b19afb")
-     (func       "#e979ff")             ;#ea81ff #e979ff
+     (func       "#ea81ff")             ;#ea81ff #e979ff
      (builtin    "#b19afb")
      (var        "#ba67f8")             ;#ba67f8 #c27bfb
 

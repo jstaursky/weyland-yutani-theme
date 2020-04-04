@@ -57,7 +57,7 @@
      (type       "#ae8cf7")             ;#b799ff
      (func       "#cd81e2")                    ;#da83e6
      (builtin    "#ae8cf7")
-     (var        "#b568dc")                    ;#C076F1
+     (var        "#b569e2")                    ;#C076F1 #b568dc
 
      (const      "#76a2d6")
      (str        "#61b8ce")

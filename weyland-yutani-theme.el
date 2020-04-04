@@ -55,10 +55,9 @@
 
      (keyword    "#92b75c")
      (type       "#ae8cf7")             ;#b799ff
-     (func       "#cd81e2")                    ;#da83e6
+     (func       "#CE8DEC")                    ;#da83e6 #d196f5 #cd81e2
+     (var        "#b569e2")
      (builtin    "#ae8cf7")
-     (var        "#b569e2")                    ;#C076F1 #b568dc
-
      (const      "#76a2d6")
      (str        "#61b8ce")
      (str-bg      bg1)

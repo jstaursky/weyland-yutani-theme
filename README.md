@@ -4,6 +4,8 @@ Essentially the lovechild of spacemacs + doom-one themes.
 
 ![Image of theme](screenshot.png)
 
+![Image of theme](completion-popup.png)
+
 ![Image of theme](screenshot-elisp.png)
 
 ![Image of theme](screenshot-c-lang.png)

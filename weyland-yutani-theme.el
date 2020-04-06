@@ -46,18 +46,18 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#20242D")             ;#202428
+     (bg1        "#20242D")             ;#202428 #20242D
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#92b75c")
-     (type       "#ae8cf7")             ;#b799ff
-     (func       "#CE8DEC")                    ;#da83e6 #d196f5 #cd81e2
-     (var        "#b569e2")
-     (builtin    "#ae8cf7")
+     (keyword    "#92b75c")                    ;#92b75c #96b55f
+     (type       "#9d8dff")                    ;#ae8cf7 #ae9cff #9d8dff
+     (func       "#CE8DEC")             ;#CE8DEC #d993f5
+     (var        "#B364F8")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #b569e2
+     (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7
      (const      "#76a2d6")
      (str        "#61b8ce")
      (str-bg      bg1)

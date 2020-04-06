@@ -67,13 +67,13 @@
      (comment    "#5e7188")
      (comment-bg bg1)
 
-     (region-bg  (color-lighten-name bg1 6))
-     (region-fg  "#72b38f")
+     (region-bg  "#30374c")
+     (region-fg  "#a59ef3")
      (warning    "#f1cd85")             ;#caa64c
      ;; #E0C240
 
      ;; Colors Generic
-     (wy-blue        "#69a8d8")
+     (wy-blue        "#69a#caa64c8d8")
      (wy-light-blue  "#54c2cf")
 
 

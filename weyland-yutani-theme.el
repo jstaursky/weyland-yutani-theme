@@ -195,17 +195,21 @@
     `(company-tooltip-annotation ((,class
         (:foreground ,const))))
 
+    ;; Colors that fill the body the tooltip (main bg and fg)
     `(company-tooltip ((,class
-        (:foreground "#546e7a" :background "#2c2c2c" ))))
+        (:foreground "#a59ef3" :background "#30374c" ))))
 
+    ;; Color that match as you type
     `(company-tooltip-common ((,class
-        (:foreground "#90a4ae"))))
+        (:foreground "#92b75c"))))
 
+    ;; Color for matching text in the completion selection
     `(company-tooltip-common-selection ((,class
         (:foreground "#98be65" :bold t :underline t))))
 
+    ;; hl-line for company popup
     `(company-tooltip-selection ((,class
-        (:background ,bg3 :foreground ,fg3))))
+        (:background ,(color-darken-name "#575f8c" 11) :foreground ,fg3)))) ;,bg3
 
     `(company-tooltip-mouse ((,class
         (:inherit highlight))))

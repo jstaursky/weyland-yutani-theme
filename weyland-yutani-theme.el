@@ -54,7 +54,7 @@
      (key3       "#b3f35c")
 
      (keyword    "#92b75c")                    ;#92b75c #96b55f
-     (type       "#9d8dff")                    ;#ae8cf7 #ae9cff #9d8dff
+     (type       "#9d8dff");                   ;#ae8cf7 #ae9cff #9d8dff
      (func       "#d993f5")             ;#CE8DEC #d993f5 #CE8DEC #e190dd
      (var        "#b569e2")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #b569e2
      (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8
@@ -126,6 +126,10 @@
    `(lsp-face-highlight-write ((,class (:background nil :underline t :bold t))))
    `(lsp-face-highlight-textual ((,class (:background nil :underline t :bold t))))
 
+
+   `(success ((,class (:foreground "#80C617" :bold t))))
+
+
    `(font-lock-comment-face
      ((,class (:foreground ,comment
                :background
@@ -177,12 +181,17 @@
 
         `(region ((,class (:background ,region-bg :foreground ,region-fg))))
 
-        `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
+        `(highlight ((,class (:foreground "#a59ef3" :background "#2d324c"))))
     `(hl-line ((,class (:background  ,bg2))))
     `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
     `(cursor ((,class (:background ,fg1))))
 
     `(which-func ((,class (:foreground ,wy-green-02))))
+
+
+    `(evil-ex-lazy-highlight ((,class
+                (:foreground "#20242D" :background "Violet"))))
+
 
 
 ;;;;; Company

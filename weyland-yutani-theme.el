@@ -60,8 +60,8 @@
                                         ;#b569e2 #b569e2 #E36264 #B677ED #b569e2 #b569e2
      (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8
                                         ;#9d8dff #B364F8
-     (const      "#73A4DA")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff
-     (str        "#61b8ce")             ; #B677ED #61b8ce #61b8ce #76a2d6
+     (const      "#6da0d6")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff
+     (str        "#61b8ce")             ; #B677ED #61b8ce #61b8ce #76a2d6 #73A4DA
      (str-bg      bg1)
 
      ;; speedbar-separator-face

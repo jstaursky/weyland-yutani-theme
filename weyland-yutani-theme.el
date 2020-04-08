@@ -54,12 +54,13 @@
      (key3       "#b3f35c")
 
      (keyword    "#92b75c")                    ;#92b75c #96b55f
-     (type       "#9d8dff");                   ;#ae8cf7 #ae9cff #9d8dff
-     (func       "#d993f5")             ;#CE8DEC #d993f5 #CE8DEC #e190dd
-     (var        "#b569e2")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #b569e2
-     (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8
-     (const      "#76a2d6")
-     (str        "#61b8ce")
+     (type       "#9d8dff");                   ;#ae8cf7 #ae9cff #9d8dff #9d8dff #9581FD
+     (func       "#d993f5") ;                  ;#CE8DEC #d993f5 #CE8DEC #e190dd  #d993f5
+     (var        "#B364F8")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #B364F8
+                                        ;#b569e2 #b569e2 #E36264 #B677ED #b569e2 #b569e2
+     (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8 #9d8dff
+     (const      "#73A4DA")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff
+     (str        "#61b8ce")             ; #B677ED #61b8ce #61b8ce #76a2d6
      (str-bg      bg1)
 
      ;; speedbar-separator-face
@@ -69,7 +70,7 @@
 
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
-     (warning    "#f1cd85")             ;#caa64c
+     (warning    "#F7AF5E")             ;#caa64c #f1cd85
      ;; #E0C240
 
      ;; Colors Generic

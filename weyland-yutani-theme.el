@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#262A36")             ;#202428 #20242D #20242D
+     (bg1        "#282c39")             ;#202428 #20242D #20242D #262A36
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
@@ -54,7 +54,7 @@
      (key3       "#b3f35c")
 
      (type       "#9d8dff");
-     (keyword    "#92b75c")                    ;#92b75c #96b55f #8bbc45 #92b75c #98be65
+     (keyword    "#96B765")                    ;#92b75c #96b55f #8bbc45 #92b75c #98be65
      (func       "#D087F7") ; #d36dff #dd90fd #d98af7 #cf91ed
      ;; #D38DF9
 

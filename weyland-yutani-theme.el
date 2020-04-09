@@ -42,11 +42,11 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#b5b5b5")
+     (fg1        "#b5b5b5")             ;#b5b5b5 #e1e0e2  <- bright White
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#20242D")             ;#202428 #20242D
+     (bg1        "#262A36")             ;#202428 #20242D #20242D
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
@@ -54,13 +54,12 @@
      (key3       "#b3f35c")
 
      (keyword    "#92b75c")                    ;#92b75c #96b55f
-     (type       "#9d8dff");                   ;#ae8cf7 #ae9cff #9d8dff #9d8dff #9581FD
-     (func       "#d993f5") ;                  ;#CE8DEC #d993f5 #CE8DEC #e190dd  #d993f5
-     (var        "#B568E6")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #B364F8
-                                        ;#b569e2 #b569e2 #E36264 #B677ED #b569e2 #b569e2
-     (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8
-                                        ;#9d8dff #B364F8
-     (const      "#6da0d6")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff
+     (type       "#a998ff");                   ;#ae8cf7 #ae9cff #9d8dff #9d8dff #9581FD
+     (func       "#ce89ea")       ;#d993f5 #db89e1
+     (var        "#B677ED")             ;#b569e2
+     (builtin    "#a998ff")             ;#9d8dff
+                                        ;#9d8dff
+     (const      "#73b2ef")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff #D45B80 #7eb0e7
      (str        "#61b8ce")             ; #B677ED #61b8ce #61b8ce #76a2d6 #73A4DA
      (str-bg      bg1)
 
@@ -208,7 +207,8 @@
 
     ;; Colors that fill the body the tooltip (main bg and fg)
     `(company-tooltip ((,class
-        (:foreground "#a59ef3" :background "#30374c" ))))
+                        (:foreground "#a59ef3" :background "#2D3345" )))) ;#2B3141
+                                        ;#30374c #272C39
 
     ;; Color that match as you type
     `(company-tooltip-common ((,class
@@ -220,7 +220,8 @@
 
     ;; hl-line for company popup
     `(company-tooltip-selection ((,class
-        (:background ,(color-darken-name "#575f8c" 11) :foreground ,fg3)))) ;,bg3
+                                  (:background "#282D39" :foreground ,fg3))))
+                                        ;,bg3 ,(color-darken-name "#575f8c" 11)
 
     `(company-tooltip-mouse ((,class
         (:inherit highlight))))

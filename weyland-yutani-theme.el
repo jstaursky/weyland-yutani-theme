@@ -60,7 +60,7 @@
      (builtin    "#9a82ff")
                  ;
      (const      "#62a1d7")
-     (str        "#DB8E73")             ;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
+     (str        "#5eb8cf")             ;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
      (str-bg      bg1)                  ;#db8e73 #db8e73
 
      ;; speedbar-separator-face

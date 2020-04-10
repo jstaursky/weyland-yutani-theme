@@ -42,22 +42,23 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#b5b5b5")
+     (fg1        "#b2b2b2")
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#20242D")             ;#202428 #20242D
+     (bg1        "#20242D")
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#89bb52")
-     (type       "#9a82ff")
-     (func       "#CA95F8")
+     (keyword    "#9bbd64")
+     (type       "#9988ff")
+     (func       "#c284f8")
      (var        "#cc6ef2")
      (builtin    "#9a82ff")
+                 ;
      (const      "#62a1d7")
      (str        "#5eb8cf")
      (str-bg      bg1)
@@ -69,8 +70,8 @@
 
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
-     (warning    "#f1cd85")             ;#caa64c
-     ;; #E0C240
+     (warning    "#c8b46a")
+     ;; #E0C240  ;#c8b46a #c5b159 #c8b46a
 
      ;; Colors Generic
      (wy-blue        "#69a#caa64c8d8")
@@ -125,6 +126,9 @@
    `(lsp-face-highlight-read ((,class (:background nil :underline t :bold t))))
    `(lsp-face-highlight-write ((,class (:background nil :underline t :bold t))))
    `(lsp-face-highlight-textual ((,class (:background nil :underline t :bold t))))
+
+
+
 
 
    `(success ((,class (:foreground "#80C617" :bold t))))
@@ -192,6 +196,9 @@
     `(evil-ex-lazy-highlight ((,class
                 (:foreground "#20242D" :background "Violet"))))
 
+    `(org-document-title ((,class (:inherit font-lock-constant-face))))
+    `(org-document-info ((,class (:inherit font-lock-variable-name-face))))
+    `(org-ref-cite-face ((,class (:inherit font-lock-function-name-face))))
 
 
 ;;;;; Company

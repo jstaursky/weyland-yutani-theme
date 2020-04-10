@@ -42,11 +42,11 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#b2b2b2")
+     (fg1        "#afb1b4")             ;#b2b2b2 #b6bac0 #b5b7bc #b4b6b9 #afb1b4
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#20242D")
+     (bg1        (color-lighten-name "#20242D" 1))
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
@@ -55,15 +55,13 @@
 
      (keyword    "#9bbd64")
      (type       "#9988ff")
-     (func       (color-lighten-name "#c284f8" 1))
+     (func       "#c489f8") ; (color-lighten-name "#c284f8" 1)
      (var        "#cc6ef2")
      (builtin    "#9a82ff")
-                 ;
      (const      "#62a1d7")
      (str        "#5eb8cf")             ;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
      (str-bg      bg1)                  ;#db8e73 #db8e73
 
-     ;; speedbar-separator-face
      (err        "#f70108")
      (comment    "#5e7188")
      (comment-bg bg1)

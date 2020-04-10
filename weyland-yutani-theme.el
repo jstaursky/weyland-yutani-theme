@@ -55,13 +55,13 @@
 
      (keyword    "#9bbd64")
      (type       "#9988ff")
-     (func       "#c284f8")
+     (func       (color-lighten-name "#c284f8" 1))
      (var        "#cc6ef2")
      (builtin    "#9a82ff")
                  ;
      (const      "#62a1d7")
-     (str        "#5eb8cf")
-     (str-bg      bg1)
+     (str        "#DB8E73")             ;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
+     (str-bg      bg1)                  ;#db8e73 #db8e73
 
      ;; speedbar-separator-face
      (err        "#f70108")

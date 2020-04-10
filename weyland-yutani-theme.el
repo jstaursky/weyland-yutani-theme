@@ -42,29 +42,24 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#b5b5b5")             ;#b5b5b5 #e1e0e2  <- bright White
+     (fg1        "#b5b5b5")
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#282c39")             ;#202428 #20242D #20242D #262A36
+     (bg1        "#20242D")             ;#202428 #20242D
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (type       "#9d8dff");
-     (keyword    "#96B765")                    ;#92b75c #96b55f #8bbc45 #92b75c #98be65
-     (func       "#D087F7") ; #d36dff #dd90fd #d98af7 #cf91ed
-     ;; #D38DF9
-
-     ; (0.8290493448564258 0.4274509803921567 1.0)
-                                        ;#dc90fb #dc8cff #d28dff
-     (var        "#B677ED")             ;#b569e2 #ca9af1 #c58ff2 #e273dd #ca8aff
-     (builtin    "#9d8dff")             ;#9d8dff #a998ff
-                                        ;#9d8dff
-     (const      "#73b2ef")             ;#76a2d6 #76A1D6 #76a2d6 #9590ff #D45B80 #7eb0e7
-     (str        "#61b8ce")             ; #B677ED #61b8ce #61b8ce #76a2d6 #73A4DA
+     (keyword    "#92b75c")                    ;#92b75c #96b55f
+     (type       "#9d8dff");                   ;#ae8cf7 #ae9cff #9d8dff
+     (func       "#d993f5")             ;#CE8DEC #d993f5 #CE8DEC #e190dd
+     (var        "#b569e2")             ;#b569e2 #ae66ec #B263FC #b569e2 #B364F8 #b569e2
+     (builtin    "#9d8dff")             ;#9d8dff #B364F8 #b569e2 #ae8cf7 #B364F8
+     (const      "#76a2d6")
+     (str        "#61b8ce")
      (str-bg      bg1)
 
      ;; speedbar-separator-face
@@ -74,7 +69,7 @@
 
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
-     (warning    "#F7AF5E")             ;#caa64c #f1cd85
+     (warning    "#f1cd85")             ;#caa64c
      ;; #E0C240
 
      ;; Colors Generic
@@ -211,8 +206,7 @@
 
     ;; Colors that fill the body the tooltip (main bg and fg)
     `(company-tooltip ((,class
-                        (:foreground "#a59ef3" :background "#2D3345" )))) ;#2B3141
-                                        ;#30374c #272C39
+        (:foreground "#a59ef3" :background "#30374c" ))))
 
     ;; Color that match as you type
     `(company-tooltip-common ((,class
@@ -224,8 +218,7 @@
 
     ;; hl-line for company popup
     `(company-tooltip-selection ((,class
-                                  (:background "#282D39" :foreground ,fg3))))
-                                        ;,bg3 ,(color-darken-name "#575f8c" 11)
+        (:background ,(color-darken-name "#575f8c" 11) :foreground ,fg3)))) ;,bg3
 
     `(company-tooltip-mouse ((,class
         (:inherit highlight))))

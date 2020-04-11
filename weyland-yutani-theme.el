@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#222630")             ;(color-lighten-name "#20242D" 1)
+     (bg1        "#222630")
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
@@ -68,13 +68,13 @@
      ;;#db8e73 #db8e73
 
      ;; LOWER SATURATION VERSION
-    (keyword    "#99be5a")
+    (keyword    "#9bbd64")
     (type       "#998ee4")
-    (func       "#bd90e7")
+    (func       "#bd90e8")
     (var        "#c377e3")
     (builtin    "#9889e3")
-    (const      "#5aa2dc")
-    (str        "#60b8cf")
+    (const      "#72a0cc")
+    (str        "#80b4c4")
     (str-bg      bg1)
 
      (err        "#f70108")

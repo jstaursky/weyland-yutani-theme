@@ -46,21 +46,36 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        (color-lighten-name "#20242D" 1))
+     (bg1        "#222630")             ;(color-lighten-name "#20242D" 1)
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#9bbd64")
-     (type       "#9988ff")
-     (func       "#c489f8") ; (color-lighten-name "#c284f8" 1)
-     (var        "#cc6ef2")
-     (builtin    "#9a82ff")
-     (const      "#62a1d7")
-     (str        "#5eb8cf")             ;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
-     (str-bg      bg1)                  ;#db8e73 #db8e73
+     ;; ORIGINAL
+     ;; (keyword    "#9bbd64")
+     ;; (type       "#998de8")
+     ;; (func       "#be8fea")
+     ;; (var        "#c575e7")
+     ;; (builtin    "#998de8")
+     ;; (const      "#62a1d7")
+     ;; (str        "#5eb8cf")
+     ;; (str-bg      bg1)
+
+     ;; Potiential future uses
+     ;;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
+     ;;#db8e73 #db8e73
+
+     ;; LOWER SATURATION VERSION
+    (keyword    "#99be5a")
+    (type       "#998ee4")
+    (func       "#bd90e7")
+    (var        "#c377e3")
+    (builtin    "#9889e3")
+    (const      "#5aa2dc")
+    (str        "#60b8cf")
+    (str-bg      bg1)
 
      (err        "#f70108")
      (comment    "#5e7188")

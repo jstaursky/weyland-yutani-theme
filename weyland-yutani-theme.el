@@ -70,10 +70,10 @@
 
      ;; LOWER SATURATION VERSION
     ;; (keyword    "#9bbd64")
-     (type       "#9990d9")
+     (type       "#9c93da")
     ;; (func       "#bd90e8")
     ;; (var        "#c377e3")
-     (builtin    "#9990d9")
+     (builtin    "#9c93da")
     (const      "#72a0cc")
     (str        "#7ca0ab")              ;#80b4c4 #78a9b8
     (str-bg      "#252B35")

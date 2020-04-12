@@ -55,25 +55,25 @@
      (key3       "#b3f35c")
 
      ;; ORIGINAL
-     ;; (keyword    "#9bbd64")
-     ;; (type       "#998de8")
-     ;; (func       "#be8fea")
-     ;; (var        "#c575e7")
-     ;; (builtin    "#998de8")
+     (keyword    "#9bbd64")
+     (type       "#998de8")
+     (func       "#be8fea")
+     (var        "#c575e7")
+     (builtin    "#998de8")
      ;; (const      "#62a1d7")
      ;; (str        "#5eb8cf")
      ;; (str-bg      bg1)
 
      ;; Potiential future uses
      ;;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574
-     ;;#db8e73 #db8e73
+     ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-    (keyword    "#9bbd64")
-    (type       "#998ee4")
-    (func       "#bd90e8")
-    (var        "#c377e3")
-    (builtin    "#9889e3")
+    ;; (keyword    "#9bbd64")
+    ;; (type       "#998ee4")
+    ;; (func       "#bd90e8")
+    ;; (var        "#c377e3")
+    ;; (builtin    "#9889e3")
     (const      "#72a0cc")
     (str        "#80b4c4")
     (str-bg      bg1)

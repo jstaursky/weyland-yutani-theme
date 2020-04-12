@@ -56,10 +56,10 @@
 
      ;; ORIGINAL
      (keyword    "#9bbd64")
-     (type       "#998de8")
+     ;; (type       "#998de8")
      (func       "#be8fea")
      (var        "#c575e7")
-     (builtin    "#998de8")
+     ;; (builtin    "#998de8")
      ;; (const      "#62a1d7")
      ;; (str        "#5eb8cf")
      ;; (str-bg      bg1)
@@ -70,10 +70,10 @@
 
      ;; LOWER SATURATION VERSION
     ;; (keyword    "#9bbd64")
-    ;; (type       "#998ee4")
+     (type       "#998fde")
     ;; (func       "#bd90e8")
     ;; (var        "#c377e3")
-    ;; (builtin    "#9889e3")
+     (builtin    "#998fde")
     (const      "#72a0cc")
     (str        "#80b4c4")
     (str-bg      bg1)

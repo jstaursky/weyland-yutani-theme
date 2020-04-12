@@ -75,7 +75,7 @@
     ;; (var        "#c377e3")
      (builtin    "#9c93da")
     (const      "#72a0cc")
-    (str        "#7ca0ab")              ;#80b4c4 #78a9b8
+    (str        "#7DA4B0")              ;#80b4c4 #78a9b8 #7ca0ab
     (str-bg      "#252B35")
 
      (err        "#f70108")

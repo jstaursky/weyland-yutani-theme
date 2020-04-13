@@ -55,13 +55,13 @@
      (key3       "#b3f35c")
 
      ;; ORIGINAL
-     ;; (keyword    "#9bbd64")
+;    (keyword    "#94c156")       ;#9bbd64 #92b556 #a1c074 #96b66a #96c457
      ;; (type       "#998de8")
      ;; (func       "#be8fea")             ;#c09aec
      ;; (var        "#c476e5")             ;#c575e7
      ;; (builtin    "#998de8")
      ;; (const      "#62a1d7")
-     ;; (str        "#5eb8cf")
+;    (str        "#c8b46a") ;#5eb8cf
      ;; (str-bg      bg1)
 
      ;; Potiential future uses
@@ -69,13 +69,13 @@
      ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-     (keyword    "#94b45f")             ;Good
-     (type       "#9a86e5")             ;Good #998de8 #6f50b2 #866ec3 #896ad0 #8a68d5
-     (func       "#be8fea")             ;Good #b88cba #ae50b2
-     (var        "#BA6DD6")             ;#ce95e4 #c377e3 #c475e6
-     (builtin    "#9a86e5")             ;Good #9E71FE #e7558e
-     (const      "#72a0cc")             ;Good #449DD1
-     (str        "#50a8b2")             ;Good #50a8b2 #449DD1
+     (keyword    "#94c156")
+     (type       "#A47ADF")
+     (func       "#c98fdd")
+     (var        "#BA6DD6")             ;#f46ba8
+     (builtin    "#A779DB")             ;#d573d2 #a779db
+     (const      "#7A9CC6")             ;#9a84f3
+     (str        "#64acb0")             ;#c8b46a
 
     (str-bg      bg1)                             ;"#252B35"
 

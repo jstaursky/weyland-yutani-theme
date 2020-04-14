@@ -69,13 +69,13 @@
      ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-     (keyword    "#92b556")             ;#94c156
-     (type       "#b786ff")                    ;#A779DB
-     (func       "#CA8CEB")             ;#c98fdd #d191f3 #CC8EED
-     (var        "#ba6dd6")             ;#f46ba8 #58508d #d29ae4 #cb62c5 #c864c7 #c468d7
-     (builtin    "#b786ff")             ;#d573d2 #a779db #ec69be
-     (const      "#6c9ecb")             ;#9a84f3 #7A9CC6
-     (str        "#64acb0")             ;#c8b46a
+     (keyword    "#92af56")
+     (type       "#9d83ff")
+     (func       "#CA8CEB")
+     (var        "#ba6dd6")
+     (builtin    "#9d83ff")
+     (const      "#6c9ecb")
+     (str        "#50b5a3")             ;#c8b46a #64acb0
 
     (str-bg      bg1)                             ;"#252B35"
 

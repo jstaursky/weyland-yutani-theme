@@ -70,10 +70,10 @@
 
      ;; LOWER SATURATION VERSION
      (keyword    "#92b556")             ;#94c156
-     (type       "#9981df")                    ;#A779DB
-     (func       "#D29AE4")             ;#c98fdd
-     (var        "#c468d7")             ;#f46ba8 #58508d #d29ae4 #cb62c5 #c864c7
-     (builtin    "#9981df")             ;#d573d2 #a779db #ec69be
+     (type       "#b786ff")                    ;#A779DB
+     (func       "#CA8CEB")             ;#c98fdd #d191f3 #CC8EED
+     (var        "#ba6dd6")             ;#f46ba8 #58508d #d29ae4 #cb62c5 #c864c7 #c468d7
+     (builtin    "#b786ff")             ;#d573d2 #a779db #ec69be
      (const      "#6c9ecb")             ;#9a84f3 #7A9CC6
      (str        "#64acb0")             ;#c8b46a
 

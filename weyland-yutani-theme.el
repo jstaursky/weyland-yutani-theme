@@ -42,8 +42,9 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#a7a7a7")             ;#b2b2b2 #b6bac0 #acacac
-                                        ;#aeafb0
+     (fg1        "#94a9b3")             ;#b2b2b2 #b6bac0 #acacac #a7a7a7 #abb2bf #A2AAB5
+     ;; #cfd8dc #b0bec5 #A0A7B6 #90a4ae #93A7B1
+
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
@@ -56,7 +57,7 @@
 
      ;; ORIGINAL
 ;    (keyword    "#94c156")       ;#9bbd64 #92b556 #a1c074 #96b66a #96c457
-     ;; (type       "#998de8")
+     ;; (type       "#998de8") #d19a66 #98c379
      ;; (func       "#be8fea")             ;#c09aec
      ;; (var        "#c476e5")             ;#c575e7
      ;; (builtin    "#998de8")
@@ -70,11 +71,12 @@
 
      ;; LOWER SATURATION VERSION
      (keyword    "#92b556")
-     (type       "#9c86f5")
-     (func       "#CA8CEB")
-     (var        "#ba6dd6")             ;#ba6dd6 #B765BA
-     (builtin    "#9c86f5")             ;#9d83ff
-     (const      "#6c9ecb")
+     (type       "#9c88ff")             ;#9c86f5
+     (func       "#ca92eb")             ;#e35772  #CA8CEB #c4b2ff
+     (var        "#c575e7")             ; #ba6dd6
+     (builtin    "#9c88ff")             ; #9c91ff #c8a26a "#c89c6a" #82aaff
+     (const      "#56a8e7")             ; #e382ff  #e39672 #c8b46a #0099e9 #ff9668
+                                        ; #ccb44e #82aaff #62a1d7
      (str        "#64acb0")
 
     (str-bg      bg1)                             ;"#252B35"

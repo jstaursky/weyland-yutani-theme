@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#98a6b2")             ; #a2b0bc
+     (fg1        "#9fadb9")             ; #a2b0bc #98a6b2 #9aa9b5
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
@@ -75,13 +75,13 @@
      ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-     (keyword    "#90b354")                    ;#92b556
+     (keyword    "#91b455")                    ;#92b556
      (type       "#9e8aff")                           ;#9c88ff
-     (func       "#c890e9")                           ;#ca92eb
-     (var        "#c36edd")                    ;#c16cdb
+     (func       "#ca92eb")                           ;#ca92eb
+     (var        "#c46ede")                    ;#c16cdb
      (builtin    "#9e8aff")
-     (const      "#54a7e5")
-     (str        "#62aaae")
+     (const      "#55a8e6")
+     (str        "#63abaf")
 
     (str-bg      bg1)                             ;"#252B35"
 

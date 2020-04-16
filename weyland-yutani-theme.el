@@ -42,8 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#a2b0bc")             ;#acb8c5 #a4b0bd #a8b5c1
-     ;; #94a9b3 #a5b2bf
+     (fg1        "#98a6b2")             ; #a2b0bc
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
@@ -59,24 +58,30 @@
      ;; (type       "#998de8") #d19a66 #98c379
      ;; (func       "#be8fea")             ;#c09aec
      ;; (var        "#c476e5")             ;#c575e7
-     ;; (builtin    "#998de8")
+     ;; (builtin    "#998de8")      
      ;; (const      "#62a1d7")
 ;    (str        "#c8b46a") ;#5eb8cf
      ;; (str-bg      bg1)
+     ;; {"#d074ec", "#54a5e2", "#87a850", "#a58fff", "#c28ce2", "#66afb3"}
+     ;; {"#e580ff", "#b59eff", "#5db5f9", "#95b958", "#d69af9", "#70c0c5"}
+     ;; {"#da7af8", "#58adee", "#ad97ff", "#8eb054", "#cc93ed", "#6bb7bc"}
+     ;; {"#d477f1", "#56a8e7", "#8aab51", "#a892ff", "#c68fe7", "#68b2b6"}
+     ;; {"#ce73ea", "#53a3e0", "#86a64f", "#a38eff", "#c08be0", "#65adb1"}
+     ;; #8eb153 #9e8aff #c890e9 #c46fde #55a8e6 #63abaf
+
 
      ;; Potiential future uses
      ;;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574 #b45f9c
      ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-     (keyword    "#92b556")
-     (type       "#9c88ff")             ;#9c86f5 #C594C5
-     (func       "#ca92eb")             ;#e35772  #CA8CEB #c4b2ff
-     (var        "#c16cdb")             ; #ba6dd6 #c575e7 #c678dd #c578de
-     (builtin    "#9c88ff")             ; #9c91ff #c8a26a "#c89c6a" #82aaff
-     (const      "#56a8e7")             ; #e382ff  #e39672 #c8b46a #0099e9 #ff9668
-                                        ; #ccb44e #82aaff #62a1d7
-     (str        "#64acb0")
+     (keyword    "#90b354")                    ;#92b556
+     (type       "#9e8aff")                           ;#9c88ff
+     (func       "#c890e9")                           ;#ca92eb
+     (var        "#c36edd")                    ;#c16cdb
+     (builtin    "#9e8aff")
+     (const      "#54a7e5")
+     (str        "#62aaae")
 
     (str-bg      bg1)                             ;"#252B35"
 

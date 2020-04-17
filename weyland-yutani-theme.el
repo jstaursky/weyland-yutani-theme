@@ -75,13 +75,13 @@
      ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
 
      ;; LOWER SATURATION VERSION
-     (keyword    "#85B755")                    ;#92b556 #91b455
+     (keyword    "#8EB45B")                    ;#92b556 #91b455 #85B755
      (type       "#9e8aff")                           ;#9c88ff
      (func       "#ca92eb")                           ;#ca92eb
      (var        "#c46ede")                    ;#c16cdb
      (builtin    "#9e8aff")
-     (const      "#55a8e6")
-     (str        "#63abaf")
+     (const      "#4AA8E8")
+     (str        "#3FAFBC")             ;#63abaf
 
     (str-bg      bg1)                             ;"#252B35"
 

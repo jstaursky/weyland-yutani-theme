@@ -53,12 +53,12 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#8EB45B")
-     (type       "#9d8aff")             ;#9e8aff
-     (func       "#ca92eb")
-     (var        "#C268DD")             ;#c46ede
-     (builtin    "#9d8aff")
-     (const      "#4AA8E8")
+     (keyword    "#8eb45d")             ;#8EB45B
+     (type       "#9c90e1")                    ;#9d8aff
+     (func       "#c794e6")                    ;#ca92eb
+     (var        "#c169dc")                    ;#c169dc
+     (builtin    "#9c90e1")             ;#9d8aff
+     (const      "#51a8e5")
      (str        "#3FAFBC")
 
      (str-bg      bg1)                             ;"#252B35"
@@ -66,7 +66,7 @@
      (err        "#f70108")
      (comment    "#5e7188")
      (comment-bg bg1)
-
+     ;; {"#9c90e1", "#c794e6"}
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")             ;#ed73e7
@@ -172,7 +172,7 @@
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
-                                                             ;; "#2B272E"
+                                                             :italic t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

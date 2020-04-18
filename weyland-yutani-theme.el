@@ -54,10 +54,10 @@
      (key3       "#b3f35c")
 
      (keyword    "#8eb45d")             ;#8EB45B
-     (type       "#9c90e1")                    ;#9d8aff
+     (type       "#9d8cf5")                    ;#9d8aff
      (func       "#c794e6")                    ;#ca92eb
      (var        "#c169dc")                    ;#c169dc
-     (builtin    "#9c90e1")             ;#9d8aff
+     (builtin    "#9d8cf5")             ;#9d8aff
      (const      "#51a8e5")
      (str        "#3FAFBC")
 

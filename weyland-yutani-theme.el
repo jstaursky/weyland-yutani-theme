@@ -53,37 +53,15 @@
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     ;; ORIGINAL
-;    (keyword    "#94c156")       ;#9bbd64 #92b556 #a1c074 #96b66a #96c457
-     ;; (type       "#998de8") #d19a66 #98c379
-     ;; (func       "#be8fea")             ;#c09aec
-     ;; (var        "#c476e5")             ;#c575e7
-     ;; (builtin    "#998de8")      
-     ;; (const      "#62a1d7")
-;    (str        "#c8b46a") ;#5eb8cf
-     ;; (str-bg      bg1)
-     ;; {"#d074ec", "#54a5e2", "#87a850", "#a58fff", "#c28ce2", "#66afb3"}
-     ;; {"#e580ff", "#b59eff", "#5db5f9", "#95b958", "#d69af9", "#70c0c5"}
-     ;; {"#da7af8", "#58adee", "#ad97ff", "#8eb054", "#cc93ed", "#6bb7bc"}
-     ;; {"#d477f1", "#56a8e7", "#8aab51", "#a892ff", "#c68fe7", "#68b2b6"}
-     ;; {"#ce73ea", "#53a3e0", "#86a64f", "#a38eff", "#c08be0", "#65adb1"}
-     ;; #8eb153 #9e8aff #c890e9 #c46fde #55a8e6 #63abaf
-
-
-     ;; Potiential future uses
-     ;;#5eb8cf #c8b46a #2d9574 #2aa1ae #2d9574 #b45f9c
-     ;;#db8e73 #db8e73 ;"#ea9eeb" "#e498e5" "#ec9ded" #e498e5
-
-     ;; LOWER SATURATION VERSION
-     (keyword    "#8EB45B")                    ;#92b556 #91b455 #85B755
-     (type       "#9e8aff")                           ;#9c88ff
-     (func       "#ca92eb")                           ;#ca92eb
-     (var        "#c46ede")                    ;#c16cdb
+     (keyword    "#8EB45B")
+     (type       "#9e8aff")
+     (func       "#ca92eb")
+     (var        "#c46ede")
      (builtin    "#9e8aff")
      (const      "#4AA8E8")
-     (str        "#3FAFBC")             ;#63abaf
+     (str        "#3FAFBC")
 
-    (str-bg      bg1)                             ;"#252B35"
+     (str-bg      bg1)                             ;"#252B35"
 
      (err        "#f70108")
      (comment    "#5e7188")
@@ -91,7 +69,7 @@
 
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
-     (warning    "#c8b46a")
+     (warning    "#ee78e8")             ;#ed73e7
      ;; #E0C240  ;#c8b46a #c5b159 #c8b46a
 
      ;; Colors Generic
@@ -194,14 +172,13 @@
     `(font-lock-constant-face ((,class (:foreground ,const ))))
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
-
                                                              ;; "#2B272E"
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var ;:italic t
                                                              ))))
-        `(font-lock-warning-face ((,class (:foreground ,warning))))
+        `(font-lock-warning-face ((,class (:foreground ,warning :bold t))))
 
 
         `(region ((,class (:background ,region-bg :foreground ,region-fg))))
@@ -371,7 +348,7 @@
         `(js3-function-param-face ((,class (:foreground ,key3))))
         `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
         `(js3-instance-member-face ((,class (:foreground ,const))))
-    `(warning ((,class (:foreground ,warning)))) 
+    `(warning ((,class (:foreground ,warning :bold t)))) 
     `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
     `(info-quoted-name ((,class (:foreground ,builtin))))
     `(info-string ((,class (:foreground ,str))))

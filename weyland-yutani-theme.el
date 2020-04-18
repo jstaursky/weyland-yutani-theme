@@ -55,9 +55,9 @@
 
      (keyword    "#8eb45d")             ;#8EB45B
      (type       "#9d8cf5")                    ;#9d8aff
-     (func       "#c794e6")                    ;#ca92eb
-     (var        "#c169dc")                    ;#c169dc
-     (builtin    "#9d8cf5")             ;#9d8aff
+     (func       "#c794e6")                    ;#ca92eb #cc78e1
+     (var        "#cb74e0")                    ;#c169dc #c46ede
+     (builtin    "#9d8cf5")             ;#9d8aff #bc6ec5 #c87ae1
      (const      "#51a8e5")
      (str        "#3FAFBC")
 
@@ -173,6 +173,7 @@
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
                                                              :italic t
+                                                             :bold t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

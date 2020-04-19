@@ -60,6 +60,7 @@
      (builtin    "#9B88F7")                    ;#9b88f7
      (const      "#51a8e5")
      (str        "#3FAFBC")
+     (str-bg     bg1)
 
      (err        "#f70108")
      (comment    "#5e7188")

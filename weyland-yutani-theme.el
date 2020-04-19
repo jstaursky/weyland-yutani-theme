@@ -54,12 +54,31 @@
      (key3       "#b3f35c")
 
      (keyword    "#8eb45d")             ;#8EB45B
-     (type       "#9d8cf5")                    ;#9d8aff
+     (type       "#9B88F7")                    ;#9d8aff
      (func       "#c794e6")                    ;#ca92eb #cc78e1
      (var        "#cb74e0")                    ;#c169dc #c46ede
-     (builtin    "#9d8cf5")             ;#9d8aff #bc6ec5 #c87ae1
+     (builtin    "#9B88F7")                    ;#9b88f7
      (const      "#51a8e5")
      (str        "#3FAFBC")
+
+;;  SOLARIZED HEX     16/8
+;; --------- ------- ----
+;; base03    #002b36  8/4
+;; base02    #073642  0/4
+;; base01    #586e75 10/7
+;; base00    #657b83 11/7
+;; base0     #839496 12/6
+;; base1     #93a1a1 14/4
+;; base2     #eee8d5  7/7
+;; base3     #fdf6e3 15/7
+;; yellow    #b58900  3/3
+;; orange    #cb4b16  9/3
+;; red       #dc322f  1/1
+;; magenta   #d33682  5/5
+;; violet    #6c71c4 13/5
+;; blue      #268bd2  4/4
+;; cyan      #2aa198  6/6
+;; green     #859900  2/2
 
      (str-bg      bg1)                             ;"#252B35"
 

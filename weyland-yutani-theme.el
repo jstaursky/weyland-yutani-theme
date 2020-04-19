@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#222630")             ;#222630
+     (bg1        "#282c34")             ;#222630 #282C34 #282c34
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")

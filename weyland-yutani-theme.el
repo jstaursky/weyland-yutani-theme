@@ -61,27 +61,6 @@
      (const      "#51a8e5")
      (str        "#3FAFBC")
 
-;;  SOLARIZED HEX     16/8
-;; --------- ------- ----
-;; base03    #002b36  8/4
-;; base02    #073642  0/4
-;; base01    #586e75 10/7
-;; base00    #657b83 11/7
-;; base0     #839496 12/6
-;; base1     #93a1a1 14/4
-;; base2     #eee8d5  7/7
-;; base3     #fdf6e3 15/7
-;; yellow    #b58900  3/3
-;; orange    #cb4b16  9/3
-;; red       #dc322f  1/1
-;; magenta   #d33682  5/5
-;; violet    #6c71c4 13/5
-;; blue      #268bd2  4/4
-;; cyan      #2aa198  6/6
-;; green     #859900  2/2
-
-     (str-bg      bg1)                             ;"#252B35"
-
      (err        "#f70108")
      (comment    "#5e7188")
      (comment-bg bg1)

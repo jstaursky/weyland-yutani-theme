@@ -46,7 +46,7 @@
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#282c34")             ;#222630 #282C34 #282c34
+     (bg1        "#232830")             ;#222630 #282C34 #282c34
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
@@ -55,9 +55,9 @@
 
      (keyword    "#94ba61")             ;#8EB45B #8eb45d
      (type       "#9885f4")                    ;#9d8aff
-     (func       "#c792ea")                    ;#ca92eb #cc78e1 #c794e6
-     (var        "#cb74e0")                    ;#c169dc #c46ede #c792ea
-     (builtin    "#9885f4")                    ;#9b88f7
+     (func       "#c792ea")                    ;#ca92eb #cc78e1 #c794e6 "#ba62ce"
+     (var        "#ca66de")                    ;#c169dc #c46ede #c792ea #cb74e0 #C678DD
+     (builtin    "#9885f4")                    ;#9b88f7 "#959df0"
      (const      "#54b1f1")                    ;#ABB2BF
      (str        "#2ca2af")
      (str-bg        bg1)
@@ -173,7 +173,7 @@
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
                     ;                                        :italic t
-                                                            :bold t
+                                                           ;:bold t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

@@ -55,10 +55,10 @@
 
      (keyword    "#94ba61")             ;#8EB45B #8eb45d
      (type       "#9885f4")                    ;#9d8aff
-     (func       "#ce9bed")                    ;#ca92eb #cc78e1 #c794e6
-     (var        "#cb74e0")                    ;#c169dc #c46ede
+     (func       "#c792ea")                    ;#ca92eb #cc78e1 #c794e6
+     (var        "#cb74e0")                    ;#c169dc #c46ede #c792ea
      (builtin    "#9885f4")                    ;#9b88f7
-     (const      "#54b1f1")
+     (const      "#54b1f1")                    ;#ABB2BF
      (str        "#2ca2af")
      (str-bg        bg1)
 
@@ -173,7 +173,7 @@
         `(font-lock-doc-face ((,class (:foreground ,comment))))
         `(font-lock-function-name-face ((,class (:foreground ,func
                     ;                                        :italic t
-                    ;                                        :bold t
+                                                            :bold t
                                                              ))))                                                   ;:bold t
         `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
         `(font-lock-type-face ((,class (:foreground ,type ))))

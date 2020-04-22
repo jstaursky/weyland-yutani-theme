@@ -42,25 +42,59 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#a0aeba")             ; #a2b0bc #98a6b2 #9aa9b5 #9fadb9
-     (fg2        "#b3c1c9")
+     (fg1        "#ACB6C3")             ; #a2b0bc #98a6b2 #9aa9b5 #9fadb9
+     (fg2        "#b3c1c9")             ;#a0aeba #9fadb9 #b9c0cd
      (fg3        "#9babb7")
      (fg4        "#8694a5")
-     (bg1        "#232830")             ;#222630 #282C34 #282c34
-     (bg2        (color-lighten-name bg1 3))
+     (bg1        "#232830")             ;#222630 #282C34 #282c34 #232830 #252B3C
+     (bg2        (color-lighten-name bg1 3)) ;#4b2332 #222732
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#c8ef62")
      (key3       "#b3f35c")
 
-     (keyword    "#94ba61")             ;#8EB45B #8eb45d
-     (type       "#9885f4")                    ;#9d8aff
-     (func       "#c792ea")                    ;#ca92eb #cc78e1 #c794e6 "#ba62ce"
-     (var        "#ca66de")                    ;#c169dc #c46ede #c792ea #cb74e0 #C678DD
-     (builtin    "#9885f4")                    ;#9b88f7 "#959df0"
-     (const      "#54b1f1")                    ;#ABB2BF
-     (str        "#2ca2af")
+     (keyword    "#95bb62")             ;#8EB45B #8eb45d
+     (type       "#9683f2")                    ;#9d8aff
+     (func       "#ca95ed")                    ;#ca92eb #cc78e1 #c794e6 "#ba62ce"
+     (var        "#cd69e1")                    ;#c169dc #c46ede #c792ea #cb74e0 #cd69e1
+     (builtin    "#9683f2")                    ;#9b88f7 "#959df0"
+     (const      "#54b2f2")                    ;#54b2f2
+     ;; #008ed2
+     (str        "#29a1ae")
      (str-bg        bg1)
+
+     ;; Gold #A4A460
+     ;; Red  #E56399
+     ;; Yellow #F2B880
+     ;; Orange #E08D79
+
+;; "#95bb62", "#b6a1ff", "#d19bf4", "#ef88ff", "#5db9fa", "#51c0cd", \
+;; "#9683f2",
+;; "#ca95ed"
+;; "#29a1ae", "#8b929e", "#8fb45c", "#af9aff", , "#e782fb", \
+;; "#55b3f3", "#49b9c6", "#a3aab6", "#779c46", "#9683f2", "#b17dd3", \
+;; "#cd69e1", "#369bd9", "#29a1ae", "#8b929e", "#8eb35b", "#ae99ff", \
+;; "#c994ec", "#e681fa", "#54b2f2", "#48b8c5", "#a2a9b5", "#779c46", \
+;; "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", "#8b929e", \
+;; "#a5cb71", "#c7b1ff", "#e1abff", "#ff98ff", "#70c9ff", "#64d0dd", \
+;; "#b9c0cd"}
+
+
+     ;; "#94ba61", "#b59fff", "#cf9af2", "#ed87ff", "#5cb8f8", "#50becb", \
+     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", \
+     ;; "#8fb45c", "#af9aff", "#ca95ed", "#e782fb", "#55b3f3", "#49b9c6", \
+     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", \
+     ;; "#8eb35b", "#ae99ff", "#c994ec", "#e681fa", "#54b2f2", "#48b8c5", \
+     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae"}
+
+
+
+     ;; ;; "#90b65d", "#b09cff", "#cb96ee", "#e983fd", "#58b4f4", "#4cbac7", \
+     ;;    "#779d46", "#9683f2", "#b17dd4", "#ce6ae2", "#379bda", "#2aa1ae", \
+     ;;    "#8eb45b", "#af9aff", "#c994ec", "#e781fb", "#55b2f2", "#49b8c5", \
+     ;;    "#779c45", "#9683f2", "#b17dd3", "#cd69e1", "#369ad9", "#29a0ad", \
+     ;;    "#8eb45c", "#af9aff", "#c994ed", "#e781fb", "#56b2f2", "#4ab9c6", \
+     ;;    "#779d46", "#9683f2", "#b17dd4", "#ce6ae2", "#379bd9", "#2aa1ae"}
 
 
      (err        "#f70108")

@@ -212,7 +212,7 @@
         `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var ;:italic t
                                                              ))))
-        `(font-lock-warning-face ((,class (:foreground ,warning :bold t))))
+        `(font-lock-warning-face ((,class (:foreground ,warning ))))
 
 
         `(region ((,class (:background ,region-bg :foreground ,region-fg))))

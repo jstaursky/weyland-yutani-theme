@@ -1,15 +1,28 @@
-# weyland-yutani-theme
-An emacs theme based on the Alien movie franchise.
-Essentially the lovechild of spacemacs + doom-one themes.
+<h3 align="center">Weyland Yutani Emacs Theme</h3>
+<hr/>
 
-![Image of theme](screenshot.png)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/120px-EmacsIcon.svg.png" />
+</p>
 
-![Image of theme](completion-popup.png)
+<p align="center">
+<img src="./egg-screenshot.png" width=1900>
 
-![Image of theme](screenshot-elisp.png)
+</p>
 
-![Image of theme](screenshot-c-lang.png)
+<br/>
 
-### About theme
-This theme was created with help of emacs-theme-generator, https://github.com/mswift42/theme-creator.
-Additional faces that are missed by the theme generator I have patched in myself.
+<p align="center">An emacs theme based on the Alien movie franchise.</p>
+
+### Loading the theme:
+
+
+Download `weyland-yutani-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
+
+```
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+# or 
+(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+
+(load-theme `weyland-yutani t)
+```

@@ -2,11 +2,7 @@
 <hr/>
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/120px-EmacsIcon.svg.png" />
-</p>
-
-<p align="center">
-<img src="./egg-screenshot.png" width=1900>
+<img src="./egg-screenshot.png"> <!--  width=1900 -->
 
 </p>
 

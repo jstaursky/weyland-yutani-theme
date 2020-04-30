@@ -55,8 +55,8 @@
 
      (keyword    "#95bb62")
      (type       "#9683f2")
-     (func       "#ca95ed")
-     (var        "#be6eda")                    ;#c171dd
+     (func       "#ca96ed")
+     (var        "#be6eda")
      (builtin    "#9683f2")
      (const      "#54b2f2")
      (str        "#29a1ae")

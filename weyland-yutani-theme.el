@@ -53,13 +53,13 @@
      (key2       "#bbe074")             ;#cce40c #c8ef62
      (key3       "#b3f35c")
 
-     (keyword    "#95bb62")
-     (type       "#9683f2")
-     (func       "#ca96ed")
+     (keyword    "#95b768")
+     (type       "#8f80f6")             ;#9683f2
+     (func       "#bba0ef")             ;#ca96ed #bba0ef
      (var        "#C071DC")             ;#c171dd
-     (builtin    "#9683f2")
-     (const      "#54b2f2")
-     (str        "#29a1ae")
+     (builtin    "#8f80f6")
+     (const      "#67b5ef")
+     (str        "#469faa")
      (str-bg        bg1)
 
      ;; Gold #A4A460

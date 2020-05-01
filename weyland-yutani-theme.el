@@ -53,7 +53,7 @@
      (key2       "#bbe074")             ;#cce40c #c8ef62
      (key3       "#b3f35c")
 
-     (keyword    "#95b768")
+     (keyword    "#94b768")
      (type       "#8f80f6")             ;#9683f2
      (func       "#bba0ef")             ;#ca96ed #bba0ef
      (var        "#C071DC")             ;#c171dd

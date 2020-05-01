@@ -42,22 +42,22 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#acb3bc")             ;#A9B4C1
+     (fg1        "#A9B4C1")             ;#A9B4C1 #acb3bc
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
-     (fg4        "#8694a5")             ;#21262e #22272f
-     (bg1        "#232830")             ;#222630 #282C34 #282c34 #232830 #252B3C
+     (fg4        "#8694a5")             ;#21262e #22272f #232830
+     (bg1        "#272b30")             ;#222630 #282C34 #282c34 #232830 #252B3C
      (bg2        (color-lighten-name bg1 3)) ;#4b2332 #222732 #232830
      (bg3        (color-lighten-name bg2 3))
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;#cce40c #c8ef62
      (key3       "#b3f35c")
 
-     (keyword    "#94b768")
-     (type       "#8f80f6")             ;#9683f2
+     (keyword    "#95bb62")             ;#94b768
+     (type       "#8f80fa")             ;#9683f2 #8f80f6
      (func       "#bba0ef")             ;#ca96ed #bba0ef
-     (var        "#C071DC")             ;#c171dd
-     (builtin    "#8f80f6")
+     (var        "#c372de")             ;#c171dd #C071DC
+     (builtin    "#8f80fa")
      (const      "#67b5ef")
      (str        "#469faa")
      (str-bg        bg1)

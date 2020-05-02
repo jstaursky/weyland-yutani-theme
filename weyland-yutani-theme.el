@@ -53,17 +53,17 @@
      (key2       "#bbe074")             ;#cce40c #c8ef62
      (key3       "#b3f35c")
 
-     (keyword    "#95bb62")
-     (type       "#9683f2")
-     (func       "#ca95ed")
-     (var        "#c171dd")
-     (builtin    "#9683f2")
+     (keyword    "#8fc066")             ;#96c171 #95bb62 #a5b561 #95bb62 #8fc066 #92bc6e
+     (type       "#8b85f7")             ;#817bf7 #958FF7 #8c85f6 #8c85f6
+     (func       "#c1a4ff")             ;#b996ff #c9b1ff #c1a4ff
+     (var        "#cd74eb")             ;#c965e9 #d182ed #cd74eb
+     (builtin    "#958FF7")
      (const      "#54b2f2")
      (str        "#29a1ae")
      (str-bg        bg1)
 
 
-     ;; Gold #A4A460
+     ;; Gold #A4A460 "#cab2fe" #a1c97f
      ;; Red  #E56399
      ;; Yellow #F2B880
      ;; Orange #E08D79

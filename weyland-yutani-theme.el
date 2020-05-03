@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
                                         ;; Alternatives
-     (fg1        "#b4b7c6")             ;#A9B4C1 #acb3bc #A9B4C1
+     (fg1        "#a9b4c1")             ;#A9B4C1 #acb3bc #A9B4C1
      (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")             ;#21262e #22272f #232830

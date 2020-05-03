@@ -53,7 +53,8 @@
      (key2       "#bbe074")             ;#cce40c #c8ef62
      (key3       "#b3f35c")
 
-     (keyword    "#95bb62")             ;#96c171 #95bb62 #a5b561 #95bb62 #8fc066 #92bc6e
+     (keyword    "#85b65c")             ;#96c171 #95bb62 #a5b561 #95bb62 #8fc066
+                                        ;#92bc6e  #95bb62 #85b65c
      (type       "#8c85f6")             ;#817bf7 #958FF7 #8c85f6 #8c85f6
      (func       "#c894ec")             ;#b996ff #c9b1ff #c1a4ff #ca95ed #c894ec
      (var        "#d160d0")             ;#c965e9 #d182ed #cd74eb #cd74eb
@@ -69,7 +70,7 @@
      ;; Orange #E08D79
 
 ;; "#95bb62", "#b6a1ff", "#d19bf4", "#ef88ff", "#5db9fa", "#51c0cd", \
-;; "#9683f2",
+     ;; "#9683f2",  #f084c0   #85b65c
 ;; "#ca95ed"
 ;; "#29a1ae", "#8b929e", "#8fb45c", "#af9aff", , "#e782fb", \
 ;; "#55b3f3", "#49b9c6", "#a3aab6", "#779c46", "#9683f2", "#b17dd3", \

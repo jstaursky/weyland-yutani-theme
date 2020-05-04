@@ -55,11 +55,11 @@
 
      (keyword    "#85b65c")             ;#96c171 #95bb62 #a5b561 #95bb62 #8fc066
                                         ;#92bc6e  #95bb62 #85b65c
-     (type       "#8c85f6")             ;#817bf7 #958FF7 #8c85f6 #8c85f6
-     (func       "#d182ed")             ;#b996ff #c9b1ff #c1a4ff #ca95ed #c894ec
-     (var        "#d160d0")             ;#c965e9 #d182ed #cd74eb #cd74eb #c894ec
-     (builtin    "#8c85f6") ;#958FF7 #8b85f7 {"#71b13f", "#85ad33",
-     (const      "#54b2f2")
+     (type       "#9182ed")             ;#817bf7 #958FF7 #8c85f6 #8c85f6
+     (func       "#d182ed")                    ;#d182ed
+     (var        "#bba06b")             ;#b572d4
+     (builtin    "#9c84f2")
+     (const      "#54b2f2") ;#bba06b
      (str        "#29a1ae")
      (str-bg        bg1)
 

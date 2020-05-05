@@ -43,9 +43,10 @@
     ((class '((class color) (min-colors 89)))
 
      (fg1        "#A9B4C1")
-     (fg2        "#b3c1c9")
-     (fg3        "#9babb7")
-     (fg4        "#8694a5")
+     (fg2        (color-lighten-name fg1 3))
+     (fg3        (color-darken-name  fg1 3))
+     (fg4        (color-darken-name  fg1 6))
+
      (bg1        "#232830")
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
@@ -53,11 +54,11 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#95bb62")
-     (type       "#9683f2")
-     (func       (color-lighten-name "#c171dd" 6))
-     (var        (color-darken-name  "#c171dd" 0))
-     (builtin    "#9683f2")
+     (keyword    "#99be69")
+     (type       "#9684f2")
+     (func       "#cc8ae3")
+     (var        "#bc6fd6")
+     (builtin    "#9684f2")
      (const      "#54b2f2")
      (negate     "#c5b159")
      (str        "#29a1ae")
@@ -128,6 +129,56 @@
    `(highlight                     ((,class  (:foreground  ,region-fg :background ,region-bg))))
    `(hl-line                       ((,class  (:background  ,bg2))))
    `(region                        ((,class  (:background  ,region-bg :foreground ,region-fg))))
+
+   `(whitespace-space ((,class ( :foreground ,(color-lighten-name bg1 10)))))
+   `(whitespace-trailing ((,class ( :foreground ,keyword))))
+
+
+
+   ;; Magit
+   `(magit-section-heading        ((,class (:foreground ,keyword :weight bold))))
+   `(magit-section-highlight      ((,class (:background ,bg2))))
+
+   `(magit-diff-context-highlight ((,class (:background "#434156" :foreground "#b0adc6"))))
+
+;  `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,fg3))))
+
+   `(magit-diff-added-highlight
+     ((,class (:background "#2f4436"  :foreground "#80c544" :bold nil))))
+
+   `(magit-diffstat-added   ((,class (:foreground ,type))))
+
+   `(magit-diff-removed-highlight
+     ((,class (:background "#372726"  :foreground "#f47073" :bold nil)))) ;#372726 #fe5d62
+
+   `(magit-diffstat-removed ((,class (:foreground ,var))))
+
+   `(magit-diff-hunk-heading-highlight ((,class (:foreground ,bg1 :background "#6f6d8f" ))))
+
+   `(magit-diff-hunk-heading ((,class (:foreground ,bg1 :background "#a59ef3" ))))
+
+   `(diff-header ((,class (:foreground "#46D9FF" ))))
+
+   `(diff-indicator-added ((,class (:foreground "#22aa22" ))))
+   
+   `(diff-added ((,class (:background ,bg1 :foreground ,keyword))))
+
+   `(magit-diff-whitespace-warning ((,class (:inherit font-lock-warning-face))))
+
+   
+   
+
+   ;; `(magit-process-ng ((,class (:foreground ,warning :weight bold))))
+
+
+
+   ;; `(magit-process-ok ((,class (:foreground ,func :weight bold))))
+   ;; `(magit-branch ((,class (:foreground ,const :weight bold))))
+   ;; `(magit-log-author ((,class (:foreground ,fg3))))
+   ;; `(magit-hash ((,class (:foreground ,fg2))))
+   ;; `(magit-diff-file-header ((,class (:foreground ,fg2 :background ,bg3))))
+
+
 
    ;; Flycheck
    `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))
@@ -392,21 +443,6 @@
 
 
 
-
-        `(magit-item-highlight ((,class :background ,bg3)))
-        `(magit-section-heading        ((,class (:foreground ,keyword :weight bold))))
-        `(magit-hunk-heading           ((,class (:background ,bg3))))
-        `(magit-section-highlight      ((,class (:background ,bg2))))
-        `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
-        `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,fg3))))
-        `(magit-diffstat-added   ((,class (:foreground ,type))))
-        `(magit-diffstat-removed ((,class (:foreground ,var))))
-        `(magit-process-ok ((,class (:foreground ,func :weight bold))))
-        `(magit-process-ng ((,class (:foreground ,warning :weight bold))))
-        `(magit-branch ((,class (:foreground ,const :weight bold))))
-        `(magit-log-author ((,class (:foreground ,fg3))))
-        `(magit-hash ((,class (:foreground ,fg2))))
-        `(magit-diff-file-header ((,class (:foreground ,fg2 :background ,bg3))))
         `(lazy-highlight ((,class (:foreground ,fg2 :background ,bg3))))
         `(term ((,class (:foreground ,fg1 :background ,bg1))))
         `(term-color-black ((,class (:foreground ,bg3 :background ,bg3))))

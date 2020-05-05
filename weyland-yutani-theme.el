@@ -41,9 +41,9 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-                                        ;; Alternatives
-     (fg1        "#A9B4C1")             ; #a2b0bc #98a6b2 #9aa9b5 #9fadb9
-     (fg2        "#b3c1c9")             ;#a0aeba #9fadb9 #b9c0cd #ACB6C3
+
+     (fg1        "#A9B4C1")
+     (fg2        "#b3c1c9")
      (fg3        "#9babb7")
      (fg4        "#8694a5")
      (bg1        "#232830")
@@ -56,78 +56,33 @@
      (keyword    "#95bb62")
      (type       "#9683f2")
      (func       (color-lighten-name "#c171dd" 6))
-     (var        (color-darken-name "#c171dd" 0))
+     (var        (color-darken-name  "#c171dd" 0))
      (builtin    "#9683f2")
      (const      "#54b2f2")
+     (negate     "#c5b159")
      (str        "#29a1ae")
-     (str-bg        bg1)
+     (num        "#e974c7")
+     (err        "#f70108")
+     (comment    "#5e7188")
+     (region-bg  "#30374c")
+     (region-fg  "#a59ef3")
+     (warning    "#ee78e8")
 
      ;; Gold #A4A460 "#cab2fe" #a1c97f
      ;; Red  #E56399
      ;; Yellow #F2B880
      ;; Orange #E08D79
 
-;; "#95bb62", "#b6a1ff", "#d19bf4", "#ef88ff", "#5db9fa", "#51c0cd", \
-     ;; "#9683f2",  #f084c0   #85b65c
-;; "#ca95ed"
-;; "#29a1ae", "#8b929e", "#8fb45c", "#af9aff", , "#e782fb", \
-;; "#55b3f3", "#49b9c6", "#a3aab6", "#779c46", "#9683f2", "#b17dd3", \
-;; "#cd69e1", "#369bd9", "#29a1ae", "#8b929e", "#8eb35b", "#ae99ff", \
-;; "#c994ec", "#e681fa", "#54b2f2", "#48b8c5", "#a2a9b5", "#779c46", \
-;; "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", "#8b929e", \
-;; "#a5cb71", "#c7b1ff", "#e1abff", "#ff98ff", "#70c9ff", "#64d0dd", \
-;; "#b9c0cd"}
-
-
-     ;; "#94ba61", "#b59fff", "#cf9af2", "#ed87ff", "#5cb8f8", "#50becb", \
-     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", \
-     ;; "#8fb45c", "#af9aff", "#ca95ed", "#e782fb", "#55b3f3", "#49b9c6", \
-     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae", \
-     ;; "#8eb35b", "#ae99ff", "#c994ec", "#e681fa", "#54b2f2", "#48b8c5", \
-     ;; "#779c46", "#9683f2", "#b17dd3", "#cd69e1", "#369bd9", "#29a1ae"}
-
-
-
-     ;; ;; "#90b65d", "#b09cff", "#cb96ee", "#e983fd", "#58b4f4", "#4cbac7", \
-     ;;    "#779d46", "#9683f2", "#b17dd4", "#ce6ae2", "#379bda", "#2aa1ae", \
-     ;;    "#8eb45b", "#af9aff", "#c994ec", "#e781fb", "#55b2f2", "#49b8c5", \
-     ;;    "#779c45", "#9683f2", "#b17dd3", "#cd69e1", "#369ad9", "#29a0ad", \
-     ;;    "#8eb45c", "#af9aff", "#c994ed", "#e781fb", "#56b2f2", "#4ab9c6", \
-     ;;    "#779d46", "#9683f2", "#b17dd4", "#ce6ae2", "#379bd9", "#2aa1ae"}
-
-
-     (err        "#f70108")
-     (comment    "#5e7188")
-     (comment-bg bg1)
-     ;; {"#9c90e1", "#c794e6"}
-     (region-bg  "#30374c")
-     (region-fg  "#a59ef3")
-     (warning    "#ee78e8")             ;#ed73e7
-     ;; #E0C240  ;#c8b46a #c5b159 #c8b46a
 
      ;; Colors Generic
-     (wy-blue        "#69a#caa64c8d8")
-     (wy-light-blue  "#54c2cf")
+     (wy-Blue      const)
+     (wy-Purple    func)
+     (wy-Magenta   warning)
+     (wy-Magenta1  (color-lighten-name  wy-Magenta  3))
+     (wy-Violet    region-fg)
+     (wy-Violet1   (color-lighten-name  wy-Violet   3))
+     (wy-Green     keyword)
 
-
-     (wy-pink        "#ed73e7")
-
-     (wy-purple      "#bf83ff")
-
-     (wy-violet       "#c789ed")
-
-     (wy-light-violet-01 "#bcaeff")
-     (wy-violet-02       "#AC8DE5")
-     (wy-violet-03       "#d196f5")
-     (wy-violet-04       "#bb70e0")
-
-
-     (wy-violet-red   "#f33380")
-     (wy-violet-dark  "#BB6DD1")
-
-
-
-     (wy-green-01    "#9ccc65")
      (wy-green-02    "#b3f35c")
 
      (wy-red         "#fe5d62")
@@ -153,7 +108,42 @@
 
      )
    (custom-theme-set-faces 'weyland-yutani
-   `(default ((,class (:background ,bg1 :foreground ,fg1))))
+   ;; Essentials
+   `(default                       ((,class  (:background  ,bg1 :foreground ,fg1))))
+   `(cursor                        ((,class  (:background  ,fg1))))
+   `(font-lock-warning-face        ((,class  (:foreground  ,warning))))
+   `(font-lock-function-name-face  ((,class  (:foreground  ,func))))
+   `(font-lock-variable-name-face  ((,class  (:foreground  ,var))))
+   `(font-lock-keyword-face        ((,class  (:foreground  ,keyword))))
+   `(font-lock-comment-face        ((,class  (:foreground  ,comment))))
+   `(font-lock-type-face           ((,class  (:foreground  ,type))))
+   `(font-lock-constant-face       ((,class  (:foreground  ,const))))
+   `(font-lock-builtin-face        ((,class  (:foreground  ,builtin))))
+   ;; `(font-lock-preprocessor-face ((,class (:foreground ,builtin))))  ;TODO
+   `(font-lock-string-face         ((,class  (:foreground  ,str))))
+   `(font-lock-doc-face            ((,class  (:foreground  ,comment)))) ;TODO
+   `(font-lock-negation-char-face  ((,class  (:foreground  ,negate))))
+   `(fringe                        ((,class  (:background  ,bg2 :foreground ,fg4))))
+   `(highlight-numbers-number      ((,class  (:foreground  ,num :bold t))))
+   `(highlight                     ((,class  (:foreground  ,region-fg :background ,region-bg))))
+   `(hl-line                       ((,class  (:background  ,bg2))))
+   `(region                        ((,class  (:background  ,region-bg :foreground ,region-fg))))
+
+   ;; Flycheck
+   `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))
+
+   `(flycheck-error
+     ((,(append '((supports :underline (:style line))) class)
+       (:underline (:style line :color ,err)))
+      (,class (:foreground ,bg4 :background ,err :inherit bold :underline t))))
+   `(flycheck-fringe-error ((,class (:foreground ,wy-red))))
+
+
+
+
+
+
+
 
    `(lsp-face-highlight-read ((,class (:background nil :underline t :bold t))))
    `(lsp-face-highlight-write ((,class (:background nil :underline t :bold t))))
@@ -166,62 +156,21 @@
    `(success ((,class (:foreground "#80C617" :bold t))))
 
 
-   `(font-lock-comment-face
-     ((,class (:foreground ,comment
-               :background
-               ,(when weyland-yutani-theme-comment-bg comment-bg)))))
-
    `(which-key-command-description-face ((,class (:foreground ,func :background nil))))
 
 
-   `(font-lock-string-face ((,class (:foreground ,str :background ,str-bg))))
+
 
    `(vertical-border ((,class (:foreground ,wy-window-border))))
 
-   `(dired-perm-write ((,class (:foreground ,wy-purple))))
+   `(dired-perm-write ((,class (:foreground ,wy-Purple))))
 
 
 
 
-   `(highlight-numbers-number ((,class (:foreground "#e974c7" :bold t)))) ;#e58241 #FA572A
-                                        ;#859B09 #048B5C #859B09 #B3D723 #C9D41E #87b61c
-                                        ;#F35C5A #E66343 #cbd415 #B9CE1B #bbcc56
-
-                                        ; #EE8EF7
-;;;;; flycheck
-   `(flycheck-warning ((,class (:underline (:color ,wy-orange :style line) ))))
 
 
-   `(flycheck-error
-     ((,(append '((supports :underline (:style line))) class)
-       (:underline (:style line :color ,err)))
-      (,class (:foreground ,bg4 :background ,err :inherit bold :underline t))))
-   `(flycheck-fringe-error ((,class (:foreground ,wy-red))))
 
-
-   `(font-lock-builtin-face ((,class (:foreground ,builtin))))
-    `(font-lock-negation-char-face ((,class (:foreground ,wy-yellow))))
-    `(font-lock-reference-face ((,class (:foreground ,const))))
-    `(font-lock-constant-face ((,class (:foreground ,const ))))
-        `(font-lock-doc-face ((,class (:foreground ,comment))))
-        `(font-lock-function-name-face ((,class (:foreground ,func
-                    ;                                        :italic t
-                                                           ;:bold t
-                                                             ))))                                                   ;:bold t
-        `(font-lock-keyword-face ((,class (:foreground ,keyword )))) ;:bold t
-        `(font-lock-type-face ((,class (:foreground ,type ))))
-        `(font-lock-variable-name-face ((,class (:foreground ,var ;:italic t
-                                                             ;:bold t
-                                                             ))))
-        `(font-lock-warning-face ((,class (:foreground ,warning ))))
-
-
-        `(region ((,class (:background ,region-bg :foreground ,region-fg))))
-
-        `(highlight ((,class (:foreground "#a59ef3" :background "#2d324c"))))
-    `(hl-line ((,class (:background  ,bg2))))
-    `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
-    `(cursor ((,class (:background ,fg1))))
 
     `(which-func ((,class (:foreground ,wy-green-02))))
 
@@ -307,8 +256,8 @@
 
 ;   `(smerge-mine ((,class (:background ,red-bg))))
 ;   `(smerge-other ((,class (:background ,green-bg))))
-    `(smerge-refined-added ((,class (:background ,green-bg-s :foreground ,wy-green-01))))
-    `(smerge-refined-changed ((,class (:background ,blue-bg-s :foreground ,wy-blue))))
+    `(smerge-refined-added ((,class (:background ,green-bg-s :foreground ,wy-Green))))
+    `(smerge-refined-changed ((,class (:background ,blue-bg-s :foreground ,wy-Blue))))
     `(smerge-refined-removed ((,class (:background ,red-bg-s :foreground ,wy-red))))
 
     `(smerge-upper ((,class (:background  ,red-bg)))) ;"#5f2c2e" ,red-bg-s "#331e3b"
@@ -329,10 +278,10 @@
     `(org-code ((,class (:foreground ,fg2))))
     `(org-verbatim ((,class (:foreground "#96c457"))))
     `(org-hide ((,class (:foreground ,fg4))))
-    `(org-level-1 ((,class (:bold t :foreground ,wy-light-violet-01 :height 1.3))))
-    `(org-level-2 ((,class (:bold nil :foreground ,wy-violet-02 :height 1.2))))
-        `(org-level-3 ((,class (:bold t :foreground ,wy-violet-03 :height 1.1))))
-        `(org-level-4 ((,class (:bold nil :foreground ,wy-violet-04 :height 1.0))))
+    `(org-level-1 ((,class (:bold t :foreground ,wy-Violet :height 1.3))))
+    `(org-level-2 ((,class (:bold nil :foreground ,wy-Violet1 :height 1.2))))
+        `(org-level-3 ((,class (:bold t :foreground ,wy-Magenta :height 1.1))))
+        `(org-level-4 ((,class (:bold nil :foreground ,wy-Magenta1 :height 1.0))))
         `(org-date ((,class (:underline t :foreground ,var) )))
         `(org-footnote  ((,class (:underline t :foreground ,fg4))))
         `(org-link ((,class (:underline t :foreground ,type ))))
@@ -393,7 +342,7 @@
         `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
         `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
     `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-        `(trailing-whitespace ((,class :foreground nil :background ,wy-green-01)))
+        `(trailing-whitespace ((,class :foreground nil :background ,wy-Green)))
         `(rainbow-delimiters-depth-1-face ((,class :foreground ,fg1)))
         `(rainbow-delimiters-depth-2-face ((,class :foreground ,type)))
         `(rainbow-delimiters-depth-3-face ((,class :foreground ,var)))
@@ -405,24 +354,24 @@
 
 
     ;; MODE SUPPORT: git-gutter
-    `(git-gutter:added               ((,class (:foreground ,wy-green-01      ))))
+    `(git-gutter:added               ((,class (:foreground ,wy-Green      ))))
     `(git-gutter:deleted             ((,class (:foreground ,wy-red   ))))
     `(git-gutter:modified            ((,class (:foreground ,wy-yellow       ))))
     ;; `(git-gutter:separator           ((,class (:foreground ,dp_background ))))
     ;; `(git-gutter:unchanged           ((,class (:foreground ,dp_background ))))
     ;; ;; MODE SUPPORT: git-gutter-fr
-    `(git-gutter-fr:added            ((,class (:foreground ,wy-green-01))))
+    `(git-gutter-fr:added            ((,class (:foreground ,wy-Green))))
     `(git-gutter-fr:deleted          ((,class (:foreground ,wy-red))))
     `(git-gutter-fr:modified         ((,class (:foreground ,wy-yellow))))
     ;; ;; MODE SUPPORT: git-gutter+
     ;; `(git-gutter+-commit-header-face ((,class (:foreground ,dp_foreground ))))
-    `(git-gutter+-added              ((,class (:foreground ,wy-green-01      ))))
+    `(git-gutter+-added              ((,class (:foreground ,wy-Green      ))))
     `(git-gutter+-deleted            ((,class (:foreground ,wy-red   ))))
     `(git-gutter+-modified           ((,class (:foreground ,wy-yellow       ))))
     ;; `(git-gutter+-separator          ((,class (:foreground ,dp_foreground ))))
     ;; `(git-gutter+-unchanged          ((,class (:foreground ,dp_foreground ))))
     ;; ;; MODE SUPPORT: git-gutter-fr+
-    `(git-gutter-fr+-added           ((,class (:foreground ,wy-green-01      ))))
+    `(git-gutter-fr+-added           ((,class (:foreground ,wy-Green      ))))
     `(git-gutter-fr+-deleted         ((,class (:foreground ,wy-red   ))))
     `(git-gutter-fr+-modified        ((,class (:foreground ,wy-yellow       ))))
 
@@ -472,8 +421,8 @@
 
 
         ;;; helm
-        `(helm-M-x-key ((,class (:foreground ,wy-purple))))
-        `(helm-match ((,class (:foreground ,wy-violet))))
+        `(helm-M-x-key ((,class (:foreground ,wy-Purple))))
+        `(helm-match ((,class (:foreground ,wy-Magenta))))
         `(helm-header ((,class (:foreground ,fg2 :background ,bg1 :underline nil :box nil))))
         `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
         `(helm-selection ((,class (:background ,bg4 :underline nil))))

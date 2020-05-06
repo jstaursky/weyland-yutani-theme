@@ -47,17 +47,17 @@
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#232830")
+     (bg1        "#21252d")             ;#232830
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#99be69")
+     (keyword    "#8db05e")                    ;#95bb62
      (type       "#9684f2")
-     (func       "#cc8ae3")
-     (var        "#bc6fd6")
+     (func       "#cc8ce3")             ;#d58aad #cc8ae3 #e692e1
+     (var        "#bc6ec5")             ;#bc6fd6 #c678dd #bb73d0
      (builtin    "#9684f2")
      (const      "#54b2f2")
      (negate     "#c5b159")

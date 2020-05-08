@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#afb9c5")                    ;#A9B4C1
+     (fg1        "#a9b4c1")                    ;#A9B4C1
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))

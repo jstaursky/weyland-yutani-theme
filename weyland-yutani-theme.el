@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#A9B4C1")
+     (fg1        "#afb9c5")                    ;#A9B4C1
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -54,7 +54,7 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#95bb62")                    ;#95bb62
+     (keyword    "#92b562")                    ;#95bb62
      (type       "#9684f2")
      (func       "#cc8ce3")             ;#d58aad #cc8ae3 #e692e1
      (var        "#c968c8")             ;#bc6fd6 #c678dd #bb73d0

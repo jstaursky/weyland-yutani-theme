@@ -54,14 +54,14 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#92b562")                    ;#95bb62
+     (keyword    "#89b04e")                    ;#95bb62
      (type       "#9684f2")
      (func       "#d088ea")             ;#d58aad #cc8ae3 #e692e1
      (var        "#c968c8")             ;#bc6fd6 #c678dd #bb73d0
      (builtin    "#9684f2")
      (const      "#54aae5")
      (negate     "#c5b159")
-     (str        "#2ca1ae")
+     (str        "#55b1bd")
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#5e7188")

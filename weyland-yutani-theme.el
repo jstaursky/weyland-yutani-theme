@@ -54,16 +54,19 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#90b55b")                    ;#95bb62
-     (type       "#8b8af6")
-     (func       "#d490e9")             ;#d58aad #cc8ae3 #e692e1 #d088ea #de63bf
-     (var        "#B672EB")             ;#bc6fd6 #c678dd #bb73d0 #b569e2 #ba81e1 #b569e2
-     (builtin    "#8b8af6")             ;#9684f2 #9684f2
-     (const      "#54aae5")             ;#d38aea
+     ;; #bc69ff #b868f8 #ba68fc
+     (keyword    "#90b55f")                    ;#95bb62
+     (func       "#d490e9")
+
+     (type       "#a898ff")                    ;#e58bd2 #90b55b #64acff
+
+     (var        "#b867fd")            ;#bc6fd6 #c678dd #bb73d0 #b569e2 #ba81e1 #b569e2
+     (builtin    "#a898ff")             ;#9684f2 #9684f2 #8b8af6
+     (const      "#54aae5")
      (negate     "#c5b159")
      (str        "#55b1bd")
      (num        "#e974c7")
-     (err        "#f70108")
+     (err        "#f70108")             ;#55b1bd
      (comment    "#5e7188")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")

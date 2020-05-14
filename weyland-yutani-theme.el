@@ -54,19 +54,18 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     ;; #bc69ff #b868f8 #ba68fc
-     (keyword    "#90b55f")                    ;#95bb62
-     (func       "#d490e9")
+     (keyword    "#8eb652")             ;#90b55f
+     (func       "#d490e9")             ;#d18ff6
 
-     (type       "#a898ff")                    ;#e58bd2 #90b55b #64acff
+     (type       "#aa9fee")             ;#a898ff
 
-     (var        "#bfa681")            ;#bc6fd6 #c678dd #bb73d0 #b569e2 #ba81e1 #b569e2
-     (builtin    "#a898ff")             ;#9684f2 #9684f2 #8b8af6
-     (const      "#54aae5")             ;#b867fd #bca37f
-     (negate     "#c5b159")             ;#C278FF #ce537a
+     (var        "#bfa681")
+     (builtin    "#aa9fee")             ;#C278FF
+     (const      "#5ea9e0")
+     (negate     "#c5b159")
      (str        "#55b1bd")
      (num        "#e974c7")
-     (err        "#f70108")             ;#55b1bd
+     (err        "#f70108")
      (comment    "#5e7188")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
@@ -76,6 +75,18 @@
      ;; Red  #E56399
      ;; Yellow #F2B880
      ;; Orange #E08D79
+
+
+     ;; backg: #0d0913;
+     ;; color: #65547f;
+     ;; color: #382e48;
+     ;; color: #cf6d54;
+     ;; color: #a079d4;
+     ;; color: #c868d6;
+     ;; color: #d4619c;
+     ;; color: #e580b1;
+     ;; color: #d8637c;
+     ;; backg: #241c2f;
 
 
      ;; Colors Generic

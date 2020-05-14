@@ -54,7 +54,7 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#8eb652")             ;#90b55f
+     (keyword    "#91b562")             ;#90b55f
      (func       "#d490e9")             ;#d18ff6
 
      (type       "#aa9fee")             ;#a898ff

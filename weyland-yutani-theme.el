@@ -60,10 +60,10 @@
 
      (type       "#a898ff")                    ;#e58bd2 #90b55b #64acff
 
-     (var        "#C278FF")            ;#bc6fd6 #c678dd #bb73d0 #b569e2 #ba81e1 #b569e2
+     (var        "#bfa681")            ;#bc6fd6 #c678dd #bb73d0 #b569e2 #ba81e1 #b569e2
      (builtin    "#a898ff")             ;#9684f2 #9684f2 #8b8af6
-     (const      "#54aae5")             ;#b867fd
-     (negate     "#c5b159")
+     (const      "#54aae5")             ;#b867fd #bca37f
+     (negate     "#c5b159")             ;#C278FF #ce537a
      (str        "#55b1bd")
      (num        "#e974c7")
      (err        "#f70108")             ;#55b1bd

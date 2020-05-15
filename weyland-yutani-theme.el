@@ -55,10 +55,10 @@
      (key3       "#b3f35c")
 
      (keyword    "#91b562")             ;#90b55f
-     (type       "#9c8ce9")             ;#a898ff
+     (type       "#968ae6")             ;#a898ff
      (func       "#c588d8")             ;#d18ff6 #d490e9
      (var        "#b79f7c")             ;#bfa681
-     (builtin    "#9c8ce9")             ;#C278FF
+     (builtin    "#968ae6")             ;#C278FF
      (const      "#5ea9e0")
      (negate     "#c5b159")
      (str        "#55b1bd")

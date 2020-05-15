@@ -55,12 +55,11 @@
      (key3       "#b3f35c")
 
      (keyword    "#91b562")             ;#90b55f
+     (type       "#9c8ce9")             ;#a898ff
      (func       "#d490e9")             ;#d18ff6
 
-     (type       "#9683f2")             ;#a898ff
-
      (var        "#bfa681")
-     (builtin    "#9683f2")             ;#C278FF
+     (builtin    "#9c8ce9")             ;#C278FF
      (const      "#5ea9e0")
      (negate     "#c5b159")
      (str        "#55b1bd")

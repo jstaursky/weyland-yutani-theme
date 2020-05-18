@@ -57,7 +57,7 @@
      (keyword    "#91b562")             ;#90b55f
      (type       "#968ae6")             ;#a898ff
      (func       "#c588d8")             ;#d18ff6 #d490e9
-     (var        "#bfa681")             ;#bfa681
+     (var        "#a7a074")             ;#bfa681
      (builtin    "#968ae6")             ;#C278FF
      (const      "#5ea9e0")
      (negate     "#c5b159")

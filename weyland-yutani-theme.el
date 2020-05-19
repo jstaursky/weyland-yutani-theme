@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#a9b9c9")                    ;#A9B4C1
+     (fg1        "#a8b8c8")                    ;#A9B4C1
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -54,14 +54,19 @@
      (key2       "#bbe074")
      (key3       "#b3f35c")
 
-     (keyword    "#91b562")             ;#90b55f #91b562 #8fb55b
-     (type       "#968ae6")             ;#a898ff
-     (func       "#c588d8")             ;#d18ff6 #d490e9
-     (var        "#a7a074")             ;#bfa681 #a7a074
-     (builtin    "#968ae6")             ;#C278FF
-     (const      "#5ea9e0")
+     ;; [#a8b8c8, #958ae6, #90b461, #c487d7, #232830, #a79f73, #55b0bb]
+
+     ;; [#958ae6, #55b0bb, #60aae1, #90b461, #c487d7, #a79f73]
+
+
+     (keyword    "#90b461")             ;#90b55f #91b562 #8fb55b
+     (type       "#958ae6")             ;#a898ff
+     (func       "#c487d7")             ;#d18ff6 #d490e9
+     (var        "#a79f73")             ;#bfa681 #a7a074
+     (builtin    "#958ae6")             ;#C278FF
+     (const      "#60aae1")
      (negate     "#c5b159")
-     (str        "#55b1bd")
+     (str        "#55b0bb")
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#5e7188")

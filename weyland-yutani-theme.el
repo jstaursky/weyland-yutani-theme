@@ -42,29 +42,23 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#a6b0c3")                    ;#A9B4C1 #a8b8c8
+     (fg1        "#a6b1c4")                    ;#A9B4C1 #a8b8c8
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#222534")             ;#232830
+     (bg1        "#1D2333")             ;#232830 #222534 #1D2332 #1D2332 #1C2235
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-
-     ;; [#a8b8c8, #958ae6, #90b461, #c487d7, #232830, #a79f73, #55b0bb]
-
-     ;; [#958ae6, #55b0bb, #60aae1, #90b461, #c487d7, #a79f73]
-
-
-     (keyword    "#90b461")             ;#90b55f #91b562 #8fb55b
-     (type       "#958ae6")             ;#a898ff
-     (func       "#c487d7")             ;#d18ff6 #d490e9
-     (var        "#a79f73")             ;#bfa681 #a7a074
-     (builtin    "#958ae6")             ;#C278FF
-     (const      "#60aae1")
+     (keyword    "#9ebe68")
+     (type       "#958ae6")
+     (func       "#d393ef")
+     (var        "#b369e2")
+     (builtin    "#958ae6")
+     (const      "#67a9d3")
      (negate     "#c5b159")
      (str        "#55b0bb")
      (num        "#e974c7")
@@ -73,6 +67,36 @@
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
+
+
+     ;; #d393ef
+     ;; ["#b368e1", "#dc95fc", "#9ebe68", "#958ae6", "#1d2333", "#a6b1c4"]
+
+     ;; [#9ebe68, #dc95fc, #b368e1, #958ae6, #6bb8b3]
+
+     ;; [#9ebe68, #dc95fc, #b368e1, #958ae6, #a6b1c4]
+     ;; #B8B8FF #c585e2
+
+     ;; #6B60BC #BA6FD9
+     ;; #b46ed9 #c567ce
+
+     ;; #b76dd6 #de91fd
+
+     ;; [#9abc63, #c585e2, #8f89e5, #30b6f3, #1fc468]
+
+     ;; #fe74fe
+
+     ;; #c585e3,#9fb978,#9189e5
+
+     ;; #9abb63
+
+     ;; #c072de #B35CD9
+
+     ;; #b667e1 #c996eb #b96bde
+
+     ;; #d48ae9 #dd93eb #da90e5 #dd91e6
+
+     ;; #b96fe3 {"#d69ae8", "#968ae6"}
 
      ;; Gold #A4A460 "#cab2fe" #a1c97f
      ;; Red  #E56399

@@ -55,8 +55,8 @@
      (key3       "#b3f35c")
      (keyword    "#8fb753")             ;#9ebe68 #92b662
      (type       "#958ae8")
-     (func       "#d192ea")             ;#d590ef
-     ;; #DA87EF #d491ef
+     (func       "#c792ea")             ;#d590ef
+
      (var        "#B766E5")             ;#B666E2
      (builtin    "#958ae8")
      (const      "#67a9d3")
@@ -155,7 +155,7 @@
    `(default                       ((,class  (:background  ,bg1 :foreground ,fg1))))
    `(cursor                        ((,class  (:background  ,fg1))))
    `(font-lock-warning-face        ((,class  (:foreground  ,warning))))
-   `(font-lock-function-name-face  ((,class  (:foreground  ,func))))
+   `(font-lock-function-name-face  ((,class  (:foreground  ,func :italic t))))
    `(font-lock-variable-name-face  ((,class  (:foreground  ,var))))
    `(font-lock-keyword-face        ((,class  (:foreground  ,keyword))))
    `(font-lock-comment-face        ((,class  (:foreground  ,comment))))

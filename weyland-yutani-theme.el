@@ -53,10 +53,11 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#9ebe68")
+     (keyword    "#92b662")             ;#9ebe68
      (type       "#958ae6")
-     (func       "#d393ef")
-     (var        "#b369e2")
+     (func       "#D690F1")             ;#d590ef
+     ;; #DA87EF
+     (var        "#B766E5")             ;#B666E2
      (builtin    "#958ae6")
      (const      "#67a9d3")
      (negate     "#c5b159")
@@ -69,7 +70,7 @@
      (warning    "#ee78e8")
 
 
-     ;; #d393ef
+     ;; #d393ef #ba5577
      ;; ["#b368e1", "#dc95fc", "#9ebe68", "#958ae6", "#1d2333", "#a6b1c4"]
 
      ;; [#9ebe68, #dc95fc, #b368e1, #958ae6, #6bb8b3]

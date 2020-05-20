@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#a6b1c4")                    ;#A9B4C1 #a8b8c8
+     (fg1        "#959dcb")                    ;#A9B4C1 #a8b8c8 #a6b1c4
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -53,12 +53,12 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#92b662")             ;#9ebe68 #92b662
+     (keyword    "#97BC64")             ;#9ebe68 #92b662 #98be65
      (type       "#958ae8")
      (func       "#c792ea")             ;#d590ef
-
-     (var        "#B766E5")             ;#B666E2
-     (builtin    "#958ae8")
+     ;;  #c678dd
+     (var        "#B766E5")             ;#B666E2 #B766E5
+     (builtin    "#927efa")
      (const      "#67a9d3")
      (negate     "#c5b159")
      (str        "#55b0bb")

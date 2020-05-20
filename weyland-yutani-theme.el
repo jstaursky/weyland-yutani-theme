@@ -42,7 +42,7 @@
 (let*
     ((class '((class color) (min-colors 89)))
 
-     (fg1        "#959dcb")                    ;#A9B4C1 #a8b8c8 #a6b1c4
+     (fg1        "#969ecb")                    ;#A9B4C1 #a8b8c8 #a6b1c4
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -53,13 +53,13 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#97BC64")             ;#9ebe68 #92b662 #98be65
-     (type       "#927efa")
-     (func       "#c792ea")             ;#d590ef
+     (keyword    "#9cbb71")             ;#9ebe68 #92b662 #98be65 #97BC64
+     (type       "#927efb")
+     (func       "#c691e9")             ;#d590ef
      ;;  #c678dd
-     (var        "#B766E5")             ;#B666E2 #B766E5
-     (builtin    "#927efa")
-     (const      "#67a9d3")
+     (var        "#B666E6")             ;#B666E2 #B766E5
+     (builtin    "#927efb")
+     (const      "#67a7d2")
      (negate     "#c5b159")
      (str        "#55b0bb")
      (num        "#e974c7")
@@ -69,6 +69,9 @@
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
 
+     ;; #B666E6
+     ;; [#9cbb71, #927efb, #c691e9, #b665e5, #67a7d2, #55b0bb, #969ecb]
+     ;; [#9cbb71, #927efb, #c691e9, #b665e5, #67a7d2, #55b0bb]
 
      ;; #d393ef #ba5577
      ;; ["#b368e1", "#dc95fc", "#9ebe68", "#958ae6", "#1d2333", "#a6b1c4"]

@@ -53,7 +53,7 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#8fb753")             ;#9ebe68 #92b662
+     (keyword    "#92b662")             ;#9ebe68 #92b662
      (type       "#958ae8")
      (func       "#c792ea")             ;#d590ef
 

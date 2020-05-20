@@ -53,12 +53,12 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#92b662")             ;#9ebe68
-     (type       "#958ae6")
-     (func       "#D690F1")             ;#d590ef
-     ;; #DA87EF
+     (keyword    "#8fb753")             ;#9ebe68 #92b662
+     (type       "#958ae8")
+     (func       "#d192ea")             ;#d590ef
+     ;; #DA87EF #d491ef
      (var        "#B766E5")             ;#B666E2
-     (builtin    "#958ae6")
+     (builtin    "#958ae8")
      (const      "#67a9d3")
      (negate     "#c5b159")
      (str        "#55b0bb")

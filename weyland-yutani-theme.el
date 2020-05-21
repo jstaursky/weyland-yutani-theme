@@ -53,9 +53,9 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#8fb160")             ;#9ebe68 #92b662 #98be65 #97BC64
-     (type       "#927efb")
-     (func       "#c691e9")             ;#d590ef
+     (keyword    "#84a459")             ;#9ebe68 #92b662 #98be65 #97BC64
+     (type       "#9680fc")
+     (func       "#c284d9")             ;#d590ef #c691e9
      ;;  #c678dd
      (var        "#B666E6")             ;#B666E2 #B766E5
      (builtin    "#927efb")
@@ -158,7 +158,7 @@
    `(default                       ((,class  (:background  ,bg1 :foreground ,fg1))))
    `(cursor                        ((,class  (:background  ,fg1))))
    `(font-lock-warning-face        ((,class  (:foreground  ,warning))))
-   `(font-lock-function-name-face  ((,class  (:foreground  ,func :italic t))))
+   `(font-lock-function-name-face  ((,class  (:foreground  ,func ))))
    `(font-lock-variable-name-face  ((,class  (:foreground  ,var))))
    `(font-lock-keyword-face        ((,class  (:foreground  ,keyword))))
    `(font-lock-comment-face        ((,class  (:foreground  ,comment))))

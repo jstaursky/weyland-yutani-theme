@@ -41,8 +41,9 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     ;; #969ecb
-     (fg1        "#939ebc")             ; #949bc7
+     ;; #969ecb #939ebc
+     (fg1        "#9da7c1")             ; #949bc7
+     ;; #a1abc3
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))

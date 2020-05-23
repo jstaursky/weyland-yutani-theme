@@ -42,82 +42,31 @@
 (let*
     ((class '((class color) (min-colors 89)))
      ;; #969ecb
-     (fg1        "#949bc7")                    ;#A9B4C1 #a8b8c8 #a6b1c4
+     (fg1        "#939ebc")             ; #949bc7
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#1D2333")             ;#232830 #222534 #1D2332 #1D2332 #1C2235
+     (bg1        "#20252D")             ;#1d212d
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
-     (key2       "#bbe074")
-     (key3       "#b3f35c")
-     (keyword    "#84a459")             ;#9ebe68 #92b662 #98be65 #97BC64
-     (type       "#9680fc")
-     (func       "#c284d9")             ;#d590ef #c691e9
-     ;;  #c678dd
-     (var        "#B666E6")             ;#B666E2 #B766E5
-     (builtin    "#927efb")
-     (const      "#67a7d2")
+     (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
+     (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
+     (keyword    "#7cab50")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+     (type       "#8d7bec")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (func       "#ba8dda")             ;#ca95ed  #c08ee1  #CD9CF0           #bb8edb
+     (var        "#a79f6b")             ;#a59d71  #a8a073  #9E9666           #a69e6b
+     (builtin    "#8d7bec")
+     (const      "#5591bd")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
-     (str        "#55b0bb")
+     (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#5e7188")
+     (comment    "#5b647c")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
-
-     ;; #B666E6
-     ;; [#9cbb71, #927efb, #c691e9, #b665e5, #67a7d2, #55b0bb, #969ecb]
-     ;; [#9cbb71, #927efb, #c691e9, #b665e5, #67a7d2, #55b0bb]
-
-     ;; #d393ef #ba5577
-     ;; ["#b368e1", "#dc95fc", "#9ebe68", "#958ae6", "#1d2333", "#a6b1c4"]
-
-     ;; [#9ebe68, #dc95fc, #b368e1, #958ae6, #6bb8b3]
-
-     ;; [#9ebe68, #dc95fc, #b368e1, #958ae6, #a6b1c4]
-     ;; #B8B8FF #c585e2
-
-     ;; #6B60BC #BA6FD9
-     ;; #b46ed9 #c567ce
-
-     ;; #b76dd6 #de91fd
-
-     ;; [#9abc63, #c585e2, #8f89e5, #30b6f3, #1fc468]
-
-     ;; #fe74fe
-
-     ;; #c585e3,#9fb978,#9189e5
-
-     ;; #9abb63
-
-     ;; #c072de #B35CD9
-
-     ;; #b667e1 #c996eb #b96bde
-
-     ;; #d48ae9 #dd93eb #da90e5 #dd91e6
-
-     ;; #b96fe3 {"#d69ae8", "#968ae6"}
-
-     ;; Gold #A4A460 "#cab2fe" #a1c97f
-     ;; Red  #E56399
-     ;; Yellow #F2B880
-     ;; Orange #E08D79
-
-
-     ;; backg: #0d0913;
-     ;; color: #65547f;
-     ;; color: #382e48;
-     ;; color: #cf6d54;
-     ;; color: #a079d4;
-     ;; color: #c868d6;
-     ;; color: #d4619c;
-     ;; color: #e580b1;
-     ;; color: #d8637c;
-     ;; backg: #241c2f;
 
 
      ;; Colors Generic

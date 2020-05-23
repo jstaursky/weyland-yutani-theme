@@ -41,8 +41,8 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     ;; #969ecb #939ebc
-     (fg1        "#9CA3CD")             ; #949bc7 #9da7c1 #959dcb
+     ;; #969ecb #939ebc #9da4cd
+     (fg1        "#9ea5ce")             ; #949bc7 #9da7c1 #959dcb #8d95bf
      ;; #a1abc3 #99a2c6
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
@@ -64,7 +64,7 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#6d7290")
+     (comment    "#5d6179")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

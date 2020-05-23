@@ -42,13 +42,13 @@
 (let*
     ((class '((class color) (min-colors 89)))
      ;; #969ecb #939ebc
-     (fg1        "#9da7c1")             ; #949bc7
-     ;; #a1abc3
+     (fg1        "#9CA3CD")             ; #949bc7 #9da7c1 #959dcb
+     ;; #a1abc3 #99a2c6
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#20252D")             ;#1d212d
+     (bg1        "#1f242c")             ;#1d212d #20252D
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
@@ -64,7 +64,7 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#656c81")
+     (comment    "#6d7290")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

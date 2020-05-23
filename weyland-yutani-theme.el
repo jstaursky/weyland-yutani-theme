@@ -63,7 +63,7 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#5b647c")
+     (comment    "#656c81")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

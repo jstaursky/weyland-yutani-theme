@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#949cc1")             ;#949dc1 #9ea5ce
+     (fg1        "#9aa2cc")             ;#949dc1 #9ea5ce
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -51,7 +51,7 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#729d4a")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+     (keyword    "#699f45")             ;#95bb62  #89ac5a  #75A24C           #7baa50
                                         ;                          *redesign*
      (type       "#8a7ced")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
      (func       "#b07dd6")             ;#ca95ed  #c08ee1  #CD9CF0 *redesign*
@@ -62,7 +62,7 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#5f657d")             ;#5d6179
+     (comment    "#595d75")             ;#5d6179
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

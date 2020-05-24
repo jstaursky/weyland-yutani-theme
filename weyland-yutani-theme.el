@@ -62,8 +62,8 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#555970")             ;#595d75 #686c81
-     (doc-comments   "#686c81")
+     (comment    "#57596b")             ;#595d75 #686c81 #555970
+     (doc-comments   "#6b718e")         ;#686c81
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

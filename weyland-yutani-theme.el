@@ -62,7 +62,8 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#595d75")             ;#5d6179
+     (comment    "#555970")             ;#595d75 #686c81
+     (doc-comments   "#686c81")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
@@ -110,6 +111,9 @@
    `(font-lock-variable-name-face  ((,class  (:foreground  ,var))))
    `(font-lock-keyword-face        ((,class  (:foreground  ,keyword))))
    `(font-lock-comment-face        ((,class  (:foreground  ,comment))))
+   `(font-lock-doc-face            ((,class  (:foreground  ,doc-comments))))
+
+   
    `(font-lock-type-face           ((,class  (:foreground  ,type))))
    `(font-lock-constant-face       ((,class  (:foreground  ,const))))
    `(font-lock-builtin-face        ((,class  (:foreground  ,builtin))))

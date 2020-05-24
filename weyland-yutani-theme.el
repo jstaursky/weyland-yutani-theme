@@ -37,28 +37,26 @@
   :type 'boolean
   :group 'weyland-yutani-theme)
 
-
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     ;; #969ecb #939ebc #9da4cd
-     (fg1        "#9ea5ce")             ; #949bc7 #9da7c1 #959dcb #8d95bf
-     ;; #a1abc3 #99a2c6
+     (fg1        "#9ea5ce")
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
-
+     ;; #1f242c #1b2027 #1f242c #20252D
      (bg1        "#1f242c")             ;#1d212d #20252D
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#7cab50")             ;#95bb62  #89ac5a  #75A24C           #7baa50
-     (type       "#8d7bec")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
-     (func       "#ba8dda")             ;#ca95ed  #c08ee1  #CD9CF0           #bb8edb
-     (var        "#a79f6b")             ;#a59d71  #a8a073  #9E9666           #a69e6b
-     (builtin    "#8d7bec")
+     (keyword    "#729d4a")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+                                        ;                          *redesign*
+     (type       "#8a7ced")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (func       "#b07dd6")             ;#ca95ed  #c08ee1  #CD9CF0 *redesign*
+     (var        "#999262")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
+     (builtin    "#8a7ced")
      (const      "#5591bd")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d

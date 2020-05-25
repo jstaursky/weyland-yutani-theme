@@ -30,7 +30,7 @@
 ;;; Commentary: Vanilla emacs may need first to (require 'color) before loading
 ;;; theme.
 
-;;; Code:
+;;; Code:.
 
 (defcustom weyland-yutani-theme-comment-bg nil
   "Use a background for comment lines."
@@ -62,13 +62,13 @@
      (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#4f5a6f")             ;#595d75 #686c81 #555970
-     (doc-comments   "#768098")         ;#686c81
+     (comment    "#4d5b71")             ;#595d75 #686c81 #555970
+     (doc-comments   "#62779a")         ;#686c81 #9C9C9C
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
 
-
+     ;; #7c9fd4
      ;; Colors Generic
      (wy-Blue      const)
      (wy-Purple    func)

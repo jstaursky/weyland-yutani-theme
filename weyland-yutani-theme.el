@@ -52,16 +52,16 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#699f45")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+     (keyword    "#699f44")             ;#95bb62  #89ac5a  #75A24C           #7baa50
                                         ;                          *redesign*
-     (type       "#9586ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
-     (func       "#b27cd4")             ;#ca95ed  #c08ee1  #CD9CF0 *redesign*
-     (var        "#a89866")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
-
-     (builtin    "#9586ff")         ;#8a7ced
-     (const      "#5b9ccb")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
+     (type       "#9386ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (func       "#b17bd2")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
+     (var        "#a89767")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
+                                        ;; #a89866
+     (builtin    "#9386ff")         ;#8a7ced
+     (const      "#5d9cca")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
-     (str        "#46a2a9")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
+     (str        "#46a3aa")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#4d5b71")             ;#595d75 #686c81 #555970

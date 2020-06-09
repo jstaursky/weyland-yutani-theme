@@ -54,14 +54,14 @@
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
      (keyword    "#699f45")             ;#95bb62  #89ac5a  #75A24C           #7baa50
                                         ;                          *redesign*
-     (type       "#8a7ced")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (type       "#9586ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
      (func       "#b27cd4")             ;#ca95ed  #c08ee1  #CD9CF0 *redesign*
      (var        "#a89866")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
 
-     (builtin    "#8a7ced")
-     (const      "#5591bd")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
+     (builtin    "#9586ff")         ;#8a7ced
+     (const      "#5b9ccb")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
-     (str        "#41969c")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
+     (str        "#46a2a9")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#4d5b71")             ;#595d75 #686c81 #555970
@@ -69,6 +69,8 @@
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
+
+     ;; ["#699f44", "#9386ff", "#b17bd2", "#58a2ee", "#02b72e", "#35afa6"]
 
      ;; #7c9fd4
      ;; Colors Generic

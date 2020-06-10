@@ -40,28 +40,27 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#999cb8")             ;#949dc1 #9ea5ce #9aa2cc #949cc1 #969cbc
-                                        ;#cdd2f4
+     (fg1        "#b5b8d9")             ;#949dc1 #9ea5ce #9aa2cc #949cc1 #969cbc #999cb8
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
-     ;; #1f242c #1b2027 #1f242c #20252D
-     (bg1        "#1e2126")             ;#1d212d #20252D #1f242c
+
+     (bg1        "#23262b")             ;#1e2126
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#699f44")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+     (keyword    "#7cbc50")             ;#95bb62  #89ac5a  #75A24C           #7baa50
                                         ;                          *redesign*
-     (type       "#9386ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
-     (func       "#b17bd2")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
-     (var        "#a89767")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
+     (type       "#a696ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (func       "#d191f8")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
+     (var        "#c6b27a")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
                                         ;; #a89866
      (builtin    "#9386ff")         ;#8a7ced
-     (const      "#5d9cca")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
+     (const      "#6eb8ee")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
-     (str        "#46a3aa")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
+     (str        "#53c0c9")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#4d5b71")             ;#595d75 #686c81 #555970

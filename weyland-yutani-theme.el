@@ -56,7 +56,7 @@
                                         ;                          *redesign*
      (type       "#9386ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
      (func       "#b17bd2")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
-     (var        "#a28f5b")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
+     (var        "#a89767")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
                                         ;; #a89866
      (builtin    "#9386ff")         ;#8a7ced
      (const      "#5d9cca")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0

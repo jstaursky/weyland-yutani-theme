@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#b5b8d9")             ;#949dc1 #9ea5ce #9aa2cc #949cc1 #969cbc #999cb8
+     (fg1        "#b3b8de")             ;#949dc1 #9ea5ce #9aa2cc #949cc1 #969cbc #999cb8
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -51,16 +51,16 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
      (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#7cbc50")             ;#95bb62  #89ac5a  #75A24C           #7baa50
+     (keyword    "#79bc53")             ;#95bb62  #89ac5a  #75A24C           #7baa50
                                         ;                          *redesign*
-     (type       "#a696ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
-     (func       "#d191f8")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
-     (var        "#c6b27a")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
+     (type       "#a496ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
+     (func       "#cf91fe")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
+     (var        "#c4b27e")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
                                         ;; #a89866
-     (builtin    "#9386ff")         ;#8a7ced
-     (const      "#6eb8ee")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
+     (builtin    "#a496ff")         ;#8a7ced
+     (const      "#6ab8f4")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
      (negate     "#c5b159")
-     (str        "#53c0c9")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
+     (str        "#4ec0ce")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#4d5b71")             ;#595d75 #686c81 #555970

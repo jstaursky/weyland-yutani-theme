@@ -40,39 +40,35 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#adb3d8")             ;#949dc1 #9ea5ce #9aa2cc #949cc1 #969cbc #999cb8
-     ;; #b3b8de #adb3d8
+     (fg1        "#a3b3c6")
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#23262b")             ;#1e2126
+     (bg1        "#202627")
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
-     (key2       "#bbe074")             ;         WHITE             MUNSELL  WHITE
-     (key3       "#b3f35c")             ;ORIGINAL BALANCED MUNSELL  TWEAKS   BALANCED
-     (keyword    "#79bc53")             ;#95bb62  #89ac5a  #75A24C           #7baa50
-                                        ;                          *redesign*
-     (type       "#a496ff")             ;#9683f2  #a48fff  #9787ED  #8a7cda  #8d7fdf
-     (func       "#cf91fe")             ;#b27cd4 #ca95ed  #c08ee1  #CD9CF0 *redesign*
-     (var        "#c4b27e")             ;#a59d71  #a8a073  #9E9666  #a69e6b *rebalance*
-                                        ;; #a89866
-     (builtin    "#a496ff")         ;#8a7ced
-     (const      "#6ab8f4")             ;#54b2f2  #50aae7  #6BB7EE  #62a8db  #5693c0
+     (key2       "#bbe074")
+     (key3       "#b3f35c")
+     (keyword    "#6cbc48")
+
+     (type       "#9c97eb")
+     (func       "#c792ea")
+     (var        "#bab272")
+     (builtin    "#9c97eb")
+     (const      "#5db8e1")
      (negate     "#c5b159")
-     (str        "#4ec0ce")             ;#29a1ae  #2dafbe  #46A2AA  #39858b  #41979d
+     (str        "#39c0bd")
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#4d5b71")             ;#595d75 #686c81 #555970
-     (doc-comments   "#62779a")         ;#686c81 #9C9C9C
+     (comment    "#4d5b71")
+     (doc-comments   "#62779a")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")
 
-     ;; ["#699f44", "#9386ff", "#b17bd2", "#58a2ee", "#02b72e", "#35afa6"]
 
-     ;; #7c9fd4
      ;; Colors Generic
      (wy-Blue      const)
      (wy-Purple    func)

@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#a3b3c6")
+     (fg1        "#a9b7c7")
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -51,15 +51,15 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#6cbc48")
+     (keyword    "#7bbc5c")
 
-     (type       "#9c97eb")
-     (func       "#c792ea")
-     (var        "#bab272")
-     (builtin    "#9c97eb")
-     (const      "#5db8e1")
+     (type       "#928ed7")
+     (func       "#c692e8")
+     (var        "#bab171")
+     (builtin    "#928ed7")
+     (const      "#73b0d1")
      (negate     "#c5b159")
-     (str        "#39c0bd")
+     (str        "#51bbbb")
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#5a667b")
@@ -130,6 +130,9 @@
    `(whitespace-space ((,class ( :foreground ,(color-lighten-name bg1 10)))))
    `(whitespace-trailing ((,class ( :foreground ,keyword))))
 
+
+   `(vertical-border        ((,class (:foreground ,type))))
+   `(fringe        ((,class (:foreground ,fg2))))
 
 
    ;; Magit

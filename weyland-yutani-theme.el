@@ -59,7 +59,7 @@
      (builtin    "#928ed7")
      (const      "#73b0d1")
      (negate     "#c5b159")
-     (str        "#51bbbb")
+     (str        "#59bcbc")
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#5a667b")

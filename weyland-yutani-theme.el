@@ -51,11 +51,11 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#75c661")
+     (keyword    "#76ba5e")             ;#75c661 #76ba5e
 
                                         ;    #c99df5,#c99df5,#adbdd6,#272a2e #abbbd4
      (type       "#998dff")
-     (func       "#c99bf5")             ;#c899f5 #c898f5
+     (func       "#ba8fe2")             ;#c899f5 #c898f5 #c99bf5
      (var        "#c267e5")
      (builtin    "#998dff")
      (const      "#6ebadd")

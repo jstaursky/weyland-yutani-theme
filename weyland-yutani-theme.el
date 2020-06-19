@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#a4b4c8")
+     (fg1        "#a2b2c6")
      (fg2        (color-lighten-name fg1 3))
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -51,15 +51,15 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#78bc5f")
+     (keyword    "#77ba5e")
 
-     (type       "#908edc")
-     (func       "#c492ed")
-     (var        "#b8b175")
-     (builtin    "#908edc")
-     (const      "#70b0d6")
+     (type       "#8c8ad7")             ;#908edc
+     (func       "#c291eb")
+     (var        "#b6af74")
+     (builtin    "#8c8ad7")             ;#908edc
+     (const      "#6faed4")
      (negate     "#e372dd")
-     (str        "#55bcc1")
+     (str        "#54babf")
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#555970")

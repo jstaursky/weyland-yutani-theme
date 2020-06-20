@@ -45,7 +45,7 @@
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#24272c")             ;#23262b #202627 #23262b #272a2e
+     (bg1        "#23262b")             ;#23262b #202627 #23262b #272a2e
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")

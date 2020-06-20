@@ -58,9 +58,9 @@
      (func       "#b88fe7")             ;#c899f5 #c898f5 #c99bf5
      (var        "#CB68C3")             ;"#b05ed6" #c564c0
      (builtin    "#847ee0")
-     (const      "#60a9cd")             ;#6abae2 "#dbd8d3" "#8395bd"
+     (const      "#49a5e6")             ;#6abae2 "#dbd8d3" "#8395bd"
      (negate     "#c5b159")
-     (str        "#4aabb1")
+     (str        "#41acae")             ;"#68c3cb"
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#545d70")

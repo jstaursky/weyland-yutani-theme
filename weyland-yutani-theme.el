@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*
     ((class '((class color) (min-colors 89)))
-     (fg1        "#A0AFC7")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
+     (fg1        "#9eafcc")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
      (fg2        (color-lighten-name fg1 3)) ;#adbdd6
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -51,20 +51,20 @@
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#76ba5e")             ;#75c661 #76ba5e
+     (keyword    "#63ad58")             ;#75c661 #76ba5e
 
                                         ;    #c99df5,#c99df5,#adbdd6,#272a2e #abbbd4
-     (type       "#998dff")
-     (func       "#ba8fe2")             ;#c899f5 #c898f5 #c99bf5
-     (var        "#c267e5")
-     (builtin    "#998dff")
-     (const      "#6ebadd")
+     (type       "#847ee0")
+     (func       "#b88fe7")             ;#c899f5 #c898f5 #c99bf5
+     (var        "#b05ed6")
+     (builtin    "#847ee0")
+     (const      "#60a9cd")             ;#6abae2 "#dbd8d3" "#8395bd"
      (negate     "#c5b159")
-     (str        "#4eabad")
+     (str        "#4aabb1")
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#555c72")
-     (doc-comments   "#60708c")
+     (comment    "#545d70")
+     (doc-comments   "#7583a4")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

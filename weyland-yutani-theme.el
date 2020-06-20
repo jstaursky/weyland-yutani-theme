@@ -38,9 +38,9 @@
   :group 'weyland-yutani-theme)
 
 (deftheme weyland-yutani)
-(let*
+(let*                                   ;#9eafcc #9eaecc #97A7C2
     ((class '((class color) (min-colors 89)))
-     (fg1        "#9eafcc")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
+     (fg1        "#9eaecc")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
      (fg2        (color-lighten-name fg1 3)) ;#adbdd6
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
@@ -64,7 +64,7 @@
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#545d70")
-     (doc-comments   "#7583a4")
+     (doc-comments   "#697591")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

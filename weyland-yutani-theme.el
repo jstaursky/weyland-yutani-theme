@@ -40,31 +40,29 @@
 (deftheme weyland-yutani)
 (let*                                   ;#9eafcc #9eaecc #97A7C2
     ((class '((class color) (min-colors 89)))
-     (fg1        "#9eaecc")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
+     (fg1        "#a4b2ce")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
      (fg2        (color-lighten-name fg1 3)) ;#adbdd6
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))
 
-     (bg1        "#23262b")             ;#23262b #202627 #23262b #272a2e
+     (bg1        "#292b2e")             ;#23262b #202627 #23262b #272a2e
      (bg2        (color-lighten-name bg1 3))
      (bg3        (color-lighten-name bg2 2))
      (bg4        "#3c3a50")
      (key2       "#bbe074")
      (key3       "#b3f35c")
-     (keyword    "#63ad58")             ;#75c661 #76ba5e "#ad5863"
-
-                                        ;    #c99df5,#c99df5,#adbdd6,#272a2e #abbbd4
-     (type       "#847ee0")
-     (func       "#b88fe7")             ;#c899f5 #c898f5 #c99bf5
-     (var        "#CB68C3")             ;"#b05ed6" #c564c0
-     (builtin    "#847ee0")
-     (const      "#60a9cd")             ;#6abae2 "#dbd8d3" "#8395bd"
+     (keyword    "#6dbe61")             ;#75c661 #76ba5e "#ad5863"
+     (type       "#918bf6")
+     (func       "#ca9dfe")             ;#c899f5 #c898f5 #c99bf5
+     (var        "#df72d6")             ;"#b05ed6" #c564c0
+     (builtin    "#918bf6")
+     (const      "#33b0da")             ;#6abae2 "#dbd8d3" "#8395bd"
      (negate     "#c5b159")
-     (str        "#4aabb1")             ;"#68c3cb"
+     (str        "#2aa1ae")             ;"#68c3cb"
      (num        "#e974c7")
      (err        "#f70108")
-     (comment    "#545d70")
-     (doc-comments   "#697591")
+     (comment    "#586073")
+     (doc-comments   "#7e8ba9")
      (region-bg  "#30374c")
      (region-fg  "#a59ef3")
      (warning    "#ee78e8")

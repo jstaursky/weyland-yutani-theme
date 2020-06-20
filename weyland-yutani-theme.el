@@ -58,7 +58,7 @@
      (builtin    "#918bf6")
      (const      "#33b0da")             ;#6abae2 "#dbd8d3" "#8395bd"
      (negate     "#c5b159")
-     (str        "#2aa1ae")             ;"#68c3cb"
+     (str        "#29a1ae")             ;"#68c3cb"
      (num        "#e974c7")
      (err        "#f70108")
      (comment    "#586073")

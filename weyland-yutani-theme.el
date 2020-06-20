@@ -40,7 +40,7 @@
 (deftheme weyland-yutani)
 (let*                                   ;#9eafcc #9eaecc #97A7C2
     ((class '((class color) (min-colors 89)))
-     (fg1        "#a4b2ce")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
+     (fg1        "#aebad2")             ;#a9b7c7 #a6b4c3 #a9b8ca #99a3b1 #acbcd5 #a4b3cc
      (fg2        (color-lighten-name fg1 3)) ;#adbdd6
      (fg3        (color-darken-name  fg1 3))
      (fg4        (color-darken-name  fg1 6))

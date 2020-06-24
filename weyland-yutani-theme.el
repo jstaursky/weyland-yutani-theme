@@ -60,6 +60,7 @@
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
+      (bg-ArcticBlue   "#1e2828")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
@@ -105,7 +106,7 @@
     `(font-lock-keyword-face       :foreground ,HarlequinGreen)
 	`(font-lock-negation-char-face :foreground ,IcebergBlue)
 	`(font-lock-reference-face :foreground ,IcebergBlue)
-    `(font-lock-string-face :foreground ,ArcticBlue)
+    `(font-lock-string-face :foreground ,ArcticBlue :background ,bg-ArcticBlue)
     `(font-lock-type-face   :foreground ,Indigo )
     `(font-lock-variable-name-face :foreground ,Magenta)
     `(font-lock-warning-face       :foreground ,Crimson)

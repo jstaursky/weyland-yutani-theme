@@ -1,4 +1,3 @@
-
 ;;; weyland-yutani-theme.el --- Emacs theme with a dark background.
 
 ;; Copyright (C) 2020 , Joe Staursky
@@ -36,10 +35,10 @@
 
 (deftheme weyland-yutani)
 
-;; Simplifies face specifications.
-(defun weyland-yutani-face-specifier (&rest l)
+(defun weyland-yutani-face-specifier (&rest L)
+  "Simplifies face specifications."
   (let (res '())
-    (dolist (item l res)
+    (dolist (item L res)
       (push `(,(car item)
               (( ((class color)
                   (min-colors 89))

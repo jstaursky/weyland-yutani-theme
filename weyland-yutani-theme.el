@@ -78,8 +78,10 @@
       (Purple          "#ad7fe1")
       (lightPurple     "#ba86f4")
       (darkPurple      "#7a628f")
+      (Gold            "#bab171")
 
       (VibrantGreen    "#86dc2f")
+
 
       (weyland-yutani-diff-changed    "#ca84ff")
       (weyland-yutani-diff-deleted    "#FF6135")
@@ -261,6 +263,8 @@
     `(term-color-cyan :foreground ,ArcticBlue :background ,ArcticBlue)
     `(term-color-white :foreground ,base0 :background ,base0)
     `(rainbow-delimiters-unmatched-face :foreground ,Crimson)
+    `(helm-buffer-modified :foreground ,Crimson :italic t)
+    `(helm-buffer-directory :foreground ,Gold)
     `(helm-header :foreground ,base0 :background ,bg :underline nil :box nil)
     `(helm-header-line-left-margin :background ,ArcticBlue :foreground ,bg)
     `(helm-match :foreground ,lightPurple)

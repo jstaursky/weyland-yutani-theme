@@ -60,17 +60,17 @@
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
-      (bg-ArcticBlue   "#1e2828")
+      (bg-ArcticBlue   "#1d2627")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
       ;; Main Palette
       (Indigo          "#8B8BE7")
       (HarlequinGreen  "#77ba5e")
-      (IcebergBlue     "#6faed4")
+      (IcebergBlue     "#49a5d4")
       (Violet          "#c291eb")
-      (ArcticBlue      "#55a7ae")
-      (lightArcticBlue "#60bec6")
+      (ArcticBlue      "#31a5ae")
+      (lightarcticblue "#60bec6")
       (Magenta         "#C264C6")
       (Crimson         "#d06985")
 
@@ -80,6 +80,7 @@
       (lightPurple     "#ba86f4")
       (darkPurple      "#7a628f")
       (Gold            "#bab171")
+      (Orchid          "#e372dd")
 
       (VibrantGreen    "#86dc2f")
 
@@ -130,6 +131,7 @@
 
     `(which-func :foreground ,Purple)
 
+    `(highlight-numbers-number :foreground ,Orchid)
 
     ;; MODE SUPPORT: git-gutter
     `(git-gutter:added               :foreground ,weyland-yutani-diff-added)
@@ -157,6 +159,9 @@
     `(diff-hl-change :background ,weyland-yutani-diff-changed :foreground ,weyland-yutani-diff-changed)
     `(diff-hl-insert :background ,weyland-yutani-diff-added :foreground ,weyland-yutani-diff-added)
     `(diff-hl-delete :background ,weyland-yutani-diff-deleted :foreground ,weyland-yutani-diff-deleted)
+
+    ;; MODE SUPPORT: lsp
+    `(lsp-face-highlight-textual :bolt t :underline t)
 
     `(completions-first-difference :foreground ,Magenta)
     `(completions-common-part :foreground ,Violet)

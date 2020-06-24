@@ -159,6 +159,7 @@
 
 
     `(completions-first-difference :foreground ,Magenta)
+    `(completions-common-part :foreground ,Violet)
 	`(link :foreground ,IcebergBlue :underline t)
 	`(org-code :foreground ,base0)
 	`(org-hide :foreground ,base3)

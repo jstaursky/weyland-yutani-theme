@@ -49,6 +49,7 @@
 (let ((class '((class color) (min-colors 89)))
       (fg              "#a9b7ca")
       (fg-alt          "#4a5059")
+      (White           "#C3D0DF")
       (base0           "#9aa7b8")
       (base1           "#8c97a7")
       (base3           "#7e8895")
@@ -58,19 +59,27 @@
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
+      ;; #1c1f2b
 
-      (key2            "#87c26f")
+      (key2            "#93cd6d")
       (key3            "#6aa454")
       ;; Main Palette
       (Indigo          "#8B8BE7")
-      (lightIndigo     "#A28BE7")
       (HarlequinGreen  "#77ba5e")
       (IcebergBlue     "#6faed4")
       (Violet          "#c291eb")
       (ArcticBlue      "#55a7ae")
+      (lightArcticBlue "#60bec6")
       (Magenta         "#C264C6")
       (Crimson         "#d06985")
-      (Purple          "#9d71ce")
+
+      (lightIndigo     "#A28BE7")
+      (paleIndigo      "#9497d3")
+      (Purple          "#ad7fe1")
+      (lightPurple     "#ba86f4")
+      (darkPurple      "#7a628f")
+
+      (VibrantGreen    "#86dc2f")
 
       (weyland-yutani-diff-changed    "#ca84ff")
       (weyland-yutani-diff-deleted    "#FF6135")
@@ -103,7 +112,7 @@
     `(highlight :foreground ,base1 :background ,base4)
 	`(hl-line :background  ,bg-alt)
 
-	`(cursor :background ,base4)
+	`(cursor :background ,White)
     `(show-paren-match-face :background ,Crimson)
     `(isearch :bold t :foreground ,Crimson :background ,base4)
     `(mode-line :foreground ,base3 :background ,bg :bold t)
@@ -143,6 +152,8 @@
     `(diff-hl-insert :background ,weyland-yutani-diff-added :foreground ,weyland-yutani-diff-added)
     `(diff-hl-delete :background ,weyland-yutani-diff-deleted :foreground ,weyland-yutani-diff-deleted)
 
+
+    `(completions-first-difference :foreground ,Magenta)
 	`(link :foreground ,IcebergBlue :underline t)
 	`(org-code :foreground ,base0)
 	`(org-hide :foreground ,base3)
@@ -230,6 +241,8 @@
     `(magit-process-ok :foreground ,Violet :weight bold)
     `(magit-process-ng :foreground ,Crimson :weight bold)
     `(magit-branch :foreground ,IcebergBlue :weight bold)
+    `(magit-branch-remote :foreground ,ArcticBlue)
+    `(magit-branch-local :foreground ,lightIndigo)
     `(magit-log-author :foreground ,base1)
     `(magit-hash :foreground ,base0)
     `(magit-diff-file-header :foreground ,base0 :background ,base4)
@@ -246,9 +259,12 @@
     `(term-color-white :foreground ,base0 :background ,base0)
     `(rainbow-delimiters-unmatched-face :foreground ,Crimson)
     `(helm-header :foreground ,base0 :background ,bg :underline nil :box nil)
+    `(helm-header-line-left-margin :background ,ArcticBlue :foreground ,bg)
+    `(helm-match :foreground ,lightPurple)
     `(helm-source-header :foreground ,HarlequinGreen :background ,bg :underline nil :weight bold)
-    `(helm-selection :background ,bg-alt :underline nil)
+    `(helm-selection :background ,bg-Blue :underline nil :extend t)
     `(helm-selection-line :background ,bg-alt)
+    `(helm-M-x-key :foreground ,lightPurple)
     `(helm-visible-mark :foreground ,bg :background ,base4)
     `(helm-candidate-number :foreground ,bg :background ,fg)
     `(helm-separator :foreground ,Indigo :background ,bg)
@@ -274,19 +290,60 @@
     `(helm-moccur-buffer :foreground ,Violet :background ,bg)
     `(helm-source-go-package-godoc-description :foreground ,ArcticBlue)
     `(helm-bookmark-w3m :foreground ,Indigo)
-    `(company-echo-common :foreground ,bg :background ,fg)
-    `(company-preview :background ,bg :foreground ,key2)
+
+
+;;;;; Company
+   ;; (tooltip :foreground fg :background "#232830")
+
+   `(company-tooltip-annotation-selection
+    :foreground ,bg :italic t)
+
+   `(company-tooltip-annotation
+    :foreground ,ArcticBlue)
+
+   ; Colors that fill the body the tooltip (main bg and fg)
+   `(company-tooltip
+    :foreground ,paleIndigo :background ,bg-alt)
+
+    ; Color that match as you type
+   `(company-tooltip-common
+    :foreground ,key2)
+ 
+    ; Color for matching text in the completion selection
+   `(company-tooltip-common-selection
+    :foreground ,bg :bold t)
+
+    ; hl-line for company popup
+   `(company-tooltip-selection
+     :background ,lightIndigo
+     :foreground ,bg)
+
+   `(company-echo
+    :foreground ,bg :background ,fg)
+
+   `(company-scrollbar-fg
+    :background ,Magenta)
+
+   `(company-scrollbar-bg
+    :background ,base4)
+
+   `(company-echo-common
+    :foreground ,bg :background ,fg)
+
+
+    ;; `(company-echo-common :foreground ,bg :background ,fg)
+    ;; `(company-preview :background ,bg :foreground ,key2)
     `(company-preview-common :foreground ,bg-alt :foreground ,base1)
-    `(company-preview-search :foreground ,Indigo :background ,bg)
-    `(company-scrollbar-bg :background ,base4)
-    `(company-scrollbar-fg :foreground ,HarlequinGreen)
-    `(company-tooltip :foreground ,base0 :background ,bg :bold t)
-    `(company-tooltop-annotation :foreground ,IcebergBlue)
-    `(company-tooltip-common :foreground ,base1)
-    `(company-tooltip-common-selection :foreground ,ArcticBlue)
-    `(company-tooltip-mouse :inherit highlight)
-    `(company-tooltip-selection :background ,base4 :foreground ,base1)
-    `(company-template-field :inherit region)
+    ;; `(company-preview-search :foreground ,Indigo :background ,bg)
+    ;; `(company-scrollbar-bg :background ,base4)
+    ;; `(company-scrollbar-fg :foreground ,HarlequinGreen)
+    ;; `(company-tooltip :foreground ,base0 :background ,bg :bold t)
+    ;; `(company-tooltop-annotation :foreground ,IcebergBlue)
+    ;; `(company-tooltip-common :foreground ,base1)
+    ;; `(company-tooltip-common-selection :foreground ,ArcticBlue)
+    ;; `(company-tooltip-mouse :inherit highlight)
+    ;; `(company-tooltip-selection :background ,base4 :foreground ,base1)
+    ;; `(company-template-field :inherit region)
     `(web-mode-builtin-face :inherit ,font-lock-builtin-face)
     `(web-mode-comment-face :inherit ,font-lock-comment-face)
     `(web-mode-constant-face :inherit ,font-lock-constant-face)

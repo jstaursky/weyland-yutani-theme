@@ -67,7 +67,7 @@
       ;; Main Palette
       (Indigo          "#8B8BE7")
       (HarlequinGreen  "#77ba5e")
-      (IcebergBlue     "#49a5d4")
+      (IcebergBlue     "#4F9FD2")
       (Violet          "#c291eb")
       (ArcticBlue      "#31a5ae")
       (lightarcticblue "#60bec6")
@@ -102,7 +102,7 @@
     `(font-lock-builtin-face :foreground ,Indigo)
     `(font-lock-comment-face :foreground ,fg-alt)
 	`(font-lock-constant-face :foreground ,IcebergBlue)
-    `(font-lock-doc-face      :foreground ,fg-alt)
+    `(font-lock-doc-face      :foreground ,base3)
     `(font-lock-function-name-face :foreground ,Violet)
     `(font-lock-keyword-face       :foreground ,HarlequinGreen)
 	`(font-lock-negation-char-face :foreground ,IcebergBlue)

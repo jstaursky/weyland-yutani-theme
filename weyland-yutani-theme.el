@@ -56,10 +56,10 @@
       (base4           "#3e4044")
       (base5           "#4e5054")
 
+
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
-      ;; #1c1f2b
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
@@ -124,6 +124,9 @@
 	`(fringe :background ,bg :foreground ,Purple)
     `(minibuffer-prompt :bold t :foreground ,HarlequinGreen)
     `(default-italic :italic t)
+
+    `(which-func :foreground ,Purple)
+
 
     ;; MODE SUPPORT: git-gutter
     `(git-gutter:added               :foreground ,weyland-yutani-diff-added)
@@ -272,7 +275,6 @@
     `(helm-time-zone-home :foreground ,Indigo :background ,bg)
     `(helm-buffer-not-saved :foreground ,Indigo :background ,bg)
     `(helm-buffer-process :foreground ,Indigo :background ,bg)
-
     `(helm-buffer-saved-out :foreground ,fg :background ,bg)
     `(helm-buffer-size :foreground ,fg :background ,bg)
     `(helm-ff-directory :foreground ,Violet :background ,bg :weight bold)
@@ -291,59 +293,27 @@
     `(helm-source-go-package-godoc-description :foreground ,ArcticBlue)
     `(helm-bookmark-w3m :foreground ,Indigo)
 
-
 ;;;;; Company
-   ;; (tooltip :foreground fg :background "#232830")
-
-   `(company-tooltip-annotation-selection
-    :foreground ,bg :italic t)
-
-   `(company-tooltip-annotation
-    :foreground ,ArcticBlue)
-
+   `(company-tooltip-annotation-selection :foreground ,bg :italic t)
+   `(company-tooltip-annotation :foreground ,ArcticBlue)
    ; Colors that fill the body the tooltip (main bg and fg)
-   `(company-tooltip
-    :foreground ,paleIndigo :background ,bg-alt)
-
+   `(company-tooltip :foreground ,paleIndigo :background ,bg-alt)
     ; Color that match as you type
-   `(company-tooltip-common
-    :foreground ,key2)
- 
+   `(company-tooltip-common :foreground ,key2)
     ; Color for matching text in the completion selection
-   `(company-tooltip-common-selection
-    :foreground ,bg :bold t)
-
+   `(company-tooltip-common-selection :foreground ,bg :bold t)
     ; hl-line for company popup
-   `(company-tooltip-selection
-     :background ,lightIndigo
-     :foreground ,bg)
+   `(company-tooltip-selection :background ,lightIndigo :foreground ,bg)
+   `(company-echo :foreground ,bg :background ,fg)
+   `(company-scrollbar-fg :background ,Magenta)
+   `(company-scrollbar-bg :background ,base4)
+   `(company-echo-common :foreground ,bg :background ,fg)
+   `(company-preview :background ,bg :foreground ,key2)
+   `(company-preview-common :foreground ,bg-alt :foreground ,base1)
+   `(company-preview-search :foreground ,Indigo :background ,bg)
+   `(company-tooltip-mouse :inherit highlight)
+   `(company-template-field :inherit region)
 
-   `(company-echo
-    :foreground ,bg :background ,fg)
-
-   `(company-scrollbar-fg
-    :background ,Magenta)
-
-   `(company-scrollbar-bg
-    :background ,base4)
-
-   `(company-echo-common
-    :foreground ,bg :background ,fg)
-
-
-    ;; `(company-echo-common :foreground ,bg :background ,fg)
-    ;; `(company-preview :background ,bg :foreground ,key2)
-    `(company-preview-common :foreground ,bg-alt :foreground ,base1)
-    ;; `(company-preview-search :foreground ,Indigo :background ,bg)
-    ;; `(company-scrollbar-bg :background ,base4)
-    ;; `(company-scrollbar-fg :foreground ,HarlequinGreen)
-    ;; `(company-tooltip :foreground ,base0 :background ,bg :bold t)
-    ;; `(company-tooltop-annotation :foreground ,IcebergBlue)
-    ;; `(company-tooltip-common :foreground ,base1)
-    ;; `(company-tooltip-common-selection :foreground ,ArcticBlue)
-    ;; `(company-tooltip-mouse :inherit highlight)
-    ;; `(company-tooltip-selection :background ,base4 :foreground ,base1)
-    ;; `(company-template-field :inherit region)
     `(web-mode-builtin-face :inherit ,font-lock-builtin-face)
     `(web-mode-comment-face :inherit ,font-lock-comment-face)
     `(web-mode-constant-face :inherit ,font-lock-constant-face)

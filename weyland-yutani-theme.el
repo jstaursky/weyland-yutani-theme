@@ -112,7 +112,7 @@
     `(font-lock-warning-face       :foreground ,Crimson)
 
     `(region    :background ,bg-Blue :foreground ,lightIndigo)
-    `(highlight :foreground ,base1 :background ,base4)
+    `(highlight :foreground ,bg :background ,VibrantGreen)
 	`(hl-line   :background  ,bg-alt)
 
 	`(cursor :background ,White)
@@ -131,6 +131,10 @@
     `(which-func :foreground ,Purple)
 
     `(highlight-numbers-number :foreground ,Orchid)
+
+    ;; MODE SUPPORT: Ebrowse
+    `(ebrowse-root-class :foreground ,HarlequinGreen)
+    `(ebrowse-default :foreground ,Indigo)
 
     ;; MODE SUPPORT: git-gutter
     `(git-gutter:added               :foreground ,weyland-yutani-diff-added)
@@ -256,7 +260,7 @@
     `(magit-hash :foreground ,base0)
     `(magit-diff-file-header :foreground ,base0 :background ,base4)
 
-    `(lazy-highlight     :foreground ,base0  :background ,base4)
+    `(lazy-highlight     :inherit highlight)
     `(term               :foreground ,fg     :background ,bg)
     `(term-color-black   :foreground ,base4  :background ,base4)
     `(term-color-blue    :foreground ,Violet :background ,Violet)

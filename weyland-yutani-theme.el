@@ -55,14 +55,17 @@
       (base4           "#3e4044")
       (base5           "#4e5054")
 
-
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
       (bg-ArcticBlue   "#1d2627")
+      (bg-Green        "#354238")
+      (bg-Red          "#4f343a")
+      (bg-Violet       "#504361")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
+
       ;; Main Palette
       (Indigo          "#8B8BE7")
       (HarlequinGreen  "#77ba5e")
@@ -72,16 +75,20 @@
       (lightarcticblue "#60bec6")
       (Magenta         "#C264C6")
       (Crimson         "#d06985")
-
+      (lightCrimson    "#f78a7a")
+      (dimmCrimson     "#cc5655")
+ 
+      (Mustard         "#90b55b")
       (lightIndigo     "#A28BE7")
       (paleIndigo      "#9497d3")
-      (Purple          "#ad7fe1")
+      (Purple          "#AD83EB")
       (lightPurple     "#ba86f4")
       (darkPurple      "#7a628f")
       (Gold            "#bab171")
       (Orchid          "#e372dd")
 
       (VibrantGreen    "#86dc2f")
+      (VibrantRed      "#ff6c6b")
 
 
       (weyland-yutani-diff-changed    "#ca84ff")
@@ -123,6 +130,13 @@
     `(mode-line-buffer-id :bold t :foreground ,Violet :background nil)
 	`(mode-line-highlight :foreground ,HarlequinGreen :box nil :weight bold)
     `(mode-line-emphasis :foreground ,fg)
+
+    ;; MODE SUPPORT: powerline
+    `(powerline-active0 :background ,bg)
+    `(powerline-active1 :background ,bg-alt)
+    `(powerline-active2 :foreground ,White :background ,base4)
+    `(powerline-inactive0 :background ,base3)
+
 	`(vertical-border :foreground ,Purple)
 	`(fringe :background ,bg :foreground ,Purple)
     `(minibuffer-prompt :bold t :foreground ,HarlequinGreen)
@@ -165,7 +179,7 @@
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t :underline t)
-
+ 
     `(completions-first-difference :foreground ,Magenta)
     `(completions-common-part :foreground ,Violet)
 	`(link :foreground ,IcebergBlue :underline t)
@@ -234,7 +248,7 @@
     `(undo-tree-visualizer-unmodified-face :foreground ,Magenta)
     `(undo-tree-visualizer-register-face   :foreground ,Indigo)
 	`(slime-repl-inputed-output-face       :foreground ,Indigo)
-    `(trailing-whitespace :foreground nil :background ,Crimson)
+    `(trailing-whitespace :foreground nil :background ,Purple)
     `(rainbow-delimiters-depth-1-face :foreground ,fg)
     `(rainbow-delimiters-depth-2-face :foreground ,Indigo)
     `(rainbow-delimiters-depth-3-face :foreground ,Magenta)
@@ -247,8 +261,22 @@
     `(magit-section-heading :foreground ,HarlequinGreen :weight bold)
     `(magit-hunk-heading      :background ,base4)
     `(magit-section-highlight :background ,bg-alt)
-    `(magit-hunk-heading-highlight :background ,base4)
-    `(magit-diff-context-highlight :background ,base4 :foreground ,base1)
+
+    `(magit-diff-hunk-heading-highlight :foreground ,bg :background ,Violet :weight bold)
+    `(magit-diff-hunk-heading :foreground ,bg :background ,bg-Violet)
+    `(magit-section-highlight :background ,bg-Blue)
+    `(magit-diff-added :foreground ,key3 :background ,bg-Green)
+    `(magit-diff-added-highlight :foreground ,Mustard :background ,bg-Green)
+    `(magit-diff-removed-highlight :foreground ,VibrantRed :background ,bg-Red)
+    `(magit-diff-removed :foreground ,dimmCrimson :background ,bg-Red)
+    `(magit-dimmed :foreground ,base5)
+
+
+    `(magit-diff-our :foreground ,VibrantRed :background ,bg-Red)
+    `(magit-diff-our-highlight :foreground ,VibrantRed :background ,bg-Red)
+    `(magit-diff-context-highlight :background ,bg-Blue)
+    `(magit-diff-context :inherit magit-dimmed)
+    `(magit-diff-base-highlight :foreground ,lightCrimson :background ,bg-Red)
     `(magit-diffstat-added   :foreground ,Indigo)
     `(magit-diffstat-removed :foreground ,Magenta)
     `(magit-process-ok :foreground ,Violet :weight bold)
@@ -271,6 +299,9 @@
     `(term-color-cyan    :foreground ,ArcticBlue :background ,ArcticBlue)
     `(term-color-white   :foreground ,base0      :background ,base0)
     `(rainbow-delimiters-unmatched-face :foreground ,Crimson)
+
+    `(header-line :foreground ,fg :background ,bg :distant-foreground ,bg)
+
     `(helm-buffer-modified  :foreground ,Crimson :italic t)
     `(helm-buffer-directory :foreground ,Gold)
     `(helm-header :foreground ,base0 :background ,bg :underline nil :box nil)
@@ -282,7 +313,7 @@
                      :underline nil :extend t)
     `(helm-selection-line :background ,bg-alt)
     `(helm-M-x-key        :foreground ,lightPurple)
-    `(helm-visible-mark   :foreground ,bg :background ,base4)
+    `(helm-visible-mark   :foreground ,fg :background ,bg)
     `(helm-candidate-number :foreground ,bg :background ,fg)
     `(helm-separator        :foreground ,Indigo :background ,bg)
     `(helm-time-zone-current :foreground ,Indigo :background ,bg)
@@ -292,6 +323,9 @@
     `(helm-buffer-saved-out  :foreground ,fg     :background ,bg)
     `(helm-buffer-size       :foreground ,fg     :background ,bg)
     `(helm-ff-directory      :foreground ,Violet :background ,bg :weight bold)
+
+    `(helm-ff-dotted-directory :background ,bg :foreground ,fg-alt)
+
     `(helm-ff-file           :foreground ,fg     :background ,bg :weight normal)
     `(helm-ff-executable     :foreground ,key2   :background ,bg :weight normal)
     `(helm-ff-invalid-symlink :foreground ,key3  :background ,bg :weight bold)

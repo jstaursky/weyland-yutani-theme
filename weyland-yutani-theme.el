@@ -63,6 +63,7 @@
       (bg-Green        "#354238")
       (bg-Red          "#4f343a")
       (bg-Violet       "#504361")
+      (bg-Orchid       "#3b3559")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
@@ -78,7 +79,7 @@
       (Crimson         "#d06985")
       (lightCrimson    "#f78a7a")
       (dimmCrimson     "#cc5655")
- 
+
       (Mustard         "#90b55b")
       (lightIndigo     "#A28BE7")
       (paleIndigo      "#9497d3")
@@ -87,6 +88,7 @@
       (darkPurple      "#7a628f")
       (Gold            "#bab171")
       (Orchid          "#e372dd")
+      (lightOrchid     "#ee78e8")
 
       (VibrantGreen    "#86dc2f")
       (VibrantRed      "#ff6c6b")
@@ -249,7 +251,7 @@
     `(undo-tree-visualizer-unmodified-face :foreground ,Magenta)
     `(undo-tree-visualizer-register-face   :foreground ,Indigo)
 	`(slime-repl-inputed-output-face       :foreground ,Indigo)
-    `(trailing-whitespace :foreground nil :background ,Purple)
+    `(trailing-whitespace :foreground nil :background ,fg-alt)
     `(rainbow-delimiters-depth-1-face :foreground ,fg)
     `(rainbow-delimiters-depth-2-face :foreground ,Indigo)
     `(rainbow-delimiters-depth-3-face :foreground ,Magenta)
@@ -310,7 +312,7 @@
     `(helm-match :foreground ,lightPurple)
     `(helm-source-header :foreground ,HarlequinGreen
                          :background ,bg :underline nil :weight bold)
-    `(helm-selection :background ,bg-Blue
+    `(helm-selection :background ,bg-Orchid :foreground ,lightOrchid
                      :underline nil :extend t)
     `(helm-selection-line :background ,bg-alt)
     `(helm-M-x-key        :foreground ,lightPurple)

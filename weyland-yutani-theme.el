@@ -59,7 +59,7 @@
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
-      (bg-ArcticBlue   "#1d2627")
+      (bg-ArcticBlue   "#1b2526")
       (bg-Green        "#354238")
       (bg-Red          "#4f343a")
       (bg-Violet       "#504361")

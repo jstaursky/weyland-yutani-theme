@@ -109,7 +109,7 @@
     `(font-lock-builtin-face :foreground ,Indigo)
     `(font-lock-comment-face :foreground ,fg-alt)
 	`(font-lock-constant-face :foreground ,IcebergBlue)
-    `(font-lock-doc-face      :foreground base2)
+    `(font-lock-doc-face      :foreground ,base2)
     `(font-lock-function-name-face :foreground ,Violet)
     `(font-lock-keyword-face       :foreground ,HarlequinGreen)
 	`(font-lock-negation-char-face :foreground ,IcebergBlue)

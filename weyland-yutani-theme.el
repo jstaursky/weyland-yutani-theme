@@ -69,7 +69,7 @@
       (key3            "#6aa454")
 
       ;; Main Palette
-      (Indigo          "#8B8BE7")
+      (Indigo          "#877CEB")
       (HarlequinGreen  "#77ba5e")
       (IcebergBlue     "#4F9FD2")
       (Violet          "#c291eb")

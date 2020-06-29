@@ -50,9 +50,9 @@ the parenthetical noise."
 
 
 (let (
-      (fg              "#adbbcc")
-      (fg-alt          "#4a5059")
-      (hl              "#26282c")
+      (fg              "#a8b6c8")
+      (fg-alt          "#626971")
+      (hl              "#2d2f33")
       (White           "#C3D0DF")
       (base0           "#9aa7b8")
       (base1           "#8c97a7")
@@ -62,7 +62,7 @@ the parenthetical noise."
       (base5           "#4e5054")
 
 
-      (bg              "#232529")
+      (bg              "#27292d")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
       (bg-ArcticBlue   "#1b2526")
@@ -75,13 +75,13 @@ the parenthetical noise."
       (key3            "#6aa454")
 
       ;; Main Palette
-      (Indigo          "#8980ea")
-      (HarlequinGreen  "#7dbc65")
-      (IcebergBlue     "#57a2d2")
-      (Violet          "#c396ea")
-      (ArcticBlue      "#3fa7b0")
+      (Indigo          "#8d85e7")
+      (HarlequinGreen  "#76b95e")
+      (IcebergBlue     "#4f9ed0")
+      (Violet          "#b387d7")
+      (ArcticBlue      "#32a4ac")
       (lightarcticblue "#60bec6")
-      (Magenta         "#c369c6")
+      (Magenta         "#c470c7")
       (Crimson         "#d06985")
       (lightCrimson    "#f78a7a")
       (dimmCrimson     "#cc5655")
@@ -144,6 +144,18 @@ the parenthetical noise."
     `(powerline-active1 :background ,bg-alt)
     `(powerline-active2 :foreground ,White :background ,base4)
     `(powerline-inactive0 :background ,base3)
+
+    ;; MODE SUPPORT: rainbow-delimiters
+    `(rainbow-delimiters-depth-1-face :foreground  ,HarlequinGreen)
+    `(rainbow-delimiters-depth-2-face :foreground  ,Violet)
+    `(rainbow-delimiters-depth-3-face :foreground  ,Magenta)
+    `(rainbow-delimiters-depth-4-face :foreground  ,Orchid)
+    `(rainbow-delimiters-depth-5-face :foreground  ,IcebergBlue)
+    `(rainbow-delimiters-depth-6-face :foreground  ,Indigo)
+    `(rainbow-delimiters-depth-7-face :foreground  ,ArcticBlue)
+
+
+
 
 	`(vertical-border :foreground ,Purple)
 	`(fringe :background ,bg :foreground ,Purple)

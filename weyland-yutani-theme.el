@@ -37,10 +37,10 @@
 
 (defun weyland-yutani-theme-face-specifier (&rest l)
   "Simplifies face specifications.
-Encloses each list element
-inside list 'l' with the appropriate boilerplate to achieve the
-standard '(face (( (class color) (min-colors 89)) . plist))' face
-specification without all the parenthetical noise."
+Encloses each list element inside list 'l' with the appropriate
+boilerplate to achieve the standard '(face (( (class
+color) (min-colors 89)) . plist))' face specification without all
+the parenthetical noise."
   (let (res '())
     (dolist (item l res)
       (push `(,(car item)

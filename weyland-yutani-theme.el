@@ -1,11 +1,11 @@
-;;; weyland-yutani-theme.el --- Emacs theme with a dark background.
+;;; weyland-yutani-theme.el --- Emacs theme based off Alien movie franchise -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2020 , Joe Staursky
 
 ;; Author: Joe Staursky
-;; https://github.com/jstaursky/weyland-yutani-theme
+;; Homepage: https://github.com/jstaursky/weyland-yutani-theme
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "24.1"))
 
 ;; SPECIAL THANKS goes to emacs-theme-generator
 ;; was a huge help in getting started.
@@ -23,31 +23,36 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this program. If not, see <http://www.gnu.org/licenses/>.
+;; along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
+;;; Theme based off of the Alien Movie Franchise. Regardless of
+;;; opinion on the actually movies the use colors has always been gorgeous.
 
 ;;; Code:
 
-(require 'color)
-
 (deftheme weyland-yutani)
 
-(defun weyland-yutani-face-specifier (&rest L)
-  "Simplifies face specifications."
+(defun weyland-yutani-theme-face-specifier (&rest l)
+  "Simplifies face specifications. Encloses each list element
+inside list 'l' with the appropriate boilerplate to achieve the
+standard '(face (( (class color) (min-colors 89)) . plist))' face
+specification without all the parenthetical noise.
+"
   (let (res '())
-    (dolist (item L res)
+    (dolist (item l res)
       (push `(,(car item)
               (( ((class color)
                   (min-colors 89))
                  ,(cdr item) ))) res))))
 
 
-(let ((class '((class color) (min-colors 89)))
+(let (
       (fg              "#a9b7ca")
       (fg-alt          "#4a5059")
+      (hl              "#26282c")
       (White           "#C3D0DF")
       (base0           "#9aa7b8")
       (base1           "#8c97a7")
@@ -55,6 +60,7 @@
       (base3           "#7e8895")
       (base4           "#3e4044")
       (base5           "#4e5054")
+
 
       (bg              "#202226")
       (bg-alt          "#26282c")
@@ -96,17 +102,15 @@
 
       (weyland-yutani-diff-changed    "#ca84ff")
       (weyland-yutani-diff-deleted    "#FF6135")
-      (weyland-yutani-diff-added      "#3ABC56")
-      )
-
+      (weyland-yutani-diff-added      "#3ABC56"))
   (apply
    'custom-theme-set-faces
    'weyland-yutani
-   (weyland-yutani-face-specifier
+   (weyland-yutani-theme-face-specifier
 
 
     `(default :background ,bg :foreground ,fg)
-    `(hl-line :background ,(color-lighten-name bg 3))
+    `(hl-line :background ,hl)
 
     `(font-lock-builtin-face :foreground ,Indigo)
     `(font-lock-comment-face :foreground ,fg-alt)
@@ -383,12 +387,7 @@
     `(jde-java-font-lock-constant-face :foreground ,IcebergBlue)
     `(jde-java-font-lock-modifier-face :foreground ,key3)
     `(jde-jave-font-lock-protected-face :foreground ,HarlequinGreen)
-    `(jde-java-font-lock-number-face    :foreground ,Magenta)
-
-    )
-   )
-
-  )
+    `(jde-java-font-lock-number-face    :foreground ,Magenta))))
 
 ;;;###autoload
 (when load-file-name
@@ -397,8 +396,7 @@
 
 (provide-theme 'weyland-yutani)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
+;; Shuts Package-Lint up.
+(provide 'weyland-yutani-theme)
 
 ;;; weyland-yutani-theme.el ends here

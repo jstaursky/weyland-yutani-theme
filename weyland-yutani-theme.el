@@ -50,7 +50,7 @@ the parenthetical noise."
 
 
 (let (
-      (fg              "#a9b7ca")
+      (fg              "#adbbcc")
       (fg-alt          "#4a5059")
       (hl              "#26282c")
       (White           "#C3D0DF")
@@ -62,7 +62,7 @@ the parenthetical noise."
       (base5           "#4e5054")
 
 
-      (bg              "#202226")
+      (bg              "#232529")
       (bg-alt          "#26282c")
       (bg-Blue         "#272c3b")
       (bg-ArcticBlue   "#1b2526")
@@ -75,13 +75,13 @@ the parenthetical noise."
       (key3            "#6aa454")
 
       ;; Main Palette
-      (Indigo          "#877CEB")
-      (HarlequinGreen  "#77ba5e")
-      (IcebergBlue     "#4F9FD2")
-      (Violet          "#c291eb")
-      (ArcticBlue      "#31a5ae")
+      (Indigo          "#8980ea")
+      (HarlequinGreen  "#7dbc65")
+      (IcebergBlue     "#57a2d2")
+      (Violet          "#c396ea")
+      (ArcticBlue      "#3fa7b0")
       (lightarcticblue "#60bec6")
-      (Magenta         "#C264C6")
+      (Magenta         "#c369c6")
       (Crimson         "#d06985")
       (lightCrimson    "#f78a7a")
       (dimmCrimson     "#cc5655")
@@ -120,7 +120,8 @@ the parenthetical noise."
     `(font-lock-keyword-face       :foreground ,HarlequinGreen)
 	`(font-lock-negation-char-face :foreground ,IcebergBlue)
 	`(font-lock-reference-face :foreground ,IcebergBlue)
-    `(font-lock-string-face :foreground ,ArcticBlue :background ,bg-ArcticBlue)
+    `(font-lock-string-face :foreground ,ArcticBlue ;:background ,bg-ArcticBlue
+                            )
     `(font-lock-type-face   :foreground ,Indigo )
     `(font-lock-variable-name-face :foreground ,Magenta)
     `(font-lock-warning-face       :foreground ,Crimson)

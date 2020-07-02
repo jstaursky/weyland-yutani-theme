@@ -99,6 +99,8 @@ the parenthetical noise."
       (lightPurple     "#ba86f4")
       (darkPurple      "#7a628f")
       (Gold            "#bab171")
+      (Gold-alt        "#D4B483")
+
       (Orchid          "#e372dd")
       (lightOrchid     "#ee78e8")
 

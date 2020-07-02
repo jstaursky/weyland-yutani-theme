@@ -64,11 +64,15 @@ the parenthetical noise."
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
+
+      (bg-light-Black  "#2E2F2F")
+
       (bg-Grey         "#434157")
 
       (bg-Blue         "#272c3b")
       (bg-ArcticBlue   "#1b2526")
       (bg-Green        "#354238")
+      (bg-CharlesGreen "#272D2D")
       (bg-Red          "#4f343a")
       (bg-Violet       "#504361")
       (bg-Orchid       "#3b3559")

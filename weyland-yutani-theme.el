@@ -100,7 +100,7 @@ the parenthetical noise."
 
       (VibrantGreen    "#86dc2f")
       (VibrantRed      "#ff6c6b")
-
+      (VibrantPurple   "#AD83EB")
 
       (wylnyut-diff-changed    "#ca84ff")
       (wylnyut-diff-deleted    "#FF6135")
@@ -175,6 +175,11 @@ the parenthetical noise."
     ;; MODE SUPPORT: Ebrowse
     `(ebrowse-root-class                       :foreground ,HarlequinGreen)
     `(ebrowse-default                          :foreground ,Indigo)
+    `(ebrowse-member-class                     :foreground ,IcebergBlue
+      :height 1.2)
+    `(ebrowse-member-attribute                 :foreground ,VibrantPurple)
+    `(ebrowse-progress                                                           :background ,VibrantGreen)
+
     ;; MODE SUPPORT: git-gutter
     `(git-gutter:added                         :foreground ,wylnyut-diff-added)
     `(git-gutter:deleted                       :foreground ,wylnyut-diff-deleted)
@@ -349,6 +354,14 @@ the parenthetical noise."
     `(undo-tree-visualizer-register-face       :foreground ,Indigo)
     `(slime-repl-inputed-output-face           :foreground ,Indigo)
     `(trailing-whitespace                      :foreground nil                   :background ,fg-alt)
+
+
+    `(smerge-markers                           :background ,bg-Black
+      :underline ,VibrantPurple
+      :overline ,VibrantPurple)
+
+
+
     `(magit-item-highlight                                                       :background ,base4)
     `(magit-section-heading                    :foreground ,HarlequinGreen
       :weight bold)

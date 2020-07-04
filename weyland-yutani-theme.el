@@ -54,20 +54,22 @@ the parenthetical noise."
       (fg-alt          "#4a5059")
       (hl              "#26282c")
       (White           "#C3D0DF")
-      (base0           "#9aa7b8")
+      (base0           "#95a1b2")
       (base1           "#8c97a7")
       (base2           "#717ea5")
-      (base3           "#7e8895")
+      (base3           "#8f8e9a")
       (base4           "#3e4044")
       (base5           "#4e5054")
 
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
+      (very-dark-bg    "#18191c")
 
       (bg-light-Black  "#2E2F2F")
 
       (bg-Grey         "#434157")
+      (bg-Grey-alt     "#343a4f")
 
       (bg-Blue         "#272c3b")
       (bg-ArcticBlue   "#1b2526")
@@ -84,6 +86,7 @@ the parenthetical noise."
       (Indigo          "#877CEB")
       (HarlequinGreen  "#77ba5e")
       (IcebergBlue     "#4F9FD2")
+
       (Violet          "#c291eb")
       (ArcticBlue      "#31a5ae")
       (lightarcticblue "#60bec6")
@@ -92,6 +95,7 @@ the parenthetical noise."
       (lightCrimson    "#f78a7a")
       (dimmCrimson     "#cc5655")
 
+      (IcebergBlue-alt "#4FAED9")
       (Mustard         "#90b55b")
       (lightIndigo     "#A28BE7")
       (paleIndigo      "#9497d3")
@@ -99,7 +103,7 @@ the parenthetical noise."
       (lightPurple     "#ba86f4")
       (darkPurple      "#7a628f")
       (Gold            "#bab171")
-      (Gold-alt        "#D4B483")
+      (Gold-alt        "#ada56b")
 
       (Orchid          "#e372dd")
       (lightOrchid     "#ee78e8")
@@ -147,16 +151,26 @@ the parenthetical noise."
 
     `(highlight-numbers-number                 :foreground ,Orchid)
 
-    `(mode-line                                :foreground ,base3                :background ,bg
-      :bold t)
-    `(mode-line-buffer-id                      :foreground ,Violet               :background nil
-      :bold t)
-    `(mode-line-emphasis                       :foreground ,fg)
-    `(mode-line-highlight                      :foreground ,HarlequinGreen
-      :weight bold
+    `(mode-line                                :foreground ,base3                :background ,bg-alt
+      :overline ,very-dark-bg
+      :underline ,very-dark-bg)
+
+    `(mode-line-buffer-id                      :foreground ,Violet               :background ,nil)
+
+    `(mode-line-emphasis                       :foreground ,fg
       :bold nil)
-    `(mode-line-inactive                       :foreground ,IcebergBlue          :background nil)
-    `(which-func                               :foreground ,Purple)
+    `(mode-line-highlight                      :foreground ,HarlequinGreen
+      :bold t)
+    `(mode-line-inactive                       :foreground ,base3
+      :inherit mode-line)
+    `(which-func                               :foreground ,IcebergBlue-alt
+                                               :italic t)
+
+    `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
+      :height 1.2
+      :underline ,very-dark-bg
+     ;:italic t
+      )
 
     ;; MISC BUILTIN
     `(link                                     :foreground ,IcebergBlue
@@ -170,13 +184,19 @@ the parenthetical noise."
     `(completions-first-difference             :foreground ,Magenta)
     `(completions-common-part                  :foreground ,Violet)
 
-
+    `(spacemacs-micro-state-binding-face 
+      :inherit modeline)
 
     ;; MODE SUPPORT: powerline
-    `(powerline-active0                                                          :background ,bg)
-    `(powerline-active1                                                          :background ,bg-alt)
-    `(powerline-active2                        :foreground ,White                :background ,base4)
-    `(powerline-inactive0                                                        :background ,base3)
+    `(powerline-active0                 :foreground ,base3                   :background ,bg
+      :inherit mode-line)
+    `(powerline-active1                 :foreground ,base3                   :background ,bg)
+    `(powerline-active2                 :foreground ,base3                   :background ,bg-alt)
+    ;; TODO
+    `(powerline-inactive0)
+    `(powerline-inactive1)
+    `(powerline-inactive2)
+
 
     ;; MODE SUPPORT: Ebrowse
     `(ebrowse-root-class                       :foreground ,HarlequinGreen)

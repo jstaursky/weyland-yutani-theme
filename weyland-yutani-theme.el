@@ -455,7 +455,6 @@ the parenthetical noise."
       :extend t)
     `(helm-selection-line                                                        :background ,bg-alt)
     `(helm-M-x-key                             :foreground ,lightPurple)
-    `(helm-visible-mark                        :foreground ,fg                   :background ,bg)
     `(helm-candidate-number                    :foreground ,bg                   :background ,fg)
     `(helm-separator                           :foreground ,Indigo               :background ,bg)
     `(helm-time-zone-current                   :foreground ,Indigo               :background ,bg)
@@ -489,7 +488,8 @@ the parenthetical noise."
     `(helm-moccur-buffer                       :foreground ,Violet               :background ,bg)
     `(helm-source-go-package-godoc-description :foreground ,ArcticBlue)
     `(helm-bookmark-w3m                        :foreground ,Indigo)
-
+    `(helm-visible-mark                        :foreground ,ArcticBlue           :background ,bg-Blue
+      :extend t)
 
     `(web-mode-builtin-face
       :inherit ,font-lock-builtin-face)

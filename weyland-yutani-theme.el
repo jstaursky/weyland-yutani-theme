@@ -177,7 +177,7 @@ the parenthetical noise."
       :underline t)
     `(show-paren-match                         :foreground ,Violet               :background ,bg-Violet
       :bold t)
-
+    `(shadow                                   :foreground ,base5)
     `(isearch                                  :foreground ,Crimson              :background ,base4
       :bold t)
 

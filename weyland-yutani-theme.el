@@ -35,14 +35,14 @@
 
 (deftheme weyland-yutani)
 
-(defun weyland-yutani-theme-face-specifier (&rest l)
+(defun weyland-yutani-theme-face-specifier (&rest L)
   "Simplifies face specifications.
-Encloses each list element inside list 'l' with the appropriate
+Encloses each list element inside list 'L' with the appropriate
 boilerplate to achieve the standard '(face (( (class
 color) (min-colors 89)) . plist))' face specification without all
 the parenthetical noise."
   (let (res '())
-    (dolist (item l res)
+    (dolist (item L res)
       (push `(,(car item)
               (( ((class color)
                   (min-colors 89))
@@ -430,7 +430,7 @@ the parenthetical noise."
     `(helm-source-header                       :foreground ,HarlequinGreen       :background ,bg
       :underline nil
       :weight bold)
-    `(helm-selection                           :foreground ,lightOrchid          :background ,bg-Orchid    
+    `(helm-selection                           :foreground ,lightOrchid          :background ,bg-Orchid
       :underline nil
       :extend t)
     `(helm-selection-line                                                        :background ,bg-alt)

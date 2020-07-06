@@ -490,6 +490,9 @@ the parenthetical noise."
     `(helm-bookmark-w3m                        :foreground ,Indigo)
     `(helm-visible-mark                        :foreground ,ArcticBlue           :background ,bg-Blue
       :extend t)
+    `(helm-swoop-target-line-face              :foreground ,VibrantGreen         :background ,bg-CharlesGreen
+      :extend t)
+    `(helm-swoop-target-word-face              :inherit highlight)
 
     `(web-mode-builtin-face
       :inherit ,font-lock-builtin-face)

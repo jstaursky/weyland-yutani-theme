@@ -55,7 +55,7 @@ the parenthetical noise."
       (hl              "#26282c")
       (White           "#C3D0DF")
 
-      (base0           "#95a1b2")
+      (base0           "#9ca4b7")
       (base1           "#8c97a7")
       (base2           "#717ea5")
       (base3           "#8f8e9a")
@@ -66,12 +66,12 @@ the parenthetical noise."
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
 
+
       (_bg-light-Black  "#2E2F2F")
 
-      (_bg-ArcticBlue   "#1b2526")
       (bg-Blue         "#272c3b")
       (bg-CharlesGreen "#272D2D")
-      (bg-Green        "#354238")
+      (bg-Green        "#3a4f34")
       (bg-Grey         "#434157")
       (bg-Grey-alt     "#343a4f")
       (bg-Orchid       "#3b3559")
@@ -106,7 +106,7 @@ the parenthetical noise."
       (pale-Indigo           "#9497d3")
 
       ;; LIGHT VARIANTS
-      (_light-ArcticBlue      "#60bec6")
+      (_light-ArcticBlue     "#60bec6")
       (light-Crimson         "#f78a7a")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
@@ -115,7 +115,8 @@ the parenthetical noise."
 
       ;; DARK VARIANTS
       (dark-Gold             "#ada56b")
-      (_dark-Purple           "#7a628f")
+      (_dark-Purple          "#7a628f")
+      (bg-dark-Black         "#242733")
 
       ;; VIBRANT VARIANTS
       (vibrant-Green         "#86dc2f")
@@ -405,10 +406,15 @@ the parenthetical noise."
       :overline ,vibrant-Purple)
 
 
-
+    `(magit-filename                           :foreground ,Violet)
+    `(magit-diff-file-heading                  :foreground ,Crimson
+      :bold t
+      :italic t
+      :height 1.15)
     `(magit-item-highlight                                                       :background ,base4)
     `(magit-section-heading                    :foreground ,HarlequinGreen
-      :weight bold)
+      :weight bold
+      :height 1.3)
     `(magit-hunk-heading                                                         :background ,base4)
     `(magit-section-highlight                                                    :background ,bg-alt)
 
@@ -425,7 +431,7 @@ the parenthetical noise."
 
     `(magit-diff-our                           :foreground ,vibrant-Red          :background ,bg-Red)
     `(magit-diff-our-highlight                 :foreground ,vibrant-Red          :background ,bg-Red)
-    `(magit-diff-context-highlight                                               :background ,bg-Blue)
+    `(magit-diff-context-highlight             :foreground ,base0                :background ,bg-dark-Black)
     `(magit-diff-context
       :inherit magit-dimmed)
     `(magit-diff-base-highlight                :foreground ,light-Crimson        :background ,bg-Red)
@@ -437,7 +443,7 @@ the parenthetical noise."
       :weight bold)
     `(magit-branch                             :foreground ,IcebergBlue
       :weight bold)
-    `(magit-branch-remote                      :foreground ,ArcticBlue)
+    `(magit-branch-remote                      :foreground ,Gold)
     `(magit-branch-local                       :foreground ,light-Indigo)
     `(magit-log-author                         :foreground ,base1)
     `(magit-hash                               :foreground ,base0)

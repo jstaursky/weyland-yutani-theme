@@ -83,7 +83,6 @@ the parenthetical noise."
       (key2            "#93cd6d")
       (key3            "#6aa454")
 
-
       ;; Main Palette
       (HarlequinGreen        "#77ba5e")
       (Indigo                "#877CEB")
@@ -241,6 +240,9 @@ the parenthetical noise."
     `(diff-hl-change                           :foreground ,wylnyut-diff-changed :background ,wylnyut-diff-changed)
     `(diff-hl-insert                           :foreground ,wylnyut-diff-added   :background ,wylnyut-diff-added)
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
+
+    ;; MODE SUPPORT auto-dimm-other-buffers
+    `(auto-dim-other-buffers-face                                                :background "#28292c")
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t)

@@ -114,7 +114,7 @@ the parenthetical noise."
       (light-Purple          "#ba86f4")
 
       ;; DARK VARIANTS
-      (_dark-Gold             "#ada56b")
+      (dark-Gold             "#ada56b")
       (_dark-Purple           "#7a628f")
 
       ;; VIBRANT VARIANTS
@@ -246,6 +246,7 @@ the parenthetical noise."
 
     ;; MODE SUPPORT: org-mode
     ;; TODO
+    `(org-time-grid                            :foreground ,dark-Gold)
     `(org-hide                                 :foreground ,base3)
     `(org-footnote
       :underline t

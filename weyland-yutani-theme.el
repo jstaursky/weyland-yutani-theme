@@ -114,7 +114,8 @@ the parenthetical noise."
 
       ;; DARK VARIANTS
       (dark-Gold             "#ada56b")
-      (_dark-Purple          "#7a628f")
+      (dark-Purple           "#7c73cc")
+      (very-dark-Purple      "#474275")
       (bg-dark-Black         "#242733")
 
       ;; VIBRANT VARIANTS
@@ -136,7 +137,9 @@ the parenthetical noise."
     `(default                                  :foreground ,fg                   :background ,bg)
     `(default-italic
        :italic t)
-    `(header-line                              :foreground ,fg                   :background ,bg
+    `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
+      :height 1.2
+      :box (:color ,bg :line-width 1)
       :distant-foreground ,bg)
 
     `(cursor                                                                     :background ,White)
@@ -164,22 +167,33 @@ the parenthetical noise."
     `(highlight-numbers-number                 :foreground ,Orchid)
 
     ;; MODELINE
-    `(mode-line                                :foreground ,base3                :background ,bg-alt
-      :overline ,very-dark-bg
-      :underline ,very-dark-bg)
-    `(mode-line-buffer-id                      :foreground ,Violet               :background ,nil)
-    `(mode-line-emphasis                       :foreground ,fg
+    `(mode-line                                :foreground ,fg                   :background ,bg
+      :box (:color ,dark-Purple :line-width 1))
+    `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
+      :bold nil)
+    `(mode-line-emphasis                       :foreground ,fg                   :background nil
       :bold nil)
     `(mode-line-highlight                      :foreground ,HarlequinGreen
       :bold t)
-    `(mode-line-inactive                       :foreground ,base3
+    `(mode-line-inactive                       :foreground nil                   :background ,bg
+      :box (:color ,dark-Purple :line-width 1))
+
+    ;; MODE SUPPORT: powerline
+    `(powerline-active0
       :inherit mode-line)
+    `(powerline-active1                                                          :background ,very-dark-Purple)
+    `(powerline-active2                                                          :background ,very-dark-Purple
+      :inherit mode-line)
+
+    `(powerline-inactive0
+      :inherit mode-line-inactive)
+    `(powerline-inactive1
+      :inherit mode-line-inactive)
+    `(powerline-inactive2
+      :inherit mode-line-inactive)
 
     `(which-func                               :foreground ,light-IcebergBlue
       :italic t)
-    `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
-      :height 1.2
-      :underline ,very-dark-bg)
 
     ;; MISC BUILTIN
     `(link                                     :foreground ,IcebergBlue
@@ -196,16 +210,7 @@ the parenthetical noise."
     `(spacemacs-micro-state-binding-face
       :inherit modeline)
 
-    ;; MODE SUPPORT: powerline
-    `(powerline-active0                        :foreground  ,base3               :background  ,bg
-      :inherit mode-line)
-    `(powerline-active1                        :foreground  ,base3               :background  ,bg)
-    `(powerline-active2                        :foreground  ,base3               :background  ,bg-alt)
-    ;; TODO
-    `(powerline-inactive0)
-    `(powerline-inactive1)
-    `(powerline-inactive2)
-
+    `(spacemacs-transient-state-title-face     :foreground ,vibrant-Green)
 
     ;; MODE SUPPORT: Ebrowse
     `(ebrowse-root-class                       :foreground ,HarlequinGreen)
@@ -242,7 +247,7 @@ the parenthetical noise."
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
 
     ;; MODE SUPPORT auto-dimm-other-buffers
-    `(auto-dim-other-buffers-face                                                :background "#28292c")
+    `(auto-dim-other-buffers-face                                                :background "#1c1f1a")
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t)

@@ -168,7 +168,8 @@ the parenthetical noise."
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,bg
-      :box (:color ,dark-Purple :line-width 1))
+      :box (:color ,very-dark-Purple :line-width 1)
+      )
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
     `(mode-line-emphasis                       :foreground ,fg                   :background nil

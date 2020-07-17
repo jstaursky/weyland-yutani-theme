@@ -53,6 +53,7 @@ the parenthetical noise."
       (fg              "#a9b7ca")
       (fg-alt          "#4a5059")
       (hl              "#26282c")
+
       (White           "#C3D0DF")
 
       (base0           "#9ca4b7")
@@ -65,7 +66,7 @@ the parenthetical noise."
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
-
+      (bg-darker       "#1c1f1a")
 
       (_bg-light-Black  "#2E2F2F")
 
@@ -249,7 +250,7 @@ the parenthetical noise."
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
 
     ;; MODE SUPPORT auto-dimm-other-buffers
-    `(auto-dim-other-buffers-face                                                :background "#1c1f1a")
+    `(auto-dim-other-buffers-face                                                :background ,bg-darker)
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t)
@@ -330,9 +331,14 @@ the parenthetical noise."
     `(org-ellipsis                             :foreground ,Indigo)
     `(org-warning :underline t                 :foreground ,Crimson)
 
+    ;; MOVE SUPPORT: avy, ace
+    `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg)
+    `(avy-lead-face-0                          :foreground ,vibrant-Purple       :background ,bg)
+    `(avy-background-face                      :foreground ,fg-alt)
+
     ;; MODE SUPPORT: rainbow-delimiters
     `(rainbow-delimiters-unmatched-face        :foreground ,Crimson)
-    `(rainbow-delimiters-depth-1-face          :foreground ,fg)
+    `(rainbow-delimiters-depth-1-face          :foreground ,Gold)
     `(rainbow-delimiters-depth-2-face          :foreground ,Indigo)
     `(rainbow-delimiters-depth-3-face          :foreground ,Magenta)
     `(rainbow-delimiters-depth-4-face          :foreground ,IcebergBlue)

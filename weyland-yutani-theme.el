@@ -78,7 +78,7 @@ the parenthetical noise."
       (bg-Red          "#4f343a")
       (bg-Violet       "#504361")
 
-      (very-dark-bg    "#18191c")
+      (_very-dark-bg    "#18191c")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
@@ -115,7 +115,7 @@ the parenthetical noise."
       ;; DARK VARIANTS
       (dark-Gold             "#ada56b")
       (dark-Purple           "#7c73cc")
-      (very-dark-Purple      "#474275")
+      (very-dark-Purple      "#524b7c")
       (bg-dark-Black         "#242733")
 
       ;; VIBRANT VARIANTS
@@ -168,8 +168,7 @@ the parenthetical noise."
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,bg
-      :box (:color ,very-dark-Purple :line-width 1)
-      )
+      :box (:color ,very-dark-Purple :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
     `(mode-line-emphasis                       :foreground ,fg                   :background nil

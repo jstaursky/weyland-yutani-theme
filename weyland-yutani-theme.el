@@ -203,6 +203,8 @@ the parenthetical noise."
     `(shadow                                   :foreground ,base5)
     `(isearch                                  :foreground ,Crimson              :background ,base4
       :bold t)
+    ;; NOTE emacs built with gtk cannot customize this.
+    `(scroll-bar                               :foreground ,Orchid               :background ,dark-Purple)
 
     `(completions-first-difference             :foreground ,Magenta)
     `(completions-common-part                  :foreground ,Violet)
@@ -411,7 +413,7 @@ the parenthetical noise."
     `(smerge-markers                                                             :background ,bg-Black
       :underline ,vibrant-Purple
       :overline ,vibrant-Purple)
-
+    `(git-commit-comment-file                  :foreground ,Crimson)
 
     `(magit-filename                           :foreground ,Violet)
     `(magit-diff-file-heading                  :foreground ,Crimson
@@ -451,7 +453,7 @@ the parenthetical noise."
     `(magit-branch                             :foreground ,IcebergBlue
       :weight bold)
     `(magit-branch-remote                      :foreground ,Gold)
-    `(magit-branch-local                       :foreground ,light-Indigo)
+    `(magit-branch-local                       :foreground ,light-Crimson)
     `(magit-log-author                         :foreground ,base1)
     `(magit-hash                               :foreground ,base0)
     `(magit-diff-file-header                   :foreground ,base0                :background ,base4)

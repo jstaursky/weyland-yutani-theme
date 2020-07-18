@@ -332,8 +332,9 @@ the parenthetical noise."
     `(org-warning :underline t                 :foreground ,Crimson)
 
     ;; MOVE SUPPORT: avy, ace
-    `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg)
-    `(avy-lead-face-0                          :foreground ,vibrant-Purple       :background ,bg)
+    `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg
+      :bold t)
+    `(avy-lead-face-0                          :foreground ,White                :background ,bg)
     `(avy-background-face                      :foreground ,fg-alt)
 
     ;; MODE SUPPORT: rainbow-delimiters

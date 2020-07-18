@@ -459,7 +459,7 @@ the parenthetical noise."
     `(magit-branch                             :foreground ,IcebergBlue
       :weight bold)
     `(magit-branch-remote                      :foreground ,Gold)
-    `(magit-branch-local                       :foreground ,light-Crimson)
+    `(magit-branch-local                       :foreground ,Purple)
     `(magit-log-author                         :foreground ,base1)
     `(magit-hash                               :foreground ,base0)
     `(magit-diff-file-header                   :foreground ,base0                :background ,base4)

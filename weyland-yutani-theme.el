@@ -114,9 +114,9 @@ the parenthetical noise."
       (light-Purple          "#ba86f4")
 
       ;; DARK VARIANTS
-      (dark-Gold             "#ada56b")
+      (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
-      (very-dark-Purple      "#524b7c")
+      (very-dark-Purple      "#443f63")
       (bg-dark-Black         "#242733")
 
       ;; VIBRANT VARIANTS

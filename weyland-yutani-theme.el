@@ -339,10 +339,10 @@ the parenthetical noise."
 
     ;; MODE SUPPORT: rainbow-delimiters
     `(rainbow-delimiters-unmatched-face        :foreground ,Crimson)
-    `(rainbow-delimiters-depth-1-face          :foreground ,Gold)
+    `(rainbow-delimiters-depth-1-face          :foreground ,Purple)
     `(rainbow-delimiters-depth-2-face          :foreground ,Indigo)
     `(rainbow-delimiters-depth-3-face          :foreground ,Magenta)
-    `(rainbow-delimiters-depth-4-face          :foreground ,IcebergBlue)
+    `(rainbow-delimiters-depth-4-face          :foreground ,ArcticBlue)
     `(rainbow-delimiters-depth-5-face          :foreground ,HarlequinGreen)
     `(rainbow-delimiters-depth-6-face          :foreground ,fg)
     `(rainbow-delimiters-depth-7-face          :foreground ,Indigo)

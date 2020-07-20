@@ -168,16 +168,18 @@ the parenthetical noise."
     `(highlight-numbers-number                 :foreground ,Orchid)
 
     ;; MODELINE
-    `(mode-line                                :foreground ,fg                   :background ,bg
+    `(mode-line                                :foreground ,fg                   :background ,very-dark-Purple
       :box (:color ,very-dark-Purple :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
-    `(mode-line-emphasis                       :foreground ,fg                   :background nil
-      :bold nil)
-    `(mode-line-highlight                      :foreground ,HarlequinGreen
-      :bold t)
-    `(mode-line-inactive                       :foreground nil                   :background ,bg
+    `(mode-line-inactive                       :foreground ,fg-alt               :background ,bg
       :box (:color ,dark-Purple :line-width 1))
+    `(mode-line-buffer-id-inactive             :foreground ,dark-Gold)
+    `(mode-line-emphasis                       :foreground ,fg                   :background nil
+                                               :bold nil)
+    `(mode-line-highlight                      :foreground ,HarlequinGreen
+                                               :bold t)
+
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0
@@ -197,6 +199,10 @@ the parenthetical noise."
       :italic t)
 
     ;; MISC BUILTIN
+    `(custom-group-tag                         :foreground ,HarlequinGreen
+      :height 1.2)
+    `(custom-variable-tag                      :foreground ,Gold)
+
     `(link                                     :foreground ,IcebergBlue
       :underline t)
     `(show-paren-match                         :foreground ,Violet               :background ,bg-Violet
@@ -376,6 +382,7 @@ the parenthetical noise."
     `(font-latex-string-face                   :foreground ,ArcticBlue)
     `(font-latex-match-reference-keywords      :foreground ,IcebergBlue)
     `(font-latex-match-variable-keywords       :foreground ,Magenta)
+    `(font-latex-warning-face                  :foreground ,light-Crimson)
     `(ido-only-match                           :foreground ,Crimson)
     `(ido-first-match                          :foreground ,HarlequinGreen
       :bold t)

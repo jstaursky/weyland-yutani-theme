@@ -176,9 +176,9 @@ the parenthetical noise."
       :box (:color ,dark-Purple :line-width 1))
     `(mode-line-buffer-id-inactive             :foreground ,dark-Gold)
     `(mode-line-emphasis                       :foreground ,fg                   :background nil
-                                               :bold nil)
+      :bold nil)
     `(mode-line-highlight                      :foreground ,HarlequinGreen
-                                               :bold t)
+      :bold t)
 
 
     ;; MODE SUPPORT: powerline

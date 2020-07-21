@@ -261,6 +261,11 @@ the parenthetical noise."
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t)
 
+    ;; MODE SUPPORT: rtags
+    `(rtags-errline                             :foreground ,vibrant-Red         :background nil
+      :underline (:color ,vibrant-Red :style line))
+
+
     ;; MODE SUPPORT: org-mode
     ;; TODO
     `(org-time-grid                            :foreground ,dark-Gold)

@@ -51,7 +51,7 @@ the parenthetical noise."
 
 (let (
       (fg              "#a9b7ca")
-      (fg-alt          "#4a5059")
+      (fg-alt          "#606873")
       (hl              "#26282c")
 
       (White           "#C3D0DF")
@@ -341,6 +341,8 @@ the parenthetical noise."
     `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg
       :bold t)
     `(avy-lead-face-0                          :foreground ,White                :background ,bg)
+
+    `(avy-lead-face-2                          :foreground ,dimm-Crimson         :background ,bg)
     `(avy-background-face                      :foreground ,fg-alt)
 
     ;; MODE SUPPORT: rainbow-delimiters

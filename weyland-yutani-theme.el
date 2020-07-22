@@ -79,7 +79,7 @@ the parenthetical noise."
       (bg-Red          "#4f343a")
       (bg-Violet       "#504361")
 
-      (_very-dark-bg    "#18191c")
+      (very-dark-bg    "#020202")
 
       (key2            "#93cd6d")
       (key3            "#6aa454")
@@ -125,10 +125,9 @@ the parenthetical noise."
       (vibrant-Purple        "#AD83EB")
 
       ;; VERSION CONTROL
-      (wylnyut-diff-changed  "#ca84ff")
-      (wylnyut-diff-deleted  "#FF6135")
-      (wylnyut-diff-added    "#3ABC56"))
-
+      (wylnyut-diff-changed  "#8A60C3")
+      (wylnyut-diff-deleted  "#D74040")
+      (wylnyut-diff-added    "#46932D"))
 
   (apply
    'custom-theme-set-faces
@@ -147,7 +146,7 @@ the parenthetical noise."
     `(fringe                                   :foreground ,Purple               :background ,bg)
     `(hl-line                                                                    :background ,hl)
     `(region                                   :foreground ,light-Indigo         :background ,bg-Blue)
-    `(vertical-border                          :foreground ,Purple)
+    `(vertical-border                          :foreground ,very-dark-bg)
     `(highlight                                :foreground ,bg                   :background ,vibrant-Green)
     `(minibuffer-prompt                        :foreground ,HarlequinGreen
       :bold t)
@@ -169,11 +168,11 @@ the parenthetical noise."
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,very-dark-Purple
-      :box (:color ,very-dark-Purple :line-width 1))
+      :box (:color ,very-dark-bg :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
     `(mode-line-inactive                       :foreground ,fg-alt               :background ,bg
-      :box (:color ,dark-Purple :line-width 1))
+      :box (:color ,very-dark-bg :line-width 1))
     `(mode-line-buffer-id-inactive             :foreground ,dark-Gold)
     `(mode-line-emphasis                       :foreground ,fg                   :background nil
       :bold nil)
@@ -184,8 +183,8 @@ the parenthetical noise."
     ;; MODE SUPPORT: powerline
     `(powerline-active0
       :inherit mode-line)
-    `(powerline-active1                                                          :background ,very-dark-Purple)
-    `(powerline-active2                                                          :background ,very-dark-Purple
+    `(powerline-active1                                                          :background ,bg-alt)
+    `(powerline-active2                                                          :background ,bg-alt
       :inherit mode-line)
 
     `(powerline-inactive0

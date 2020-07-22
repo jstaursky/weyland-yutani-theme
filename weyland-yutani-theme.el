@@ -81,7 +81,7 @@ the parenthetical noise."
 
       (very-dark-bg    "#020202")
 
-      (key2            "#93cd6d")
+      (key2            "#7ABE5B")
       (key3            "#6aa454")
 
       ;; Main Palette
@@ -114,6 +114,7 @@ the parenthetical noise."
       (light-Purple          "#ba86f4")
 
       ;; DARK VARIANTS
+      (dark-Slate            "#3c4666")
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
       (very-dark-Purple      "#443f63")
@@ -127,7 +128,7 @@ the parenthetical noise."
       ;; VERSION CONTROL
       (wylnyut-diff-changed  "#8A60C3")
       (wylnyut-diff-deleted  "#D74040")
-      (wylnyut-diff-added    "#46932D"))
+      (wylnyut-diff-added    "#46932d"))
 
   (apply
    'custom-theme-set-faces
@@ -139,14 +140,14 @@ the parenthetical noise."
        :italic t)
     `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
       :height 1.2
-      :box (:color ,bg :line-width 1)
+      :underline ,very-dark-bg
       :distant-foreground ,bg)
 
     `(cursor                                                                     :background ,White)
     `(fringe                                   :foreground ,Purple               :background ,bg)
     `(hl-line                                                                    :background ,hl)
     `(region                                   :foreground ,light-Indigo         :background ,bg-Blue)
-    `(vertical-border                          :foreground ,very-dark-bg)
+    `(vertical-border                          :foreground ,dark-Slate)
     `(highlight                                :foreground ,bg                   :background ,vibrant-Green)
     `(minibuffer-prompt                        :foreground ,HarlequinGreen
       :bold t)
@@ -168,11 +169,11 @@ the parenthetical noise."
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,very-dark-Purple
-      :box (:color ,very-dark-bg :line-width 1))
+      :box (:color ,dark-Slate :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
     `(mode-line-inactive                       :foreground ,fg-alt               :background ,bg
-      :box (:color ,very-dark-bg :line-width 1))
+      :box (:color ,dark-Slate :line-width 1))
     `(mode-line-buffer-id-inactive             :foreground ,dark-Gold)
     `(mode-line-emphasis                       :foreground ,fg                   :background nil
       :bold nil)
@@ -364,7 +365,7 @@ the parenthetical noise."
     `(company-tooltip-annotation-selection     :foreground ,bg :italic t)
     `(company-tooltip-annotation               :foreground ,ArcticBlue)
     ; Colors that fill the body the toolti      (main bg and fg)
-    `(company-tooltip                          :foreground ,pale-Indigo          :background ,bg-alt)
+    `(company-tooltip                          :foreground ,base0                :background ,bg-alt)
     ; Color that match as you type
     `(company-tooltip-common                   :foreground ,key2)
     ; Color for matching text in the completion selection

@@ -264,7 +264,9 @@ the parenthetical noise."
     ;; MODE SUPPORT: rtags
     `(rtags-errline                             :foreground ,vibrant-Red         :background nil
       :underline (:color ,vibrant-Red :style line))
-
+    `(rtags-warnline                            :foreground ,vibrant-Red :background nil
+      :bold t
+      :underline (:color ,vibrant-Red :style wave))
 
     ;; MODE SUPPORT: org-mode
     ;; TODO

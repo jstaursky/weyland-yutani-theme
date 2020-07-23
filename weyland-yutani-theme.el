@@ -112,6 +112,7 @@ the parenthetical noise."
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")
       (light-Purple          "#ba86f4")
+      (light-Blue            "#63A4FF")
 
       ;; DARK VARIANTS
       (dark-Slate            "#3c4666")
@@ -444,7 +445,7 @@ the parenthetical noise."
       :italic t
       :height 1.15)
     `(magit-item-highlight                                                       :background ,base4)
-    `(magit-section-heading                    :foreground ,HarlequinGreen
+    `(magit-section-heading                    :foreground ,key2
       :weight bold
       :height 1.3)
     `(magit-hunk-heading                                                         :background ,base4)
@@ -475,7 +476,7 @@ the parenthetical noise."
       :weight bold)
     `(magit-branch                             :foreground ,IcebergBlue
       :weight bold)
-    `(magit-branch-remote                      :foreground ,Gold)
+    `(magit-branch-remote                      :foreground ,light-Blue)
     `(magit-branch-local                       :foreground ,Purple)
     `(magit-log-author                         :foreground ,base1)
     `(magit-hash                               :foreground ,base0)

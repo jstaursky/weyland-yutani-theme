@@ -127,9 +127,9 @@ the parenthetical noise."
       (vibrant-Purple        "#AD83EB")
 
       ;; VERSION CONTROL
-      (wylnyut-diff-changed  "#8A60C3")
-      (wylnyut-diff-deleted  "#D74040")
-      (wylnyut-diff-added    "#46932d"))
+      (wylnyut-diff-changed  "#9965ba")
+      (wylnyut-diff-deleted  "#df3e36")
+      (wylnyut-diff-added    "#4f8920"))
 
   (apply
    'custom-theme-set-faces

@@ -271,6 +271,9 @@ the parenthetical noise."
 
     ;; MODE SUPPORT: org-mode
     ;; TODO
+    `(org-document-title                       :foreground ,HarlequinGreen
+      :underline t
+      :height 1.5)
     `(org-time-grid                            :foreground ,dark-Gold)
     `(org-hide                                 :foreground ,base3)
     `(org-footnote

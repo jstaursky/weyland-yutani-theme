@@ -124,7 +124,9 @@ the parenthetical noise."
       ;; VIBRANT VARIANTS
       (vibrant-Green         "#86dc2f")
       (vibrant-Red           "#ff6c6b")
+      (vibrant-Crimson       "#FF5C47")
       (vibrant-Purple        "#AD83EB")
+      (vibrant-Yellow        "#F4ED1A")
 
       ;; VERSION CONTROL
       (wylnyut-diff-changed  "#9965ba")
@@ -181,6 +183,11 @@ the parenthetical noise."
     `(mode-line-highlight                      :foreground ,HarlequinGreen
       :bold t)
 
+    ;; MODE SUPPORT: lsp
+    `(lsp-face-highlight-read                  :foreground ,vibrant-Yellow)
+    `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
+    ;; MODE SUPPORT: tree-sitter
+    `(tree-sitter-hl-face:number               :foreground ,light-Crimson)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

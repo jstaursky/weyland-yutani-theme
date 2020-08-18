@@ -402,9 +402,21 @@ the parenthetical noise."
     `(font-latex-match-reference-keywords      :foreground ,IcebergBlue)
     `(font-latex-match-variable-keywords       :foreground ,Magenta)
     `(font-latex-warning-face                  :foreground ,light-Crimson)
+
+    ;; MODE SUPPORT: ido
     `(ido-only-match                           :foreground ,Crimson)
     `(ido-first-match                          :foreground ,HarlequinGreen
       :bold t)
+    `(ido-subdir                               :foreground ,Gold)
+    `(ido-first-match                          :foreground ,vibrant-Green)
+    `(ido-only-match                           :foreground ,vibrant-Green
+      :italic t
+      :bold t)
+
+    `(aw-leading-char-face                     :foreground ,vibrant-Green
+      :height 1.9
+      :bold t
+      :box (:color ,dark-Slate :line-width -2))
     `(gnus-header-content                      :foreground ,HarlequinGreen)
     `(gnus-header-from                         :foreground ,Magenta)
     `(gnus-header-name                         :foreground ,Indigo)

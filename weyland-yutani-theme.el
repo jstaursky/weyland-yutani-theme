@@ -152,8 +152,7 @@ the parenthetical noise."
     `(region                                   :foreground ,light-Indigo         :background ,bg-Blue)
     `(vertical-border                          :foreground ,dark-Slate)
     `(highlight                                :foreground ,bg                   :background ,vibrant-Green)
-    `(minibuffer-prompt                        :foreground ,HarlequinGreen
-      :bold t)
+    `(minibuffer-prompt                        :foreground ,HarlequinGreen)
 
     `(font-lock-builtin-face                   :foreground ,Indigo)
     `(font-lock-comment-face                   :foreground ,fg-alt)

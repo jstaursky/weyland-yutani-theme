@@ -350,6 +350,7 @@ the parenthetical noise."
     `(org-done
       :box (:line-width 1 :color ,base4))
     `(org-agenda-done
+      :strike-through ,base3
       :inherit org-done)
     `(org-ellipsis                             :foreground ,Indigo)
     `(org-warning :underline t                 :foreground ,Crimson)

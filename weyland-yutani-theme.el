@@ -106,8 +106,9 @@ the parenthetical noise."
       (pale-Indigo           "#9497d3")
 
       ;; LIGHT VARIANTS
+      (light-Crimson         "#FF6066")
       (_light-ArcticBlue     "#60bec6")
-      (light-Crimson         "#f78a7a")
+      (Orange                "#f78a7a")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")
@@ -115,6 +116,7 @@ the parenthetical noise."
       (light-Blue            "#63A4FF")
 
       ;; DARK VARIANTS
+      (dark-Crimson          "#ba464a")
       (dark-Slate            "#3c4666")
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
@@ -186,7 +188,7 @@ the parenthetical noise."
     `(lsp-face-highlight-read                  :foreground ,vibrant-Yellow)
     `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
     ;; MODE SUPPORT: tree-sitter
-    `(tree-sitter-hl-face:number               :foreground ,light-Crimson)
+    `(tree-sitter-hl-face:number               :foreground ,Orange)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0
@@ -280,22 +282,33 @@ the parenthetical noise."
     `(org-document-title                       :foreground ,HarlequinGreen
       :underline t
       :height 1.5)
-    `(org-time-grid                            :foreground ,dark-Gold)
+    `(org-agenda-calendar-event                :foreground ,White)
+    `(org-time-grid                            :foreground ,dark-Purple)
     `(org-hide                                 :foreground ,base3)
-    `(org-footnote
+    `(org-footnote                             :foreground ,base3
+      :underline t)
+
+    `(org-warning                              :foreground ,light-Crimson
       :underline t
-                                               :foreground ,base3)
+      :bold t)
+
+    `(org-upcoming-deadline                    :foreground ,light-Crimson
+      :underline t
+      :bold t)
+    `(org-upcoming-distant-deadline            :foreground ,dark-Crimson)
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
       :underline t)
     `(org-agenda-structure                     :foreground ,base1
       :weight bold
       :box (:color ,base3))
-    `(org-agenda-date :height 1.1              :foreground ,Magenta)
+    `(org-agenda-date                          :foreground ,vibrant-Green
+      :underline t)
     `(org-agenda-date-weekend                  :foreground ,base3
       :bold nil
       :weight normal)
-    `(org-agenda-date-today                    :foreground ,HarlequinGreen
+    `(org-agenda-date-today                    :foreground ,vibrant-Green
+      :underline t
       :weight bold
       :height 1.4)
     `(org-scheduled                            :foreground ,Indigo)
@@ -341,7 +354,7 @@ the parenthetical noise."
       :inherit org-block
       :slant italic)
 
-    `(org-code                                 :foreground ,light-Crimson)
+    `(org-code                                 :foreground ,Orange)
     `(org-verbatim                             :foreground ,HarlequinGreen)
     `(org-link
       :inherit link)
@@ -350,11 +363,9 @@ the parenthetical noise."
     `(org-done
       :box (:line-width 1 :color ,base4))
     `(org-agenda-done
-      :strike-through ,base3
-      :inherit org-done)
+      :strike-through ,wylnyut-diff-changed
+      )
     `(org-ellipsis                             :foreground ,Indigo)
-    `(org-warning :underline t                 :foreground ,Crimson)
-
     ;; MOVE SUPPORT: avy, ace
     `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg
       :bold t)
@@ -402,7 +413,7 @@ the parenthetical noise."
     `(font-latex-string-face                   :foreground ,ArcticBlue)
     `(font-latex-match-reference-keywords      :foreground ,IcebergBlue)
     `(font-latex-match-variable-keywords       :foreground ,Magenta)
-    `(font-latex-warning-face                  :foreground ,light-Crimson)
+    `(font-latex-warning-face                  :foreground ,Orange)
 
     ;; MODE SUPPORT: ido
     `(ido-only-match                           :foreground ,Crimson)
@@ -489,7 +500,7 @@ the parenthetical noise."
     `(magit-diff-context-highlight             :foreground ,base0                :background ,bg-dark-Black)
     `(magit-diff-context
       :inherit magit-dimmed)
-    `(magit-diff-base-highlight                :foreground ,light-Crimson        :background ,bg-Red)
+    `(magit-diff-base-highlight                :foreground ,Orange        :background ,bg-Red)
     `(magit-diffstat-added                     :foreground ,Indigo)
     `(magit-diffstat-removed                   :foreground ,Magenta)
     `(magit-process-ok                         :foreground ,Violet

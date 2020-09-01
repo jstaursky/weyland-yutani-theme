@@ -326,7 +326,7 @@ the parenthetical noise."
       :height 1.4)
     `(org-level-3                              :foreground ,ArcticBlue
       :bold t
-      :height 1.3)
+      :height 1.2)
     `(org-level-4                              :foreground ,Violet
       :bold t
       :height 1.1)

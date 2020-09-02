@@ -358,13 +358,15 @@ the parenthetical noise."
     `(org-verbatim                             :foreground ,HarlequinGreen)
     `(org-link
       :inherit link)
-    `(org-todo
-      :box (:line-width 1 :color ,Crimson))
-    `(org-done
-      :box (:line-width 1 :color ,base4))
+    `(org-todo                                 :foreground ,vibrant-Yellow
+      :bold t
+      :italic t
+      :height 1.2)
+    `(org-done                                 :foreground ,vibrant-Green
+      :bold t
+      :height 1.2)
     `(org-agenda-done
-      :strike-through ,wylnyut-diff-changed
-      )
+      :strike-through ,wylnyut-diff-changed)
     `(org-ellipsis                             :foreground ,Indigo)
     ;; MOVE SUPPORT: avy, ace
     `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg

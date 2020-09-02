@@ -358,7 +358,8 @@ the parenthetical noise."
     `(org-verbatim                             :foreground ,HarlequinGreen)
     `(org-link
       :inherit link)
-    `(org-todo                                 :foreground ,vibrant-Yellow
+    `(org-todo                                 :foreground ,light-Crimson
+      :underline t
       :bold t
       :italic t
       :height 1.2)

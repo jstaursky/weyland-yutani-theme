@@ -63,6 +63,7 @@ the parenthetical noise."
       (base4           "#3e4044")
       (base5           "#4e5054")
       (base6           "#717ea5")
+      (base7           "#505a76")
 
       (bg              "#202226")
       (bg-alt          "#26282c")
@@ -292,14 +293,14 @@ the parenthetical noise."
       :underline t)
 
     `(org-agenda-current-time
-      :inherit default)
+      :inherit org-time-grid)
 
-    `(org-warning                              :foreground ,pale-Crimson)
+    `(org-warning                              :foreground ,pale-Crimson
+      :underline t)
 
-    `(org-upcoming-deadline
-      :inherit org-warning
-      :underline t
+    `(org-upcoming-deadline                    :foreground ,pale-Crimson
       )
+
     `(org-upcoming-distant-deadline
       :foreground ,dimm-pale-Crimson)
 
@@ -321,9 +322,7 @@ the parenthetical noise."
       :weight bold
       :height 1.4)
     `(org-scheduled                            :foreground ,Indigo)
-    `(org-scheduled-today                      :foreground ,Violet
-      :weight bold
-      :height 1.2)
+    `(org-scheduled-today                      :foreground ,IcebergBlue)
     `(org-document-info-keyword                :foreground ,Violet)
     `(org-sexp-date                            :foreground ,base3)
     ;; DONE
@@ -349,6 +348,9 @@ the parenthetical noise."
       :bold t
       :height 1.0)
 
+    `(org-habit-alert-face                                                       :background ,Gold)
+    `(org-habit-clear-future-face                                                :background "#3c7aa1")
+    `(org-habit-overdue-future-face                                              :background "#d24e62")
 
     `(org-block                                                                  :background ,bg-Black
      :extend t)
@@ -377,8 +379,9 @@ the parenthetical noise."
     `(org-done                                 :foreground ,vibrant-Green
       :bold t
       :height 1.2)
-    `(org-agenda-done
-      :strike-through ,wylnyut-diff-changed)
+    `(org-agenda-done                          :foreground ,base7
+      :bold t
+      :strike-through ,base7)
     `(org-ellipsis                             :foreground ,Indigo)
     ;; MOVE SUPPORT: avy, ace
     `(avy-lead-face                            :foreground ,vibrant-Green        :background ,bg

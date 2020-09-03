@@ -58,15 +58,16 @@ the parenthetical noise."
 
       (base0           "#9ca4b7")
       (base1           "#8c97a7")
-      (base2           "#717ea5")
+      (base2           "#6e788c")       ;
       (base3           "#8f8e9a")
       (base4           "#3e4044")
       (base5           "#4e5054")
+      (base6           "#717ea5")
 
       (bg              "#202226")
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
-      (bg-darker       "#1c1f1a")
+      (bg-darker       "#1f2024")
 
       (_bg-light-Black  "#2E2F2F")
 
@@ -90,24 +91,27 @@ the parenthetical noise."
       (Violet                "#c291eb")
       (Magenta               "#C264C6")
       (IcebergBlue           "#4F9FD2")
-      (ArcticBlue            "#31a5ae")
+      (ArcticBlue            "#59b9b4")
       (Gold                  "#bab171")
       (Orchid                "#e372dd")
 
       ;; ACCENT COLORS
       (Crimson               "#d06985")
       (Mustard               "#90b55b")
+      (Yellow                "#b9b65e")
       (Purple                "#AD83EB")
 
       ;; DIMM VARIANTS
       (dimm-Crimson          "#cc5655")
 
+
       ;; PALE VARIANTS
       (pale-Indigo           "#9497d3")
+      (pale-Crimson          "#b95e76")
+      (dimm-pale-Crimson     "#9f5066")
 
       ;; LIGHT VARIANTS
       (light-Crimson         "#FF6066")
-      (_light-ArcticBlue     "#60bec6")
       (Orange                "#f78a7a")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
@@ -164,7 +168,9 @@ the parenthetical noise."
     `(font-lock-keyword-face                   :foreground ,HarlequinGreen)
     `(font-lock-negation-char-face             :foreground ,IcebergBlue)
     `(font-lock-reference-face                 :foreground ,IcebergBlue)
-    `(font-lock-string-face                    :foreground ,ArcticBlue)
+    `(font-lock-string-face                    :foreground ;"#5eb2a9"
+                                              ,ArcticBlue ;:italic t
+                                               )
     `(font-lock-type-face                      :foreground ,Indigo)
     `(font-lock-variable-name-face             :foreground ,Magenta)
     `(font-lock-warning-face                   :foreground ,Crimson)
@@ -264,9 +270,6 @@ the parenthetical noise."
     `(diff-hl-insert                           :foreground ,wylnyut-diff-added   :background ,wylnyut-diff-added)
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
 
-    ;; MODE SUPPORT auto-dimm-other-buffers
-    `(auto-dim-other-buffers-face                                                :background ,bg-darker)
-
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-textual :bolt t)
 
@@ -283,31 +286,37 @@ the parenthetical noise."
       :underline t
       :height 1.5)
     `(org-agenda-calendar-event                :foreground ,White)
-    `(org-time-grid                            :foreground ,dark-Purple)
+    `(org-time-grid                            :foreground ,base6)
     `(org-hide                                 :foreground ,base3)
     `(org-footnote                             :foreground ,base3
       :underline t)
 
-    `(org-warning                              :foreground ,light-Crimson
-      :underline t
-      :bold t)
+    `(org-agenda-current-time
+      :inherit default)
 
-    `(org-upcoming-deadline                    :foreground ,light-Crimson
+    `(org-warning                              :foreground ,pale-Crimson)
+
+    `(org-upcoming-deadline
+      :inherit org-warning
       :underline t
-      :bold t)
-    `(org-upcoming-distant-deadline            :foreground ,dark-Crimson)
+      )
+    `(org-upcoming-distant-deadline
+      :foreground ,dimm-pale-Crimson)
+
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
       :underline t)
     `(org-agenda-structure                     :foreground ,base1
       :weight bold
       :box (:color ,base3))
-    `(org-agenda-date                          :foreground ,vibrant-Green
-      :underline t)
+    `(org-agenda-date                          :foreground ,HarlequinGreen       :background ,bg-Grey-alt
+      :underline ,very-dark-bg
+      :distant-foreground ,bg)
+
     `(org-agenda-date-weekend                  :foreground ,base3
       :bold nil
       :weight normal)
-    `(org-agenda-date-today                    :foreground ,vibrant-Green
+    `(org-agenda-date-today                    :foreground ,HarlequinGreen
       :underline t
       :weight bold
       :height 1.4)
@@ -356,13 +365,15 @@ the parenthetical noise."
 
     `(org-code                                 :foreground ,Orange)
     `(org-verbatim                             :foreground ,HarlequinGreen)
+    `(org-agenda-calendar-event
+      :inherit default)
     `(org-link
       :inherit link)
-    `(org-todo                                 :foreground ,light-Crimson
+    `(org-todo                                 :foreground ,Yellow
       :underline t
       :bold t
       :italic t
-      :height 1.2)
+      :height 1.1)
     `(org-done                                 :foreground ,vibrant-Green
       :bold t
       :height 1.2)
@@ -389,12 +400,13 @@ the parenthetical noise."
     `(rainbow-delimiters-depth-8-face          :foreground ,Magenta)
 
     ;; MODE SUPPORT: company
-    `(company-tooltip-annotation-selection     :foreground ,bg :italic t)
+    `(company-tooltip-annotation-selection     :foreground ,bg
+      :italic t)
     `(company-tooltip-annotation               :foreground ,ArcticBlue)
     ; Colors that fill the body the toolti      (main bg and fg)
-    `(company-tooltip                          :foreground ,base0                :background ,bg-alt)
+    `(company-tooltip                          :foreground ,base0                :background ,bg-darker)
     ; Color that match as you type
-    `(company-tooltip-common                   :foreground ,key2)
+    `(company-tooltip-common                   :foreground ,light-Indigo)
     ; Color for matching text in the completion selection
     `(company-tooltip-common-selection         :foreground ,bg :bold t)
     ; hl-line for company popup
@@ -406,8 +418,10 @@ the parenthetical noise."
     `(company-preview                          :foreground ,key2                 :background ,bg)
     `(company-preview-common                   :foreground ,base1                :background ,bg-alt)
     `(company-preview-search                   :foreground ,Indigo               :background ,bg)
-    `(company-tooltip-mouse :inherit highlight)
-    `(company-template-field :inherit region)
+    `(company-tooltip-mouse 
+     :inherit highlight)
+    `(company-template-field
+      :inherit region)
 
 
     `(font-latex-bold-face                     :foreground ,Indigo)

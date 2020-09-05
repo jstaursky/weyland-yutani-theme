@@ -127,13 +127,18 @@ the parenthetical noise."
       (dark-Purple           "#7c73cc")
       (very-dark-Purple      "#443f63")
       (bg-dark-Black         "#242733")
+      (dark-Blue             "#3c79a1")
+      (dark-Red              "#d2344c")
+      (dark-Green            "#00bc45")
 
       ;; VIBRANT VARIANTS
       (vibrant-Green         "#86dc2f")
       (vibrant-Red           "#ff6c6b")
       (vibrant-Crimson       "#FF5C47")
       (vibrant-Purple        "#AD83EB")
-      (vibrant-Yellow        "#F4ED1A")
+      (vibrant-Finch         "#F4ED1A")
+      (vibrant-Yellow        "#ffbb1c")
+      (dark-vibrant-Yellow   "#d3a850")
 
       ;; VERSION CONTROL
       (wylnyut-diff-changed  "#9965ba")
@@ -169,14 +174,13 @@ the parenthetical noise."
     `(font-lock-keyword-face                   :foreground ,HarlequinGreen)
     `(font-lock-negation-char-face             :foreground ,IcebergBlue)
     `(font-lock-reference-face                 :foreground ,IcebergBlue)
-    `(font-lock-string-face                    :foreground ;"#5eb2a9"
-                                              ,ArcticBlue ;:italic t
-                                               )
+    `(font-lock-string-face                    :foreground ,ArcticBlue)
     `(font-lock-type-face                      :foreground ,Indigo)
     `(font-lock-variable-name-face             :foreground ,Magenta)
     `(font-lock-warning-face                   :foreground ,Crimson)
 
     `(highlight-numbers-number                 :foreground ,Orchid)
+    `(match                                    :foreground ,pale-Crimson         :background ,bg-darker)
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,very-dark-Purple
@@ -192,10 +196,11 @@ the parenthetical noise."
       :bold t)
 
     ;; MODE SUPPORT: lsp
-    `(lsp-face-highlight-read                  :foreground ,vibrant-Yellow)
+    `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
     `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
     ;; MODE SUPPORT: tree-sitter
     `(tree-sitter-hl-face:number               :foreground ,Orange)
+    `(tree-sitter-hl-face:operator             :foreground ,dark-vibrant-Yellow)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0
@@ -275,11 +280,14 @@ the parenthetical noise."
     `(lsp-face-highlight-textual :bolt t)
 
     ;; MODE SUPPORT: rtags
-    `(rtags-errline                             :foreground ,vibrant-Red         :background nil
-      :underline (:color ,vibrant-Red :style line))
-    `(rtags-warnline                            :foreground ,vibrant-Red :background nil
+    `(rtags-errline                            :foreground ,vibrant-Red          :background nil
+      :underline
+      (:color ,vibrant-Red :style line))
+
+    `(rtags-warnline                           :foreground ,vibrant-Red          :background nil
       :bold t
-      :underline (:color ,vibrant-Red :style wave))
+      :underline
+      (:color ,vibrant-Red :style wave))
 
     ;; MODE SUPPORT: org-mode
     ;; TODO
@@ -302,7 +310,7 @@ the parenthetical noise."
       )
 
     `(org-upcoming-distant-deadline
-      :foreground ,dimm-pale-Crimson)
+                                               :foreground ,dimm-pale-Crimson)
 
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
@@ -348,9 +356,19 @@ the parenthetical noise."
       :bold t
       :height 1.0)
 
-    `(org-habit-alert-face                                                       :background ,Gold)
-    `(org-habit-clear-future-face                                                :background "#3c7aa1")
-    `(org-habit-overdue-future-face                                              :background "#d24e62")
+    `(org-habit-alert-face                     :foreground ,bg                   :background ,vibrant-Yellow
+      :box t
+      :bold t)
+
+    `(org-habit-clear-future-face              :foreground ,bg                   :background ,dark-Blue
+      :box t)
+
+    `(org-habit-ready-face                     :foreground "black"               :background ,dark-Green
+      :underline t
+      :overline t)
+    `(org-habit-overdue-future-face            :foreground ,bg                   :background ,dark-Red
+      :underline t
+      :overline t)
 
     `(org-block                                                                  :background ,bg-Black
      :extend t)
@@ -520,7 +538,7 @@ the parenthetical noise."
     `(magit-diff-context-highlight             :foreground ,base0                :background ,bg-dark-Black)
     `(magit-diff-context
       :inherit magit-dimmed)
-    `(magit-diff-base-highlight                :foreground ,Orange        :background ,bg-Red)
+    `(magit-diff-base-highlight                :foreground ,Orange               :background ,bg-Red)
     `(magit-diffstat-added                     :foreground ,Indigo)
     `(magit-diffstat-removed                   :foreground ,Magenta)
     `(magit-process-ok                         :foreground ,Violet
@@ -537,6 +555,7 @@ the parenthetical noise."
 
     `(lazy-highlight
       :inherit highlight)
+
     `(term                                     :foreground ,fg                   :background ,bg)
     `(term-color-black                         :foreground ,base4                :background ,base4)
     `(term-color-blue                          :foreground ,Violet               :background ,Violet)

@@ -200,7 +200,9 @@ the parenthetical noise."
     `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
     ;; MODE SUPPORT: tree-sitter
     `(tree-sitter-hl-face:number               :foreground ,Orange)
-    `(tree-sitter-hl-face:operator             :foreground ,dark-vibrant-Yellow)
+    `(tree-sitter-hl-face:constant
+      :inherit tree-sitter-hl-face:number)
+    `(tree-sitter-hl-face:operator             :foreground ,White)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

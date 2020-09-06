@@ -202,7 +202,6 @@ the parenthetical noise."
     `(tree-sitter-hl-face:number               :foreground ,Orange)
     `(tree-sitter-hl-face:constant
       :inherit tree-sitter-hl-face:number)
-    `(tree-sitter-hl-face:operator             :foreground ,White)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0
@@ -358,16 +357,25 @@ the parenthetical noise."
       :bold t
       :height 1.0)
 
-    `(org-habit-alert-face                     :foreground ,bg                   :background ,vibrant-Yellow
-      :box t
-      :bold t)
-
-    `(org-habit-clear-future-face              :foreground ,bg                   :background ,dark-Blue
-      :box t)
-
-    `(org-habit-ready-face                     :foreground "black"               :background ,dark-Green
+    ;; Face for days on which a task should start to be done.
+    `(org-habit-ready-face                     :foreground "black"               :background ,vibrant-Yellow
       :underline t
       :overline t)
+
+    ;; Face for days on which a task is due.
+    `(org-habit-alert-face
+      :inherit org-habit-ready-face
+      :bold t)
+
+    `(org-habit-alert-future-face                                                :background ,bg)
+    `(org-habit-overdue-face
+      :bold t
+      :inherit org-habit-ready-face)
+    `(org-habit-clear-face                     :foreground ,vibrant-Yellow       :background ,bg-Grey-alt)
+
+    ;; Face for future days on which a task shouldn’t be done yet.
+    `(org-habit-clear-future-face              :foreground ,bg                   :background ,bg-Grey-alt)
+
     `(org-habit-overdue-future-face            :foreground ,bg                   :background ,dark-Red
       :underline t
       :overline t)

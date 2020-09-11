@@ -93,7 +93,7 @@ the parenthetical noise."
       (Magenta               "#C264C6")
       (IcebergBlue           "#4F9FD2")
       (ArcticBlue            "#59b9b4")
-      (Gold                  "#bab171")
+      (Gold                  "#b9b174")
       (Orchid                "#e372dd")
 
       ;; ACCENT COLORS
@@ -113,7 +113,7 @@ the parenthetical noise."
 
       ;; LIGHT VARIANTS
       (light-Crimson         "#FF6066")
-      (Orange                "#d98676")
+      (Orange                "#fb8a69")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")
@@ -202,6 +202,7 @@ the parenthetical noise."
     `(tree-sitter-hl-face:number               :foreground ,Orange)
     `(tree-sitter-hl-face:constant
       :inherit tree-sitter-hl-face:number)
+    `(tree-sitter-hl-face:operator             :foreground ,White)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

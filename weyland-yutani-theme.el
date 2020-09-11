@@ -113,7 +113,7 @@ the parenthetical noise."
 
       ;; LIGHT VARIANTS
       (light-Crimson         "#FF6066")
-      (Orange                "#f78a7a")
+      (Orange                "#d98676")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")
@@ -183,7 +183,7 @@ the parenthetical noise."
     `(match                                    :foreground ,pale-Crimson         :background ,bg-darker)
 
     ;; MODELINE
-    `(mode-line                                :foreground ,fg                   :background ,very-dark-Purple
+    `(mode-line                                :foreground ,fg                   :background "#3B3F45"
       :box (:color ,dark-Slate :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
@@ -308,7 +308,7 @@ the parenthetical noise."
       :underline t)
 
     `(org-upcoming-deadline                    :foreground ,pale-Crimson
-      )
+      :italic t)
 
     `(org-upcoming-distant-deadline
                                                :foreground ,dimm-pale-Crimson)

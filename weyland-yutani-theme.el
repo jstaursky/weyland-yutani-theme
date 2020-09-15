@@ -65,7 +65,7 @@ the parenthetical noise."
       (base6           "#717ea5")
       (base7           "#505a76")
 
-      (bg              "#202226")
+      (bg              "#202226")       ;#202226 #040C0B
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
       (bg-darker       "#1f2024")
@@ -86,8 +86,8 @@ the parenthetical noise."
       (key2            "#7ABE5B")
       (key3            "#6aa454")
 
-      ;; Main Palette
-      (HarlequinGreen        "#77ba5e")
+      ;; Main Palette {"#18191a",
+      (HarlequinGreen        "#79c151")
       (Indigo                "#877CEB")
       (Violet                "#c291eb")
       (Magenta               "#C264C6")
@@ -107,38 +107,34 @@ the parenthetical noise."
 
 
       ;; PALE VARIANTS
-      (pale-Indigo           "#9497d3")
       (pale-Crimson          "#b95e76")
-      (dimm-pale-Crimson     "#9f5066")
 
       ;; LIGHT VARIANTS
-      (light-Crimson         "#FF6066")
+      (_light-Crimson        "#FF6066")
       (Orange                "#fb8a69")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")
       (light-Purple          "#ba86f4")
       (light-Blue            "#63A4FF")
+      (light-Finch           "#ebff5f")
 
       ;; DARK VARIANTS
       (dark-Crimson          "#ba464a")
       (dark-Slate            "#3c4666")
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
-      (very-dark-Purple      "#443f63")
       (bg-dark-Black         "#242733")
-      (dark-Blue             "#3c79a1")
       (dark-Red              "#d2344c")
-      (dark-Green            "#00bc45")
 
       ;; VIBRANT VARIANTS
       (vibrant-Green         "#86dc2f")
       (vibrant-Red           "#ff6c6b")
-      (vibrant-Crimson       "#FF5C47")
+      (vibrant-Crimson       "#df5155")
+
       (vibrant-Purple        "#AD83EB")
       (vibrant-Finch         "#F4ED1A")
       (vibrant-Yellow        "#ffbb1c")
-      (dark-vibrant-Yellow   "#d3a850")
 
       ;; VERSION CONTROL
       (wylnyut-diff-changed  "#9965ba")
@@ -183,7 +179,7 @@ the parenthetical noise."
     `(match                                    :foreground ,pale-Crimson         :background ,bg-darker)
 
     ;; MODELINE
-    `(mode-line                                :foreground ,fg                   :background "#3B3F45"
+    `(mode-line                                :foreground ,fg                   :background ,bg-Black
       :box (:color ,dark-Slate :line-width 1))
     `(mode-line-buffer-id                      :foreground ,Gold                 :background nil
       :bold nil)
@@ -195,6 +191,8 @@ the parenthetical noise."
     `(mode-line-highlight                      :foreground ,HarlequinGreen
       :bold t)
 
+    `(hi-yellow                                :foreground ,bg                   :background ,light-Finch)
+
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
     `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
@@ -202,7 +200,7 @@ the parenthetical noise."
     `(tree-sitter-hl-face:number               :foreground ,Orange)
     `(tree-sitter-hl-face:constant
       :inherit tree-sitter-hl-face:number)
-    `(tree-sitter-hl-face:operator             :foreground ,White)
+
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0
@@ -305,14 +303,14 @@ the parenthetical noise."
     `(org-agenda-current-time
       :inherit org-time-grid)
 
-    `(org-warning                              :foreground ,pale-Crimson
-      :underline t)
+    `(org-warning                              :foreground ,vibrant-Crimson
+      :bold t)
 
-    `(org-upcoming-deadline                    :foreground ,pale-Crimson
+    `(org-upcoming-deadline
+      :inherit org-warning
       :italic t)
 
-    `(org-upcoming-distant-deadline
-                                               :foreground ,dimm-pale-Crimson)
+    `(org-upcoming-distant-deadline            :foreground  ,dark-Crimson)
 
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
@@ -405,9 +403,9 @@ the parenthetical noise."
       :bold t
       :italic t
       :height 1.1)
-    `(org-done                                 :foreground ,vibrant-Green
-      :bold t
-      :height 1.2)
+    `(org-done
+      :foreground "#7cc742" ; <= VERY slight difference to HarlequinGreen—but noticable, however not enough to warrant new color variable.
+      :bold t)
     `(org-agenda-done                          :foreground ,base7
       :bold t
       :strike-through ,base7)

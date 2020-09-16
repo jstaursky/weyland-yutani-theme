@@ -193,7 +193,8 @@ the parenthetical noise."
       :bold t)
 
     `(hi-yellow
-      :inherit highlight) ; cannot think of any reason I would want a bright Yellow face.
+      :foreground ,bg
+      :background ,Mustard) ; cannot think of any reason I would want a bright Yellow face.
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
@@ -345,25 +346,17 @@ the parenthetical noise."
     ;; DONE
     `(org-level-1                              :foreground ,HarlequinGreen
       :bold t
-      :height 1.5)
+      :height 1.3)
     `(org-level-2                              :foreground ,IcebergBlue
       :bold t
-      :height 1.4)
+      :height 1.2)
     `(org-level-3                              :foreground ,ArcticBlue
       :bold t
-      :height 1.2)
-    `(org-level-4                              :foreground ,Violet
-      :bold t
       :height 1.1)
-    `(org-level-5                              :foreground ,Indigo
-      :bold t
-      :height 1.0)
-    `(org-level-6                              :foreground ,Magenta
-      :bold t
-      :height 1.0)
-    `(org-level-7                              :foreground ,Gold
-      :bold t
-      :height 1.0)
+    `(org-level-4                              :foreground ,Violet)
+    `(org-level-5                              :foreground ,Indigo)
+    `(org-level-6                              :foreground ,Magenta)
+    `(org-level-7                              :foreground ,Gold)
 
     ;; Face for days on which a task should start to be done.
     `(org-habit-ready-face                     :foreground "black"               :background ,vibrant-Yellow
@@ -599,9 +592,12 @@ the parenthetical noise."
       :box nil)
     `(helm-header-line-left-margin             :foreground ,bg                   :background ,ArcticBlue)
     `(helm-match                               :foreground ,light-Purple)
+
     `(helm-source-header                       :foreground ,HarlequinGreen       :background ,bg
       :underline nil
-      :weight bold)
+      :weight bold
+      :overline t)
+
     `(helm-selection                           :foreground ,light-Orchid         :background ,bg-Orchid
       :underline nil
       :extend t)

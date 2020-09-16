@@ -518,7 +518,7 @@ the parenthetical noise."
     ;; MODE SUPPORT: org-rifle
     `(helm-org-rifle-separator
       :height .3
-      :box (:line-width 2 :color ,base7)
+      :box (:line-width -1 :color ,base7)
       :extend t)
 
     `(smerge-markers                                                             :background ,bg-Black

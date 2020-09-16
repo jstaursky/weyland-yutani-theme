@@ -192,7 +192,8 @@ the parenthetical noise."
     `(mode-line-highlight                      :foreground ,HarlequinGreen
       :bold t)
 
-    `(hi-yellow                                :foreground ,bg                   :background ,light-Finch)
+    `(hi-yellow
+      :inherit highlight) ; cannot think of any reason I would want a bright Yellow face.
 
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
@@ -298,6 +299,7 @@ the parenthetical noise."
       :box (:color ,bg-dark-Black :line-width -1))
 
     ;; MODE SUPPORT: org-mode
+
     `(org-document-title                       :foreground ,HarlequinGreen
       :underline t
       :height 1.5)
@@ -520,6 +522,11 @@ the parenthetical noise."
     `(slime-repl-inputed-output-face           :foreground ,Indigo)
     `(trailing-whitespace                      :foreground nil                   :background ,fg-alt)
 
+    ;; MODE SUPPORT: org-rifle
+    `(helm-org-rifle-separator
+      :height .3
+      :box (:line-width 2 :color ,base7)
+      :extend t)
 
     `(smerge-markers                                                             :background ,bg-Black
       :underline ,vibrant-Purple
@@ -671,6 +678,7 @@ the parenthetical noise."
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
+
 
 (provide-theme 'weyland-yutani)
 

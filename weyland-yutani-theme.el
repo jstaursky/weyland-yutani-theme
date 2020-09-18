@@ -169,8 +169,6 @@ the parenthetical noise."
     `(font-lock-function-name-face             :foreground ,Violet)
     `(font-lock-keyword-face                   :foreground ,HarlequinGreen)
     `(font-lock-negation-char-face             :foreground ,IcebergBlue)
-    `(font-lock-preprocessor-face
-      :inherit font-lock-constant-face)
     `(font-lock-reference-face                 :foreground ,IcebergBlue)
     `(font-lock-string-face                    :foreground ,ArcticBlue)
     `(font-lock-type-face                      :foreground ,Indigo)
@@ -203,6 +201,8 @@ the parenthetical noise."
     ;; MODE SUPPORT: tree-sitter
     `(tree-sitter-hl-face:number               :foreground ,Orange)
     `(tree-sitter-hl-face:constant
+      :inherit tree-sitter-hl-face:number)
+    `(tree-sitter-hl-face:function.macro
       :inherit tree-sitter-hl-face:number)
 
 

@@ -63,7 +63,7 @@ the parenthetical noise."
       (base4           "#3e4044")
       (base5           "#4e5054")
       (base6           "#717ea5")
-      (base6.1         "#8c9dc4")
+      (_base6.1         "#8c9dc4")
       (base7           "#505a76")
 
       (bg              "#202226")
@@ -76,7 +76,7 @@ the parenthetical noise."
       (bg-Blue         "#272c3b")
       (bg-CharlesGreen "#272D2D")
       (bg-Green        "#3a4f34")
-      (bg-Grey         "#434157")
+      (_bg-Grey         "#434157")
       (bg-Grey-alt     "#343a4f")
       (bg-Orchid       "#3b3559")
       (bg-Red          "#4f343a")
@@ -118,7 +118,6 @@ the parenthetical noise."
       (light-Orchid          "#ee78e8")
       (light-Purple          "#ba86f4")
       (light-Blue            "#63A4FF")
-      (light-Finch           "#ebff5f")
 
       ;; DARK VARIANTS
       (dark-Crimson          "#ba464a")
@@ -170,6 +169,8 @@ the parenthetical noise."
     `(font-lock-function-name-face             :foreground ,Violet)
     `(font-lock-keyword-face                   :foreground ,HarlequinGreen)
     `(font-lock-negation-char-face             :foreground ,IcebergBlue)
+    `(font-lock-preprocessor-face
+      :inherit font-lock-constant-face)
     `(font-lock-reference-face                 :foreground ,IcebergBlue)
     `(font-lock-string-face                    :foreground ,ArcticBlue)
     `(font-lock-type-face                      :foreground ,Indigo)
@@ -383,7 +384,8 @@ the parenthetical noise."
 
     `(org-block                                                                  :background ,bg-Black
      :extend t)
-    `(org-block-begin-line                                                       :background ,bg-Grey
+    `(org-block-begin-line                                                       :background ,bg-Grey-alt
+      :height .9
       :extend t)
     `(org-block-end-line
       :inherit org-block-begin-line)

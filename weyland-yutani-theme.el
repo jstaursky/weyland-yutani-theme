@@ -63,7 +63,7 @@ the parenthetical noise."
       (base4           "#3e4044")
       (base5           "#4e5054")
       (base6           "#717ea5")
-      (_base6.1         "#8c9dc4")
+      (base6.1         "#94a5d0")
       (base7           "#505a76")
 
       (bg              "#202226")
@@ -302,6 +302,9 @@ the parenthetical noise."
 
     ;; MODE SUPPORT: org-mode
 
+    `(org-ref-cite-face                        :foreground ,light-Orchid
+      :underline t)
+
     `(org-document-title                       :foreground ,HarlequinGreen
       :underline t
       :height 1.5)
@@ -384,10 +387,11 @@ the parenthetical noise."
 
     `(org-block                                                                  :background ,bg-Black
      :extend t)
-    `(org-block-begin-line                                                       :background ,bg-Grey-alt
-      :height .9
+    `(org-block-begin-line                     :foreground ,base6.1              :background ,bg-Grey-alt
+      :underline ,bg-dark-Black
       :extend t)
     `(org-block-end-line
+      :overline ,bg-dark-Black
       :inherit org-block-begin-line)
     `(org-quote
       :inherit org-block

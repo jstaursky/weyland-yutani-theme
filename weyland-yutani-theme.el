@@ -94,6 +94,7 @@ the parenthetical noise."
       (Magenta               "#C264C6")
       (IcebergBlue           "#4F9FD2")
       (ArcticBlue            "#59b9b4")
+      (ArcticBlue-alt        "#67bfba")
       (Gold                  "#b9b174")
       (Orchid                "#e372dd")
 
@@ -125,6 +126,7 @@ the parenthetical noise."
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
       (bg-dark-Black         "#242733")
+      (bg-Arctic-Blue        "#1e2827")
       (dark-Red              "#d2344c")
 
       ;; VIBRANT VARIANTS
@@ -170,7 +172,7 @@ the parenthetical noise."
     `(font-lock-keyword-face                   :foreground ,HarlequinGreen)
     `(font-lock-negation-char-face             :foreground ,IcebergBlue)
     `(font-lock-reference-face                 :foreground ,IcebergBlue)
-    `(font-lock-string-face                    :foreground ,ArcticBlue)
+    `(font-lock-string-face                    :foreground ,ArcticBlue-alt       :background ,bg-Arctic-Blue)
     `(font-lock-type-face                      :foreground ,Indigo)
     `(font-lock-variable-name-face             :foreground ,Magenta)
     `(font-lock-warning-face                   :foreground ,Crimson)
@@ -302,6 +304,10 @@ the parenthetical noise."
 
     ;; MODE SUPPORT: org-mode
 
+
+    `(org-indent
+      :inherit (org-hide fixed-pitch))
+
     `(org-ref-cite-face                        :foreground ,light-Orchid
       :underline t)
 
@@ -346,7 +352,8 @@ the parenthetical noise."
     `(org-scheduled                            :foreground ,Indigo)
     `(org-scheduled-today                      :foreground ,IcebergBlue)
     `(org-document-info-keyword                :foreground ,Violet)
-    `(org-sexp-date                            :foreground ,base3)
+    `(org-sexp-date                            :foreground ,base3
+      :inherit fixed-pitch)
     ;; DONE
     `(org-level-1                              :foreground ,HarlequinGreen
       :bold t
@@ -393,12 +400,13 @@ the parenthetical noise."
     `(org-block-end-line
       :overline ,bg-dark-Black
       :inherit org-block-begin-line)
+
     `(org-quote
-      :inherit org-block
-      :slant italic)
-    `(org-verse
-      :inherit org-block
-      :slant italic)
+      :foreground ,White
+      :background ,bg-darker
+      :slant normal
+      :extend t
+      )
 
     `(org-code                                 :foreground ,Orange)
     `(org-verbatim                             :foreground ,HarlequinGreen)

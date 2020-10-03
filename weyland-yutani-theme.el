@@ -126,7 +126,7 @@ the parenthetical noise."
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
       (bg-dark-Black         "#242733")
-      (bg-Arctic-Blue        "#1e2827")
+      (bg-Arctic-Blue        "#26303d") ;#273332
       (dark-Red              "#d2344c")
 
       ;; VIBRANT VARIANTS

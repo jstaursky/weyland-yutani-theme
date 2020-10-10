@@ -66,7 +66,7 @@ the parenthetical noise."
       (base6.1         "#94a5d0")
       (base7           "#505a76")
 
-      (bg              "#202226")
+      (bg              "#1f2226")
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
       (bg-darker       "#1f2024")
@@ -113,6 +113,7 @@ the parenthetical noise."
 
       ;; LIGHT VARIANTS
       (_light-Crimson        "#FF6066")
+      (light-Brown           "#d3b26b")
       (Orange                "#fb8a69")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
@@ -126,7 +127,7 @@ the parenthetical noise."
       (dark-Gold             "#7e784c")
       (dark-Purple           "#7c73cc")
       (bg-dark-Black         "#242733")
-      (bg-Arctic-Blue        "#26303d") ;#273332
+      (bg-Arctic-Blue        "#26303d")
       (dark-Red              "#d2344c")
 
       ;; VIBRANT VARIANTS
@@ -335,9 +336,10 @@ the parenthetical noise."
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
       :underline t)
-    `(org-agenda-structure                     :foreground ,base1
-      :weight bold
-      :box (:color ,base3))
+    `(org-agenda-structure                     :foreground ,light-Brown
+      :height 1.3
+      :italic t
+      :weight bold)
     `(org-agenda-date                          :foreground ,HarlequinGreen       :background ,bg-Grey-alt
       :underline ,very-dark-bg
       :distant-foreground ,bg)

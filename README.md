@@ -23,3 +23,10 @@ Download `weyland-yutani-theme.el` and put it under `~/.emacs.d/themes/` (or `~/
 
 (load-theme `weyland-yutani t)
 ```
+Also if you use [highlight-parentheses](https://github.com/tsdh/highlight-parentheses.el/tree/e18f2c2b240d7586ff7ffdc2881079e2dd8944ca)
+(spacemacs does) I recommend using the following setting to put in your init file:
+
+``` elisp
+  (setq hl-paren-colors '("#000000"))
+  (setq hl-paren-background-colors '("#B376D2"))
+```

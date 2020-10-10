@@ -113,7 +113,6 @@ the parenthetical noise."
 
       ;; LIGHT VARIANTS
       (_light-Crimson        "#FF6066")
-      (light-Brown           "#d3b26b")
       (Orange                "#fb8a69")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
@@ -336,7 +335,9 @@ the parenthetical noise."
     `(org-special-keyword                      :foreground ,Violet)
     `(org-date                                 :foreground ,Magenta
       :underline t)
-    `(org-agenda-structure                     :foreground ,light-Brown
+    `(org-agenda-structure                     :foreground "#4e94c2"
+                                               :background "#212a31"
+      :extend t
       :height 1.3
       :italic t
       :weight bold)

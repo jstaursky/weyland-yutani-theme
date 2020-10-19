@@ -660,6 +660,37 @@ the parenthetical noise."
     `(helm-swoop-target-word-face
       :inherit highlight)
 
+    ;; Face for highlighting odd-numbered non-current differences in buffer A.
+    `(ediff-odd-diff-A
+      :foreground "#cfd6e0"
+      :background "#3b3f57")
+
+    `(ediff-odd-diff-B
+      :foreground "#cfd6e0"
+      :background "#3b3f57")
+
+    `(ediff-even-diff-A
+      :foreground "#cfd6e0"
+      :background "#3b3f57")
+
+    `(ediff-even-diff-B
+      :foreground "#cfd6e0"
+      :background "#3b3f57")
+
+    `(ediff-fine-diff-B
+      :foreground ,bg-darker
+      :background "#7daa22")
+
+    `(ediff-current-diff-A
+      :foreground "#c7d0db"
+      :background "#553333"
+      )                                 ;
+
+    `(ediff-current-diff-B
+      :foreground "#e7ebef"
+      :background "#335533"
+      )
+
     `(web-mode-builtin-face
       :inherit ,font-lock-builtin-face)
     `(web-mode-comment-face

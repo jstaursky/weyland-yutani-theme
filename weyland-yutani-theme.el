@@ -148,7 +148,8 @@ the parenthetical noise."
    'weyland-yutani
    (weyland-yutani-theme-face-specifier
     ;; FACE                                    :foreground                       :background  :MISC
-    `(default                                  :foreground ,fg                   :background ,bg)
+    `(default                                  :foreground ,fg
+       :background ,bg :distant-foreground ,bg)
     `(default-italic
        :italic t)
     `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
@@ -165,7 +166,7 @@ the parenthetical noise."
     `(minibuffer-prompt                        :foreground ,HarlequinGreen)
 
     `(font-lock-builtin-face                   :foreground ,Indigo)
-    `(font-lock-comment-face                   :foreground ,fg-alt)
+    `(font-lock-comment-face                   :foreground ,fg-alt :distant-foreground ,base2)
     `(font-lock-constant-face                  :foreground ,IcebergBlue)
     `(font-lock-doc-face                       :foreground ,base2)
     `(font-lock-function-name-face             :foreground ,Violet)
@@ -234,7 +235,7 @@ the parenthetical noise."
       :underline t)
     `(show-paren-match                         :foreground ,Violet               :background ,bg-Violet
       :bold t)
-    `(shadow                                   :foreground ,base5)
+    `(shadow                                   :foreground ,base6)
     `(isearch                                  :foreground ,Crimson              :background ,base4
       :bold t)
     ;; NOTE emacs built with gtk cannot customize this.

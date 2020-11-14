@@ -161,7 +161,7 @@ the parenthetical noise."
     `(fringe                                   :foreground ,Purple               :background ,bg)
     `(hl-line                                                                    :background ,hl)
     `(region                                   :foreground ,light-Indigo         :background ,bg-Blue)
-    `(vertical-border                          :foreground ,dark-Slate)
+    `(vertical-border                          :foreground "#4a5677")
     `(highlight                                :foreground ,bg                   :background ,vibrant-Green)
     `(minibuffer-prompt                        :foreground ,HarlequinGreen)
 

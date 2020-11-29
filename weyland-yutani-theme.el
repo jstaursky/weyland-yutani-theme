@@ -207,7 +207,7 @@ the parenthetical noise."
       :inherit tree-sitter-hl-face:number)
     `(tree-sitter-hl-face:function.macro
       :inherit tree-sitter-hl-face:number)
-
+    `(tree-sitter-hl-face:punctuation nil)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

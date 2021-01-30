@@ -66,7 +66,7 @@ the parenthetical noise."
       (base6.1         "#94a5d0")
       (base7           "#505a76")
 
-      (bg              "#1f2226")
+      (bg              "#24272B")       ;#1f2226 <- previous
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
       (bg-darker       "#1f2024")

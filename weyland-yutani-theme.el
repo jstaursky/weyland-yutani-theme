@@ -307,6 +307,8 @@ the parenthetical noise."
     `(org-indent
       :inherit (org-hide fixed-pitch))
 
+    `(org-ref-ref-face :foreground ,Yellow)
+
     `(org-ref-cite-face                        :foreground ,light-Orchid
       :underline t)
 

@@ -50,7 +50,7 @@ the parenthetical noise."
 
 
 (let (
-      (fg              "#a9b7ca")
+      (fg              "#adbac7")
       (fg-alt          "#606873")
       (hl              "#26282c")
 
@@ -66,7 +66,7 @@ the parenthetical noise."
       (base6.1         "#94a5d0")
       (base7           "#505a76")
 
-      (bg              "#24272B")       ;#1f2226 <- previous
+      (bg              "#1e2228")       ;#1f2226 <- previous #24272B
       (bg-alt          "#26282c")
       (bg-Black        "#2b2f37")
       (bg-darker       "#1f2024")

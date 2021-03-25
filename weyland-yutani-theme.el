@@ -153,7 +153,6 @@ the parenthetical noise."
     `(default-italic
        :italic t)
     `(header-line                              :foreground ,HarlequinGreen       :background ,bg-Grey-alt
-      :underline ,very-dark-bg
       :distant-foreground ,bg)
 
     `(cursor                                                                     :background ,White)

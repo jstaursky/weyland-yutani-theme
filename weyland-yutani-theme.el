@@ -199,6 +199,10 @@ the parenthetical noise."
     ;; MODE SUPPORT: lsp
     `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
     `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
+    `(lsp-headerline-breadcrumb-path-error-face
+      :underline (:color ,dark-Red :style line))
+    `(lsp-face-highlight-textual :bolt t)
+
     ;; MODE SUPPORT: tree-sitter
     `(tree-sitter-hl-face:number               :foreground ,Orange)
     `(tree-sitter-hl-face:constant
@@ -281,8 +285,7 @@ the parenthetical noise."
     `(diff-hl-insert                           :foreground ,wylnyut-diff-added   :background ,wylnyut-diff-added)
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
 
-    ;; MODE SUPPORT: lsp
-    `(lsp-face-highlight-textual :bolt t)
+
 
     ;; MODE SUPPORT: rtags
     `(rtags-errline                            :foreground ,vibrant-Red          :background nil

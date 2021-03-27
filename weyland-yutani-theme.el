@@ -51,14 +51,14 @@ the parenthetical noise."
 
 (let (
       (fg              "#a9b7ca")
-      (fg-alt          "#606873")
+      (fg-alt          "#2b2c2e")       ;#606873
       (hl              "#26282c")
 
       (White           "#C3D0DF")
 
       (base0           "#9ca4b7")
       (base1           "#8c97a7")
-      (base2           "#6e788c")       ;
+      (base2           "#6e788c")
       (base3           "#8f8e9a")
       (base4           "#3e4044")
       (base5           "#4e5054")

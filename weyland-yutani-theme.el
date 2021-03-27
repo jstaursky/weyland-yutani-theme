@@ -88,7 +88,7 @@ the parenthetical noise."
       (key3            "#6aa454")
 
       ;; Main Palette
-      (HarlequinGreen        "#79c151")
+      (HarlequinGreen        "#83CB55") ;#79c151 #a2e960 #8ED559
       (Indigo                "#877CEB")
       (Violet                "#c291eb")
       (Magenta               "#C264C6")

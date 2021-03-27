@@ -113,7 +113,7 @@ the parenthetical noise."
 
       ;; LIGHT VARIANTS
       (_light-Crimson        "#FF6066")
-      (Orange                "#fb8a69")
+      (Orange                "#e98061")
       (light-IcebergBlue     "#4FAED9")
       (light-Indigo          "#A28BE7")
       (light-Orchid          "#ee78e8")

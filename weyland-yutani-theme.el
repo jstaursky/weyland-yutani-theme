@@ -213,6 +213,8 @@ the parenthetical noise."
     `(tree-sitter-hl-face:operator :foreground "#73b34b"
        :bold t)
     `(tree-sitter-hl-face:property :inherit default :bold t)
+    `(tree-sitter-hl-face:method.call :inherit tree-sitter-hl-face:function.call
+                                      :weight normal)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

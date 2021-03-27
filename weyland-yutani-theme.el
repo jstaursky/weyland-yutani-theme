@@ -210,6 +210,9 @@ the parenthetical noise."
     `(tree-sitter-hl-face:function.macro
       :inherit tree-sitter-hl-face:number)
     `(tree-sitter-hl-face:punctuation nil)
+    `(tree-sitter-hl-face:operator :foreground "#73b34b"
+       :bold t)
+    `(tree-sitter-hl-face:property :inherit default :bold t)
 
     ;; MODE SUPPORT: powerline
     `(powerline-active0

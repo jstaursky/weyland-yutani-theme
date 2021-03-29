@@ -290,7 +290,8 @@ the parenthetical noise."
     `(diff-hl-insert                           :foreground ,wylnyut-diff-added   :background ,wylnyut-diff-added)
     `(diff-hl-delete                           :foreground ,wylnyut-diff-deleted :background ,wylnyut-diff-deleted)
 
-
+    ;; MODE SUPPORT: scala
+    `(scala-font-lock:var-face :inherit font-lock-variable-name-face)
 
     ;; MODE SUPPORT: rtags
     `(rtags-errline                            :foreground ,vibrant-Red          :background nil

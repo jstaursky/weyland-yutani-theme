@@ -263,6 +263,8 @@ the parenthetical noise."
       :height 1.2)
     `(ebrowse-member-attribute                 :foreground ,vibrant-Purple)
     `(ebrowse-progress                                                           :background ,vibrant-Green)
+    `(ggtags-global-line :background ,dark-Slate)
+    `(compilation-info :foreground ,vibrant-Green)
 
     ;; MODE SUPPORT: git-gutter
     `(git-gutter:added                         :foreground ,wylnyut-diff-added)

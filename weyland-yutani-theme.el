@@ -178,6 +178,7 @@ the parenthetical noise."
 
     `(highlight-numbers-number                 :foreground ,Orchid)
     `(match                                    :foreground ,pale-Crimson         :background ,bg-darker)
+    `(trailing-whitespace                      :background ,IcebergBlue)
 
     ;; MODELINE
     `(mode-line                                :foreground ,fg                   :background ,bg-Black
@@ -202,6 +203,14 @@ the parenthetical noise."
     `(lsp-headerline-breadcrumb-path-error-face
       :underline (:color ,dark-Red :style line))
     `(lsp-face-highlight-textual :bolt t)
+    `(lsp-ui-peek-peek :inherit org-block)
+    `(lsp-ui-peek-filename :foreground ,HarlequinGreen)
+    `(lsp-ui-peek-highlight :bold t
+                           ; :box (:color ,dark-Slate :line-width -2)
+                            )
+    `(lsp-ui-peek-selection :background nil :foreground ,light-Purple)
+    `(lsp-ui-peek-header :inherit org-block-begin-line)
+    `(lsp-ui-peek-footer :inherit org-block-end-line)
 
     ;; MODE SUPPORT: tree-sitter
     `(tree-sitter-hl-face:number               :foreground ,Orange)

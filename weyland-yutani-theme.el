@@ -455,7 +455,7 @@ the parenthetical noise."
     `(avy-lead-face-0                          :foreground ,White                :background ,bg)
 
     `(avy-lead-face-2                          :foreground ,dimm-Crimson         :background ,bg)
-    `(avy-background-face                      :foreground ,fg-alt)
+    `(avy-background-face                      :foreground ,base2)
 
     ;; MODE SUPPORT: rainbow-delimiters
     `(rainbow-delimiters-unmatched-face        :foreground ,Crimson)

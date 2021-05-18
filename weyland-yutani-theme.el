@@ -265,6 +265,13 @@ the parenthetical noise."
 
     `(spacemacs-transient-state-title-face     :foreground ,vibrant-Green)
 
+
+    `(flycheck-error
+      :underline
+      (:color ,vibrant-Red :style line))
+
+
+
     ;; MODE SUPPORT: Ebrowse
     `(ebrowse-root-class                       :foreground ,HarlequinGreen)
     `(ebrowse-default                          :foreground ,Indigo)

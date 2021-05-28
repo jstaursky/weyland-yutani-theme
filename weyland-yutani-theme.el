@@ -198,8 +198,8 @@ the parenthetical noise."
       :background ,Mustard) ; cannot think of any reason I would want a bright Yellow face.
 
     ;; MODE SUPPORT: lsp
-    `(lsp-face-highlight-read                  :foreground ,vibrant-Finch)
-    `(lsp-face-highlight-write                 :foreground ,vibrant-Crimson)
+    `(lsp-face-highlight-read                  :foreground ,White :bold t  :underline ,fg)
+    `(lsp-face-highlight-write                 :foreground ,White :bold t)
     `(lsp-headerline-breadcrumb-path-error-face
       :underline (:color ,dark-Red :style line))
     `(lsp-face-highlight-textual :bolt t)
@@ -221,7 +221,7 @@ the parenthetical noise."
     `(tree-sitter-hl-face:punctuation nil)
     `(tree-sitter-hl-face:operator :foreground "#73b34b"
        :bold t)
-    `(tree-sitter-hl-face:property :inherit default :bold t)
+    `(tree-sitter-hl-face:property :inherit default :italic t)
     `(tree-sitter-hl-face:method.call :inherit tree-sitter-hl-face:function.call
                                       :weight normal)
 

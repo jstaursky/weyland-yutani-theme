@@ -329,6 +329,8 @@ the parenthetical noise."
       :box (:color ,bg-dark-Black :line-width -1))
 
     ;; MODE SUPPORT: org-mode
+    `(org-property-value :inherit fixed-pitch)
+
     `(org-headline-done :foreground "#606873" :strike-through t)
     `(org-indent
       :inherit (org-hide fixed-pitch))

@@ -576,9 +576,14 @@ the parenthetical noise."
       :box (:line-width -1 :color ,base7)
       :extend t)
 
-    `(smerge-markers                                                             :background ,bg-Black
+    `(smerge-markers
+      :background ,bg-Black
       :underline ,vibrant-Purple
       :overline ,vibrant-Purple)
+    `(smerge-refined-removed nil)
+    `(smerge-refined-added nil)
+    `(smerge-upper :foreground "#dbddee" :background "#2a3341")
+    `(smerge-lower :foreground "#F0EDFE" :background ,bg-Violet)
     `(git-commit-comment-file                  :foreground ,Crimson)
 
     `(magit-filename                           :foreground ,Violet)

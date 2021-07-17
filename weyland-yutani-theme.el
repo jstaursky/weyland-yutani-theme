@@ -719,34 +719,35 @@ the parenthetical noise."
       :foreground "#c8e5c7"
       :background "#698368")
 
-    `(ediff-odd-diff-C :foreground "#F0EDFE"
-                       :background "#3c4663")
+    `(ediff-odd-diff-C
+      :foreground "#e0ded4"
+      :background "#585648")
+    `(ediff-even-diff-C
+      :foreground "#ede6c7"
+      :background "#6c674c")
 
-    `(ediff-even-diff-C :foreground "#F0EDFE"
-                        :background "#3c4663")
 
 
+    `(ediff-current-diff-A
+      :foreground "#c7d0db"
+      :background "#553333")                                 ;
 
+    `(ediff-current-diff-B
+      :foreground "#e7ebef"
+      :background "#335533")
 
 
     `(ediff-fine-diff-B
       :foreground ,bg-darker
       :background "#7daa22")
 
-    `(ediff-current-diff-A
-      :foreground "#c7d0db"
-      :background "#553333"
-      )                                 ;
-
-    `(ediff-current-diff-B
-      :foreground "#e7ebef"
-      :background "#335533"
-      )
 
     `(ediff-fine-diff-C
-      :background ,dark-Slate
-      :foreground "#d2cc2b"
-      )
+      :foreground "#F0EDFE"
+      :background "#555432")
+
+
+
 
     `(ediff-current-diff-C :foreground "#d2cc2b" :background ,bg)
 

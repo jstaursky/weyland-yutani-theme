@@ -706,19 +706,24 @@ the parenthetical noise."
     ;; Face for highlighting odd-numbered non-current differences in buffer A.
     `(ediff-odd-diff-A
       :foreground "#cfd6e0"
-      :background "#3b3f57")
+      :background "#343f56")
 
     `(ediff-odd-diff-B
       :foreground "#cfd6e0"
-      :background "#3b3f57")
+      :background "#555d8a")
+
+    `(ediff-odd-diff-C :foreground "#F0EDFE"
+                       :background "#3c4663")
 
     `(ediff-even-diff-A
       :foreground "#cfd6e0"
-      :background "#3b3f57")
+      :background "#343f56")
 
     `(ediff-even-diff-B
       :foreground "#cfd6e0"
-      :background "#3b3f57")
+      :background "#555d8a")
+
+;    `(ediff-even-diff-C :background ,bg-Violet)
 
     `(ediff-fine-diff-B
       :foreground ,bg-darker

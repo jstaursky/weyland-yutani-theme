@@ -736,6 +736,8 @@ the parenthetical noise."
       :foreground "#e7ebef"
       :background "#335533")
 
+    `(ediff-current-diff-C :foreground ,vibrant-Finch :background "#555432")
+
 
     `(ediff-fine-diff-B
       :foreground ,bg-darker
@@ -743,13 +745,13 @@ the parenthetical noise."
 
 
     `(ediff-fine-diff-C
-      :foreground "#F0EDFE"
+      :foreground "#c5c987"
       :background "#555432")
 
 
 
 
-    `(ediff-current-diff-C :foreground "#d2cc2b" :background ,bg)
+
 
     `(web-mode-builtin-face
       :inherit ,font-lock-builtin-face)

@@ -580,8 +580,8 @@ the parenthetical noise."
       :background ,bg-Black
       :underline ,vibrant-Purple
       :overline ,vibrant-Purple)
-    `(smerge-refined-removed nil)
-    `(smerge-refined-added nil)
+    `(smerge-refined-removed :foreground ,vibrant-Red)
+    `(smerge-refined-added :foreground ,vibrant-Green)
     `(smerge-upper :foreground "#dbddee" :background "#2a3341")
     `(smerge-lower :foreground "#F0EDFE" :background ,bg-Violet)
     `(git-commit-comment-file                  :foreground ,Crimson)
@@ -733,6 +733,13 @@ the parenthetical noise."
       :foreground "#e7ebef"
       :background "#335533"
       )
+
+    `(ediff-fine-diff-C
+      :background ,dark-Slate
+      :foreground "#d2cc2b"
+      )
+
+    `(ediff-current-diff-C :foreground "#d2cc2b" :background ,bg)
 
     `(web-mode-builtin-face
       :inherit ,font-lock-builtin-face)

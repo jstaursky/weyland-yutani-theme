@@ -736,13 +736,17 @@ the parenthetical noise."
       :foreground "#e7ebef"
       :background "#335533")
 
-    `(ediff-current-diff-C :foreground ,vibrant-Finch :background "#555432")
+    `(ediff-current-diff-C :bold t
+      :foreground ,vibrant-Finch
+      :background "#555432")
 
+    `(ediff-fine-diff-A
+      :foreground "#e7ebef"
+      :background "#aa2222")
 
     `(ediff-fine-diff-B
       :foreground ,bg-darker
       :background "#7daa22")
-
 
     `(ediff-fine-diff-C
       :foreground "#c5c987"

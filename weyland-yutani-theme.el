@@ -715,6 +715,9 @@ the parenthetical noise."
     `(ediff-odd-diff-C :foreground "#F0EDFE"
                        :background "#3c4663")
 
+    `(ediff-even-diff-C :foreground "#F0EDFE"
+                        :background "#3c4663")
+
     `(ediff-even-diff-A
       :foreground "#cfd6e0"
       :background "#343f56")
@@ -723,7 +726,7 @@ the parenthetical noise."
       :foreground "#cfd6e0"
       :background "#555d8a")
 
-;    `(ediff-even-diff-C :background ,bg-Violet)
+
 
     `(ediff-fine-diff-B
       :foreground ,bg-darker

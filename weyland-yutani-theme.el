@@ -51,7 +51,7 @@ the parenthetical noise."
 
 (let (
       (fg              "#b0bcce")
-      (fg-alt          "#2b2c2e")       ;#606873
+      (fg-alt          "#606873")       ;#606873
       (hl              "#26282c")
 
       (White           "#C3D0DF")
